@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Aluguel de quadras de esporte
 
 `CURSO: Sistemas de Informação`
 
@@ -6,20 +6,20 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O sistema de aluguel de quadras de esporte é uma plataforma web e mobile que permite aos usuários reservar quadras de diferentes modalidades esportivas, como futevôlei, beach tennis e vôlei, de forma rápida e conveniente. Através da interface intuitiva, o usuário pode selecionar a data, o horário e o esporte desejado, visualizando as quadras disponíveis em tempo real. Para os proprietários dos estabelecimentos, esse sistema traz benefícios, como a automatização do processo de reservas, reduzindo a necessidade de gestão manual e minimizando erros de agendamento. A plataforma permite ainda que o proprietário tenha um controle preciso sobre as ocupações e os horários disponíveis, otimizando o uso das quadras e aumentando a receita.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Bianca Oliveira da Silva
+* Davi Perrier Cabral
+* Diego da Silva Gomes Barbosa
+* Enzo Silva Soares
+* Henrique Israel Oliveira
+* Lucas de Paula Martins
 
 ## Orientador
 
-* Nome completo do professor 1
+* Kleber Jacques Ferreira de Souza
 
 # Planejamento
 
