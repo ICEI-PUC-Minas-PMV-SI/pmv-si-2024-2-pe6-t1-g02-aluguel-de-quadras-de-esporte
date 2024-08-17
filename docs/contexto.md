@@ -60,15 +60,22 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o locador disponibilize suas quadras para aluguel | ALTA | 
+|RF-002| Permitir que o locador possa gerir os horarios disponíveis de cada quadra que possui   | ALTA |
+|RF-003| Permitir que o locador cancele reservas de locatários de suas quadras   | MÉDIA |
+|RF-004| Permitir que o locador bana locatários de suas quadras   | BAIXA |
+|RF-005| Permitir que o locatário pesquise quadras por nome, endereço ou preço   | MÉDIA |
+|RF-006| Permitir que o locatário reserve uma quadra dentro dos horários disponibilizados pelo locador   | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
+|RNF-002| O sistema deve ser escalável para lidar com aumentos de demanda de usuários |  BAIXA | 
+|RNF-003| O sistema deve ser de fácil manutenção |  ALTA | 
+|RNF-004| O sistema deve estar disponível quando requisitado pelo usuário |  ALTA | 
+|RNF-005| O sistema deve ser intuitivo e evitar deixar o usuário cometer erros |  MÉDIA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
