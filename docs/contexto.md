@@ -1,18 +1,23 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+> Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+
+
+O projeto consiste no desenvolvimento de um sistema web e mobile para o aluguel de quadras esportivas, visando digitalizar e simplificar o processo de reserva para os usuários e a gestão para os proprietários. No contexto de crescente popularidade das atividades esportivas e a necessidade de maior eficiência na administração desses espaços, o sistema permitirá que os usuários consultem horários disponíveis, escolham o esporte desejado e realizem reservas. Para os proprietários, a plataforma oferecerá uma ferramenta para gerenciar reservas, monitorar a ocupação, otimizando a utilização das quadras e aumentando a receita. A justificativa do projeto se baseia na necessidade de modernizar o setor, oferecendo uma solução que atenda às demandas dos consumidores e melhore a eficiência operacional dos estabelecimentos. O público-alvo inclui tanto os usuários de quadras esportivas, como atletas amadores e pessoas em busca de atividades recreativas, quanto os proprietários de quadras, como clubes e centros esportivos.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+> Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+> Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+> Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+
+A aplicação de aluguel de quadras esportivas será desenvolvida para atender um mercado em expansão dentro do setor de esportes e lazer. Em um cenário onde a digitalização dos serviços é uma tendência crescente, clubes, academias, escolas e centros esportivos têm enfrentado dificuldades na gestão eficaz de suas quadras. Esses estabelecimentos, muitas vezes, ainda utilizam métodos tradicionais para a administração de reservas, como planilhas, cadernos de anotações ou sistemas desatualizados, o que resulta em ineficiências operacionais, perda de oportunidades de negócios e insatisfação do cliente. O contexto tecnológico em que a aplicação será implementada abrange o uso de dispositivos móveis e web. O problema central enfrentado pelos estabelecimentos que alugam quadras esportivas é gerado pelos métodos manuais que tornam a gestão de reservas confusa e suscetível a erros. É comum ocorrerem conflitos de horários, onde duas ou mais reservas são feitas para o mesmo período, causando frustrações tanto para os clientes quanto para os proprietários. Esse tipo de situação não só prejudica a experiência dos usuários, mas também compromete a reputação e a eficiência operacional dos estabelecimentos que oferecem o serviço de aluguel de quadras. A falta de uma visão clara e atualizada sobre a ocupação das quadras resulta em muitos horários ociosos, levando a uma subutilização dos espaços disponíveis. Esse cenário representa uma perda de receita significativa para os proprietários, que poderiam otimizar a ocupação das quadras e maximizar seus lucros se dispusessem de uma ferramenta de gestão mais eficiente. Outro problema enfrentado se trata do processo de encontrar e reservar uma quadra disponível que muitas vezes é demorado e frustrante. Os usuários precisam enviar mensagens ou realizar ligações por canais de comunicação como WhatsApp e aguardar o retorno de um funcionário, o que pode levar tempo e resultar em incertezas. A ausência de uma plataforma que centralize as opções de quadras, disponibilize informações atualizadas e permita reservas de forma direta e prática dificulta o acesso dos usuários, que acabam desistindo ou buscando alternativas menos convenientes. Essa falta de agilidade e transparência no processo de reserva diminui a satisfação do cliente e afeta negativamente a demanda.
 
 ## Objetivos
 
