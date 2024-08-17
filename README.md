@@ -1,4 +1,4 @@
-# Aluguel de quadras de esporte
+# Aluguel de quadras de esportes
 
 `CURSO: Sistemas de Informação`
 
@@ -6,7 +6,7 @@
 
 `SEMESTRE: 6º`
 
-O sistema de aluguel de quadras de esporte é uma plataforma web e mobile que permite aos usuários reservar quadras de diferentes modalidades esportivas, como futevôlei, beach tennis e vôlei, de forma rápida e conveniente. Através da interface intuitiva, o usuário pode selecionar a data, o horário e o esporte desejado, visualizando as quadras disponíveis em tempo real. Para os proprietários dos estabelecimentos, esse sistema traz benefícios, como a automatização do processo de reservas, reduzindo a necessidade de gestão manual e minimizando erros de agendamento. A plataforma permite ainda que o proprietário tenha um controle preciso sobre as ocupações e os horários disponíveis, otimizando o uso das quadras e aumentando a receita.
+O sistema de aluguel de quadras de esportes é uma plataforma web e mobile que permite aos usuários reservar quadras de diferentes modalidades esportivas, como futevôlei, beach tennis e vôlei, de forma rápida e conveniente. Através da interface intuitiva, o usuário pode selecionar a data, o horário e o esporte desejado, visualizando as quadras disponíveis em tempo real. Para os proprietários dos estabelecimentos, esse sistema traz benefícios, como a automatização do processo de reservas, reduzindo a necessidade de gestão manual e minimizando erros de agendamento. A plataforma permite ainda que o proprietário tenha um controle preciso sobre as ocupações e os horários disponíveis, otimizando o uso das quadras e aumentando a receita.
 
 ## Integrantes
 
