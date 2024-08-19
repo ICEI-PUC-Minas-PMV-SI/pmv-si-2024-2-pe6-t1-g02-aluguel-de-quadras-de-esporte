@@ -21,9 +21,10 @@ A aplicação de aluguel de quadras esportivas será desenvolvida para atender u
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo é desenvolver um software que facilite o encontro de locatários e locadores, aumentando o número de aluguéis fechados e gerando dados para que os negócios possam gerir suas quadras de forma mais eficiente e lucrativa. Dentro deste objetivo geral há os seguintes objetivos específicos:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+1. Implementar um funcionalidade de gerenciamento de reservas que por meio de uma interface para administrar a utilização das suas quadras, deve ajudar os negócios a atuarem em suas quadras subutilizadas.
+2. Otimizar a experiência do usuário ao alugar uma quadra, por meio de uma interface intuitiva e amigável para que o processo de criar uma reserva seja simples e sem frustrações, aumentando a satisfação dos clientes.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
