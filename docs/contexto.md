@@ -92,6 +92,9 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma
 característica alvo da sua solução. Além disso, certifique-se de que
 todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
+### Critério de priorização
+Foi utilizado um critério que prioriza requisitos que sejam necessários para a viabilidade da solução em primeiro lugar e que aumentem a flexibilidade do que foi desenvolvido para permitir mudanças rápidas, seguidos por critérios que melhorem a experiência do usuário e por último requisitos que tragam funcionalidades secundárias ou melhorias que ganham mais valor apenas se a solução se consolidar no mercado.
+
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
