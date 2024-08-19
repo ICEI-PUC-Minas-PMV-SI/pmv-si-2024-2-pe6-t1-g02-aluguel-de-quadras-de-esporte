@@ -90,9 +90,7 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 A empresa atende a um público diversificado que inclui:
 
-1. Grupos de Amigos e Famílias:
-
-Pessoas que buscam um local para a prática de desporto e lazer nos fins de semana ou após o horário de trabalho.
+1. Grupos de Amigos e Famílias:Pessoas que buscam um local para a prática de desporto e lazer nos fins de semana ou após o horário de trabalho.
 Famílias que desejam praticar desporto de forma recreativa, em um ambiente seguro e acolhedor.
 
 2. Atletas Amadores e Profissionais:
