@@ -36,6 +36,7 @@ O objetivo é desenvolver um software que facilite o encontro de locatários e l
 
 ## Justificativa
 Sistema de Aluguel de Quadra Esportiva
+
 A criação de um sistema de aluguel de quadras desportivas é uma necessidade estratégica e operacional que oferece múltiplos benefícios tanto para a gestão interna quanto para os clientes. Este sistema visa automatizar e otimizar o processo de reservas, melhorar a experiência do cliente, aumentar a eficiência operacional, e, consequentemente, maximizar a rentabilidade da empresa.
 
 1. Automatização e Eficiência Operacional
