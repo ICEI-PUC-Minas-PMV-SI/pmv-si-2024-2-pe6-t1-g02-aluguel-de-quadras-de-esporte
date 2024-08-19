@@ -89,6 +89,12 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 2.Público-Alvo
 
 A empresa atende a um público diversificado que inclui:
+Faixa etária:
+
+Adultos jovens (18-35 anos)
+Adolescentes (13-17 anos)
+Adultos (35-50 anos)
+Famílias com crianças e adolescentes
 
 1. Grupos de Amigos e Famílias:Pessoas que buscam um local para a prática de desporto e lazer nos fins de semana ou após o horário de trabalho.
 Famílias que desejam praticar desporto de forma recreativa, em um ambiente seguro e acolhedor.
