@@ -2,10 +2,10 @@
 
 > Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
-
 O setor de aluguel de quadras esportivas cresceu significativamente nos últimos anos, impulsionado pela crescente conscientização sobre a importância de manter um estilo de vida ativo e saudável. Como resultado, esportes coletivos como futevôlei, beach tênis e vôlei de praia têm ganhado popularidade no Brasil, atraindo cada vez mais praticantes e fortalecendo essa tendência. Nesse cenário onde a digitalização dos serviços também é uma tendência, clubes, academias e centros esportivos têm enfrentado dificuldades na gestão eficaz de suas quadras. A justificativa do projeto se baseia na necessidade de modernizar o setor, oferecendo uma solução que melhore a eficiência operacional dos estabelecimentos e atenda às demandas dos consumidores. O público-alvo inclui os usuários de quadras esportivas, como atletas amadores e pessoas em busca de atividades recreativas, quanto os proprietários de quadras, como clubes e centros esportivos. 
 
 ## Problema
+
 > Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
 > Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
@@ -22,18 +22,14 @@ Os estabelecimentos de aluguel de quadras esportivas frequentemente enfrentam de
 Outro problema comum é o processo demorado e frustrante de encontrar e reservar uma quadra disponível. Usuários frequentemente precisam enviar mensagens ou fazer ligações, aguardando o retorno de um funcionário, o que causa incertezas e diminui a satisfação do cliente. A ausência de uma plataforma centralizada e eficiente para gerenciamento e reservas dificulta o acesso dos usuários e prejudica a demanda, impactando negativamente a experiência do cliente e a rentabilidade dos locatários.
 
 ## Objetivos
-A aplicação de aluguel de quadras esportivas será desenvolvida para atender um mercado em expansão dentro do setor de esportes e lazer.
 
-O objetivo é desenvolver um software que facilite o encontro de locatários e locadores, aumentando o número de aluguéis fechados e gerando dados para que os negócios possam gerir suas quadras de forma mais eficiente e lucrativa. Dentro deste objetivo geral há os seguintes objetivos específicos:
+O objetivo é desenvolver uma aplicação distribuída para realizar agendamentos de quadras esportivas. Dentro deste objetivo geral há os seguintes objetivos específicos:
 
-1. Implementar um funcionalidade de gerenciamento de reservas que por meio de uma interface para administrar a utilização das suas quadras, deve ajudar os negócios a atuarem em suas quadras subutilizadas.
-2. Otimizar a experiência do usuário ao alugar uma quadra, por meio de uma interface intuitiva e amigável para que o processo de criar uma reserva seja simples e sem frustrações, aumentando a satisfação dos clientes.
-3. Qualidade do Serviço: Garantir que todas as quadras estejam sempre em ótimas condições, proporcionando uma experiência desportiva de alta qualidade.
-4. Acessibilidade: Oferecer preços competitivos e flexibilidade nos horários de reserva, atendendo às diferentes necessidades dos clientes.
-5. Diversificação de Ofertas: Disponibilizar quadras para diversas modalidades, além de espaços para eventos e aulas, atendendo a um público variado.
-6. Fidelização de Clientes: Desenvolver programas de fidelidade e parcerias que incentivem o uso recorrente das instalações.
-7. Promoção de Eventos: Organizar e sediar torneios, eventos desportivos e sociais, promovendo a interação e o espírito desportivo na comunidade.
- 
+1. Desenvolver uma aplicação web administrativa para proprietários.
+2. Desenvolver uma aplicação mobile para clientes.
+3. Desenvolver uma API para integração de serviços.
+4. Implementar um sistema de notificações e lembretes.
+
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
