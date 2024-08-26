@@ -144,6 +144,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
+Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
 Catálogo de Serviços
 
 A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços:
@@ -163,7 +164,7 @@ Pagamento Online: permitirá que os usuários paguem as reservas de quadras espo
 Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
 Arquitetura da Solução
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+
 
 # Arquitetura da Solução
 
