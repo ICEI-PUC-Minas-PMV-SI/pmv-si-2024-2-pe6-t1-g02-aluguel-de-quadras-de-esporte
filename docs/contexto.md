@@ -34,48 +34,23 @@ Facilita a gerenciamento de reservas e alugueis, evitando conflitos de horários
 Permite a gestão eficiente de reservas, cancelamentos e alterações;
 Aumenta a receita, pois os proprietários podem alugar as quadras por períodos mais curtos e com mais frequência.
 
-Conclusão
+> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
-A aplicação de aluguel de quadras esportivas é uma solução inovadora que resolve os problemas de busca, reserva e aluguel de quadras esportivas, tanto para os usuários quanto para os proprietários de quadras esportivas. Com sua plataforma fácil de usar e sua variedade de recursos, a aplicação tem o potencial de se tornar a principal opção para a busca e reserva de quadras esportivas.
-
-
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
+> Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-2.Público-Alvo
+> Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
-A empresa atende a um público diversificado que inclui:
-Faixa etária:
+A empresa atende a um público que inclui:
 
-Adultos jovens (18-35 anos)
-Adolescentes (13-17 anos)
-Adultos (35-50 anos)
-Famílias com crianças e adolescentes
-
-1. Grupos de Amigos e Famílias:Pessoas que buscam um local para a prática de desporto e lazer nos fins de semana ou após o horário de trabalho.
-Famílias que desejam praticar desporto de forma recreativa, em um ambiente seguro e acolhedor.
-
-2. Atletas Amadores e Profissionais:
-Jogadores e equipes amadoras que precisam de um local regular para treinos e partidas.
-Atletas profissionais que utilizam as quadras para treinamentos específicos.
-
-3. Escolas e Instituições Educacionais:
-Escolas que necessitam de espaços para aulas de educação física ou eventos desportivos escolares.
-Universidades e outras instituições educacionais que organizam ligas e campeonatos internos.
-
-4. Empresas e Corporações:
-Empresas que organizam eventos corporativos, atividades de team building e campeonatos entre funcionários.
-Clubes desportivos corporativos que precisam de espaços regulares para jogos e treinos.
+Adolescentes de (15-17 anos) com excelente convivência com a tecnologia e facilidade no seu uso e adultos (18-50 anos) em que fluxos longos e complexos podem ser um problema. 
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
