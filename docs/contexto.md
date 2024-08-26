@@ -110,13 +110,11 @@ Cadastro de Quadras: permitirá que os proprietários de quadras esportivas cada
 
 Busca de Quadras: permitirá que os usuários busquem quadras esportivas por localização, tipo de esporte, capacidade e disponibilidade.
 
-Reserva de Quadras: permitirá que os usuários reservem quadras esportivas para um período específico, com opção de pagamento online.
+Reserva de Quadras: permitirá que os usuários reservem quadras esportivas para um período específico.
 
 Gerenciamento de Reservas: permitirá que os proprietários de quadras gerenciem as reservas de suas quadras, incluindo a confirmação ou cancelamento de reservas.
 
 Avaliação de Quadras: permitirá que os usuários avaliem as quadras esportivas após a utilização, fornecendo feedback sobre a qualidade do serviço.
-
-Pagamento Online: permitirá que os usuários paguem as reservas de quadras esportivas online, utilizando cartões de crédito ou débito.
 
 Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
 Arquitetura da Solução
@@ -136,8 +134,7 @@ Frontend: Aplicativo Móvel (React Native) e Painel de Administração (React)
 
 Backend: API Gateway (Node.js),
 Microserviço de Autenticação (Node.js),
-Microserviço de Quadras (Node.js), 
-Microserviço de Pagamento (Node.js)
+Microserviço de Quadras (Node.js)
 
 Banco de Dados: Banco de Dados Relacional (MySQL) e Banco de Dados NoSQL (MongoDB)
 
@@ -157,7 +154,6 @@ A aplicação será hospedada em um ambiente de nuvem, utilizando os seguintes c
 
 Servidor Web: Hospedado na AWS
 Banco de Dados: Hospedado na AWS
-Serviço de Pagamento: Utilizando o serviço de pagamento da Stripe
 Serviço de Notificações: Utilizando o serviço de notificações da Firebase
 
 Essas arquiteturas permitem que a aplicação seja escalável, flexível e segura, garantindo uma experiência de usuário satisfatória e uma gestão eficiente das quadras esportivas.
@@ -175,8 +171,6 @@ Front-end: React, JavaScript, HTML, CSS
 Back-end: Node.js, Express.js, MongoDB
 
 Banco de Dados: MongoDB
-
-Serviço de Pagamento: Stripe
 
 Serviço de Notificações: Firebase Cloud Messaging
 
