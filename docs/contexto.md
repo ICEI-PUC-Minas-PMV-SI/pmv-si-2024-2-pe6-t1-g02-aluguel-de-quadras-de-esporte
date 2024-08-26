@@ -128,8 +128,6 @@ Organizações comunitárias que promovem o desporto e o bem-estar na comunidade
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
-
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
@@ -137,7 +135,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Permitir que o locador disponibilize suas quadras para aluguel | ALTA | 
 |RF-002| Permitir que o locador possa gerir os horarios disponíveis de cada quadra que possui   | ALTA |
 |RF-003| Permitir que o locador cancele reservas de locatários de suas quadras   | MÉDIA |
-|RF-004| Permitir que o locador bana locatários de suas quadras   | BAIXA |
+|RF-004| Permitir que o locador bloqueie usuários de suas quadras   | BAIXA |
 |RF-005| Permitir que o locatário pesquise quadras por nome, endereço ou preço   | MÉDIA |
 |RF-006| Permitir que o locatário reserve uma quadra dentro dos horários disponibilizados pelo locador   | ALTA |
 
@@ -147,24 +145,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
 |RNF-002| O sistema deve ser escalável para lidar com aumentos de demanda de usuários |  BAIXA | 
-|RNF-003| O sistema deve ser de fácil manutenção |  ALTA | 
-|RNF-004| O sistema deve estar disponível quando requisitado pelo usuário |  ALTA | 
-|RNF-005| O sistema deve ser intuitivo e evitar deixar o usuário cometer erros |  MÉDIA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-003| O sistema deve estar disponível quando requisitado pelo usuário |  ALTA | 
+|RNF-004| O sistema deve ter boa usabilidade |  MÉDIA | 
 
 ### Critério de priorização
 Foi utilizado um critério que prioriza requisitos que sejam necessários para a viabilidade da solução em primeiro lugar e que aumentem a flexibilidade do que foi desenvolvido para permitir mudanças rápidas, seguidos por critérios que melhorem a experiência do usuário e por último requisitos que tragam funcionalidades secundárias ou melhorias que ganham mais valor apenas se a solução se consolidar no mercado.
