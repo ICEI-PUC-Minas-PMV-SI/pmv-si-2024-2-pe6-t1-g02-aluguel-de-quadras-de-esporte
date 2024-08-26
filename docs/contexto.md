@@ -1,21 +1,8 @@
 # Introdução
 
-> Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
-
 O setor de aluguel de quadras esportivas cresceu significativamente nos últimos anos, impulsionado pela crescente conscientização sobre a importância de manter um estilo de vida ativo e saudável. Como resultado, esportes coletivos como futevôlei, beach tênis e vôlei de praia têm ganhado popularidade no Brasil, atraindo cada vez mais praticantes e fortalecendo essa tendência. Nesse cenário onde a digitalização dos serviços também é uma tendência, clubes, academias e centros esportivos têm enfrentado dificuldades na gestão eficaz de suas quadras. A justificativa do projeto se baseia na necessidade de modernizar o setor, oferecendo uma solução que melhore a eficiência operacional dos estabelecimentos e atenda às demandas dos consumidores. O público-alvo inclui os usuários de quadras esportivas, como atletas amadores e pessoas em busca de atividades recreativas, quanto os proprietários de quadras, como clubes e centros esportivos. 
 
 ## Problema
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-> Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-> Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 Os estabelecimentos de aluguel de quadras esportivas frequentemente enfrentam desafios operacionais devido ao uso de métodos tradicionais e manuais para a gestão de reservas, como planilhas, cadernos de anotações e sistemas desatualizados. Esses métodos levam a ineficiências, como conflitos de horários, onde duas ou mais reservas são feitas para o mesmo período, causando frustração tanto para os clientes quanto para os proprietários. Além disso, a falta de uma visão clara e atualizada sobre a ocupação das quadras resulta em horários ociosos, gerando subutilização dos espaços e perda de receita.
 
@@ -29,9 +16,6 @@ O objetivo é desenvolver uma aplicação distribuída para realizar agendamento
 2. Desenvolver uma aplicação mobile para clientes.
 3. Desenvolver uma API para integração de serviços.
 4. Implementar um sistema de notificações e lembretes.
-
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 A aplicação de aluguel de quadras esportivas tem como objetivo principal proporcionar uma plataforma fácil e conveniente para que os usuários encontrem e reservem quadras esportivas de acordo com suas necessidades. Além disso, a aplicação também visa ajudar os proprietários de quadras esportivas a gerenciar suas quadras de forma mais eficiente, aumentando a visibilidade e a receita.
