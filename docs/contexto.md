@@ -24,8 +24,7 @@ Benefícios para os Usuários:
 
 Facilita a busca e reserva de quadras esportivas de acordo com a localização, tipo de esporte e disponibilidade;
 Oferece uma variedade de opções de quadras esportivas para escolher;
-Permite a reserva e pagamento online, evitando a necessidade de ligar ou visitar pessoalmente;
-Fornece avaliações e comentários de outros usuários para ajudar a tomar uma decisão informada;
+Permite a reserva, evitando a necessidade de ligar ou visitar pessoalmente;
 Oferece uma experiência de usuário intuitiva e fácil de usar.
 
 Benefícios para os Proprietários de Quadras Esportivas:
@@ -33,7 +32,6 @@ Benefícios para os Proprietários de Quadras Esportivas:
 Aumenta a visibilidade das quadras esportivas, alcançando um público mais amplo;
 Facilita a gerenciamento de reservas e alugueis, evitando conflitos de horários e garantindo que as quadras sejam utilizadas ao máximo;
 Permite a gestão eficiente de reservas, cancelamentos e alterações;
-Oferece uma ferramenta para avaliar a satisfação dos clientes e melhorar a experiência;
 Aumenta a receita, pois os proprietários podem alugar as quadras por períodos mais curtos e com mais frequência.
 
 Conclusão
@@ -96,7 +94,7 @@ Clubes desportivos corporativos que precisam de espaços regulares para jogos e 
 |RF-001| Permitir que o locador disponibilize suas quadras para aluguel | ALTA | 
 |RF-002| Permitir que o locador possa gerir os horarios disponíveis de cada quadra que possui   | ALTA |
 |RF-003| Permitir que o locador cancele reservas de locatários de suas quadras   | MÉDIA |
-|RF-004| Permitir que o locador bloqueie usuários de suas quadras   | BAIXA |
+|RF-004| Permitir que o locador bloqueie usuários do sistema  | BAIXA |
 |RF-005| Permitir que o locatário pesquise quadras por nome, endereço ou preço   | MÉDIA |
 |RF-006| Permitir que o locatário reserve uma quadra dentro dos horários disponibilizados pelo locador   | ALTA |
 
