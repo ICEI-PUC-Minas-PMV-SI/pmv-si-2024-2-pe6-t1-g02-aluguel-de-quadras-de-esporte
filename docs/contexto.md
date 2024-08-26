@@ -177,7 +177,10 @@ A solução é composta por:
 
 Frontend: Aplicativo Móvel (React Native) e Painel de Administração (React)
 
-Backend: API Gateway (Node.js), Microserviço de Autenticação (Node.js), Microserviço de Quadras (Node.js), Microserviço de Pagamento (Node.js)
+Backend: API Gateway (Node.js),
+Microserviço de Autenticação (Node.js),
+Microserviço de Quadras (Node.js), 
+Microserviço de Pagamento (Node.js)
 
 Banco de Dados: Banco de Dados Relacional (MySQL) e Banco de Dados NoSQL (MongoDB)
 
@@ -188,7 +191,9 @@ Segurança: Autenticação e Autorização, Criptografia, Firewall
 A arquitetura da plataforma de serviços é estruturada em três camadas:
 
 Camada de Apresentação: Página Web (HTML, CSS, JavaScript) e Aplicativo Móvel (React Native)
+
 Camada de Negócios: Servidor de Aplicação (Node.js)
+
 Camada de Dados: Banco de Dados (MySQL)
 
 A aplicação será hospedada em um ambiente de nuvem, utilizando os seguintes componentes:
