@@ -144,15 +144,6 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
-
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
-
-# Arquitetura da Solução
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
-Arquitetura da Plataforma de Serviços:
 Catálogo de Serviços
 
 A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços:
@@ -172,17 +163,38 @@ Pagamento Online: permitirá que os usuários paguem as reservas de quadras espo
 Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
 Arquitetura da Solução
 
-A aplicação de aluguel de quadras esportivas será estruturada em três camadas:
+Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
 
-Camada de Apresentação: responsável por fornecer a interface de usuário, incluindo a página web e o aplicativo móvel.
-Camada de Negócios: responsável por processar as requisições dos usuários, incluindo a busca de quadras, reserva de quadras e gerenciamento de reservas.
-Camada de Dados: responsável por armazenar e gerenciar os dados da aplicação, incluindo as informações das quadras, reservas e usuários.
+# Arquitetura da Solução
+
+Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+
+![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+A arquitetura da solução para a aplicação de aluguel de quadras esportivas é baseada em uma estrutura de microserviços, que permite escalabilidade, flexibilidade e manutenção mais eficientes. A solução é composta por:
+
+Frontend: Aplicativo Móvel (React Native) e Painel de Administração (React)
+Backend: API Gateway (Node.js), Microserviço de Autenticação (Node.js), Microserviço de Quadras (Node.js), Microserviço de Pagamento (Node.js)
+Banco de Dados: Banco de Dados Relacional (MySQL) e Banco de Dados NoSQL (MongoDB)
+Ambiente de Hospedagem: Cloud Provider (AWS), Containerização (Docker), Orquestração (Kubernetes)
+Segurança: Autenticação e Autorização, Criptografia, Firewall
+A arquitetura da plataforma de serviços é estruturada em três camadas:
+
+Camada de Apresentação: Página Web (HTML, CSS, JavaScript) e Aplicativo Móvel (React Native)
+Camada de Negócios: Servidor de Aplicação (Node.js)
+Camada de Dados: Banco de Dados (MySQL)
 A aplicação será hospedada em um ambiente de nuvem, utilizando os seguintes componentes:
 
-Servidor Web: responsável por fornecer a interface de usuário e processar as requisições dos usuários.
-Banco de Dados: responsável por armazenar e gerenciar os dados da aplicação.
-Serviço de Pagamento: responsável por processar os pagamentos online.
-Serviço de Notificações: responsável por enviar notificações aos usuários.
+Servidor Web: Hospedado na AWS
+Banco de Dados: Hospedado na AWS
+Serviço de Pagamento: Utilizando o serviço de pagamento da Stripe
+Serviço de Notificações: Utilizando o serviço de notificações da Firebase
+Essas arquiteturas permitem que a aplicação seja escalável, flexível e segura, garantindo uma experiência de usuário satisfatória e uma gestão eficiente das quadras esportivas.
+
+## Tecnologias Utilizadas
+
+Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+
+Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 A aplicação será desenvolvida utilizando as seguintes tecnologias:
 
 Front-end: React, JavaScript, HTML, CSS
@@ -190,12 +202,6 @@ Back-end: Node.js, Express.js, MongoDB
 Banco de Dados: MongoDB
 Serviço de Pagamento: Stripe
 Serviço de Notificações: Firebase Cloud Messaging
-
-## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 ## Hospedagem
 
