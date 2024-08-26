@@ -36,14 +36,16 @@ O objetivo é desenvolver uma aplicação distribuída para realizar agendamento
 ## Justificativa
 A aplicação de aluguel de quadras esportivas tem como objetivo principal proporcionar uma plataforma fácil e conveniente para que os usuários encontrem e reservem quadras esportivas de acordo com suas necessidades. Além disso, a aplicação também visa ajudar os proprietários de quadras esportivas a gerenciar suas quadras de forma mais eficiente, aumentando a visibilidade e a receita.
 
-Benefícios para os Usuários
+Benefícios para os Usuários:
+
 Facilita a busca e reserva de quadras esportivas de acordo com a localização, tipo de esporte e disponibilidade;
 Oferece uma variedade de opções de quadras esportivas para escolher;
 Permite a reserva e pagamento online, evitando a necessidade de ligar ou visitar pessoalmente;
 Fornece avaliações e comentários de outros usuários para ajudar a tomar uma decisão informada;
 Oferece uma experiência de usuário intuitiva e fácil de usar.
 
-Benefícios para os Proprietários de Quadras Esportivas
+Benefícios para os Proprietários de Quadras Esportivas:
+
 Aumenta a visibilidade das quadras esportivas, alcançando um público mais amplo;
 Facilita a gerenciamento de reservas e alugueis, evitando conflitos de horários e garantindo que as quadras sejam utilizadas ao máximo;
 Permite a gestão eficiente de reservas, cancelamentos e alterações;
