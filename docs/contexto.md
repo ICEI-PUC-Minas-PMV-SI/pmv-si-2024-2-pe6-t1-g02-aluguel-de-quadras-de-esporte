@@ -54,7 +54,7 @@ Aumenta a receita, pois os proprietários podem alugar as quadras por períodos 
 
 Conclusão
 
-A aplicação de aluguel de quadras esportivas é uma solução inovadora que resolve os problemas de busca, reserva e aluguel de quadras esportivas, tanto para os usuários quanto para os proprietários de quadras esportivas. Com sua plataforma fácil de usar e sua variedade de recursos, o app tem o potencial de se tornar a principal opção para a busca e reserva de quadras esportivas.
+A aplicação de aluguel de quadras esportivas é uma solução inovadora que resolve os problemas de busca, reserva e aluguel de quadras esportivas, tanto para os usuários quanto para os proprietários de quadras esportivas. Com sua plataforma fácil de usar e sua variedade de recursos, a aplicação tem o potencial de se tornar a principal opção para a busca e reserva de quadras esportivas.
 
 
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
@@ -158,11 +158,17 @@ Catálogo de Serviços
 A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços:
 
 Cadastro de Quadras: permitirá que os proprietários de quadras esportivas cadastrem suas quadras, fornecendo informações como nome, descrição, endereço, capacidade e disponibilidade.
+
 Busca de Quadras: permitirá que os usuários busquem quadras esportivas por localização, tipo de esporte, capacidade e disponibilidade.
+
 Reserva de Quadras: permitirá que os usuários reservem quadras esportivas para um período específico, com opção de pagamento online.
+
 Gerenciamento de Reservas: permitirá que os proprietários de quadras gerenciem as reservas de suas quadras, incluindo a confirmação ou cancelamento de reservas.
+
 Avaliação de Quadras: permitirá que os usuários avaliem as quadras esportivas após a utilização, fornecendo feedback sobre a qualidade do serviço.
+
 Pagamento Online: permitirá que os usuários paguem as reservas de quadras esportivas online, utilizando cartões de crédito ou débito.
+
 Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
 Arquitetura da Solução
 
