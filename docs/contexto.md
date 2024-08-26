@@ -130,7 +130,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 A arquitetura da solução para a aplicação de aluguel de quadras esportivas é baseada em uma estrutura de microserviços, que permite escalabilidade, flexibilidade e manutenção mais eficientes.
 A solução é composta por:
 
-Frontend: Aplicativo Móvel (React Native) e Painel de Administração (React)
+Frontend e Mobile: IONIC
 
 Backend: API Gateway (Node.js),
 Microserviço de Autenticação (Node.js),
