@@ -1,6 +1,12 @@
-# Introdução
+## Introdução
 
-O setor de aluguel de quadras esportivas cresceu significativamente nos últimos anos, impulsionado pela crescente conscientização sobre a importância de manter um estilo de vida ativo e saudável. Como resultado, esportes coletivos como futevôlei, beach tênis e vôlei de praia têm ganhado popularidade no Brasil, atraindo cada vez mais praticantes e fortalecendo essa tendência. Nesse cenário onde a digitalização dos serviços também é uma tendência, clubes, academias e centros esportivos têm enfrentado dificuldades na gestão eficaz de suas quadras. A justificativa do projeto se baseia na necessidade de modernizar o setor, oferecendo uma solução que melhore a eficiência operacional dos estabelecimentos e atenda às demandas dos consumidores. O público-alvo inclui os usuários de quadras esportivas, como atletas amadores e pessoas em busca de atividades recreativas, quanto os proprietários de quadras, como clubes e centros esportivos. 
+O setor de aluguel de quadras esportivas cresceu significativamente nos últimos anos, impulsionado pela crescente conscientização sobre a importância de manter um estilo de vida ativo e saudável. Entre 2006 e 2019, a média de praticantes de esportes no Brasil era de 45%, e em 2023, esse índice subiu para 82% (Cândido, 2024). Como resultado, esportes coletivos como futevôlei, beach tênis e vôlei de praia têm ganhado popularidade, atraindo cada vez mais praticantes e fortalecendo essa tendência. Nesse cenário onde a digitalização dos serviços também é uma tendência "As ferramentas digitais estão desempenhando um papel cada vez mais importante na gestão esportiva. Elas permitem uma comunicação mais eficiente entre treinadores, atletas e a equipe de apoio, facilitam o agendamento de treinos e competições, e fornecem uma plataforma para o gerenciamento de dados de desempenho." (Volchan, 2024), clubes, academias e centros esportivos têm enfrentado dificuldades na gestão eficaz de suas quadras. A justificativa do projeto se baseia na necessidade de modernizar o setor, oferecendo uma solução que melhore a eficiência operacional dos estabelecimentos e atenda às demandas dos consumidores. O público-alvo inclui os usuários de quadras esportivas, como atletas amadores e pessoas em busca de atividades recreativas, quanto os proprietários de quadras, como clubes e centros esportivos.
+
+#### Referências
+
+Cândido, I. (2024). Prática esportiva cresce no país: veja as principais oportunidades para as marcas. Mundo do Marketing. Disponível em: https://www.mundodomarketing.com.br/pratica-esportiva-cresce-no-pais-veja-as-principais-oportunidades-para-as-marcas
+
+Volchan, F. (2024). A gestão esportiva na era digital: ferramentas e tecnologias para otimizar processos e resultados. LinkedIn. Disponível em: https://www.linkedin.com/pulse/gest%C3%A3o-esportiva-na-era-digital-ferramentas-e-para-otimizar-volchan-5p5rf/
 
 ## Problema
 
