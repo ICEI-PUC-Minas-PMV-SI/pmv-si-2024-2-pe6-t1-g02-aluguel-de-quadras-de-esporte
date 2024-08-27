@@ -89,15 +89,11 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços:
 
-Cadastro de quadras: permitirá que os proprietários de quadras esportivas cadastrem suas quadras, fornecendo informações como nome, descrição, endereço, capacidade e disponibilidade.
-
-Busca de quadras: permitirá que os usuários busquem quadras esportivas por localização, tipo de esporte, capacidade e disponibilidade.
-
-Reserva de quadras: permitirá que os usuários reservem quadras esportivas para um período específico.
-
-Gerenciamento de reservas: permitirá que os proprietários de quadras gerenciem as reservas de suas quadras, incluindo a confirmação ou cancelamento de reservas.
-
-Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
+* Cadastro de quadras: permitirá que os proprietários de quadras esportivas cadastrem suas quadras, fornecendo informações como nome, descrição, endereço, capacidade e disponibilidade.
+* Busca de quadras: permitirá que os usuários busquem quadras esportivas por localização, tipo de esporte, capacidade e disponibilidade.
+* Reserva de quadras: permitirá que os usuários reservem quadras esportivas para um período específico.
+* Gerenciamento de reservas: permitirá que os proprietários de quadras gerenciem as reservas de suas quadras, incluindo a confirmação ou cancelamento de reservas.
+* Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
 
 # Arquitetura da Solução
 
