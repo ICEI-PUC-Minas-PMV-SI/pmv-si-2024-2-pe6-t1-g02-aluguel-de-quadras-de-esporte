@@ -52,12 +52,9 @@ Adolescentes de (15-17 anos) com excelente convivência com a tecnologia e facil
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| --------|
-|RF-001| Permitir que o locador disponibilize suas quadras para aluguel | ALTA | 
-|RF-002| Permitir que o locador possa gerir os horarios disponíveis de cada quadra que possui   | ALTA |
-|RF-003| Permitir que o locador cancele reservas de locatários de suas quadras   | MÉDIA |
-|RF-004| Permitir que o locador bloqueie usuários do sistema  | BAIXA |
-|RF-005| Permitir que o locatário pesquise quadras por nome, endereço ou preço   | MÉDIA |
-|RF-006| Permitir que o locatário reserve uma quadra dentro dos horários disponibilizados pelo locador   | ALTA |
+|RF-001| O sistema deve prover a gestão de usuários | ALTA | 
+|RF-002| O sistema deve prover o agendamento de quadras | ALTA |
+|RF-003| O sistema deve prover a gestão de quadras | ALTA |
 
 ### Requisitos não Funcionais
 
@@ -77,13 +74,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
 
