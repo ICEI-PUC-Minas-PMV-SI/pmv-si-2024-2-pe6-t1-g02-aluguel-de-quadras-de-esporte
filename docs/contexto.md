@@ -28,17 +28,17 @@ A aplicação de aluguel de quadras esportivas tem como objetivo principal propo
 
 Benefícios para os Usuários:
 
-Facilita a busca e reserva de quadras esportivas de acordo com a localização, tipo de esporte e disponibilidade;
-Oferece uma variedade de opções de quadras esportivas para escolher;
-Permite a reserva, evitando a necessidade de ligar ou visitar pessoalmente;
-Oferece uma experiência de usuário intuitiva e fácil de usar.
+* Facilita a busca e reserva de quadras esportivas de acordo com a localização, tipo de esporte e disponibilidade;
+* Oferece uma variedade de opções de quadras esportivas para escolher;
+* Permite a reserva, evitando a necessidade de ligar ou visitar pessoalmente;
+* Oferece uma experiência de usuário intuitiva e fácil de usar.
 
 Benefícios para os Proprietários de Quadras Esportivas:
 
-Aumenta a visibilidade das quadras esportivas, alcançando um público mais amplo;
-Facilita a gerenciamento de reservas e alugueis, evitando conflitos de horários e garantindo que as quadras sejam utilizadas ao máximo;
-Permite a gestão eficiente de reservas, cancelamentos e alterações;
-Aumenta a receita, pois os proprietários podem alugar as quadras por períodos mais curtos e com mais frequência.
+* Aumenta a visibilidade das quadras esportivas, alcançando um público mais amplo;
+* Facilita a gerenciamento de reservas e alugueis, evitando conflitos de horários e garantindo que as quadras sejam utilizadas ao máximo;
+* Permite a gestão eficiente de reservas, cancelamentos e alterações;
+* Aumenta a receita, pois os proprietários podem alugar as quadras por períodos mais curtos e com mais frequência.
 
 ## Público-Alvo
 
@@ -50,8 +50,8 @@ Adolescentes de (15-17 anos) com excelente convivência com a tecnologia e facil
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
+|ID    | Descrição do Requisito  | Prioridade | Responsável |
+|------|-----------------------------------------|----| --------|
 |RF-001| Permitir que o locador disponibilize suas quadras para aluguel | ALTA | 
 |RF-002| Permitir que o locador possa gerir os horarios disponíveis de cada quadra que possui   | ALTA |
 |RF-003| Permitir que o locador cancele reservas de locatários de suas quadras   | MÉDIA |
@@ -61,12 +61,11 @@ Adolescentes de (15-17 anos) com excelente convivência com a tecnologia e facil
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
-|RNF-002| O sistema deve ser escalável para lidar com aumentos de demanda de usuários |  BAIXA | 
-|RNF-003| O sistema deve estar disponível quando requisitado pelo usuário |  ALTA | 
-|RNF-004| O sistema deve ter boa usabilidade |  MÉDIA | 
+|ID     | Descrição do Requisito  | Prioridade |  Responsável |
+|-------|-------------------------|----|--------|
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA |
+|RNF-002| O sistema deve estar disponível quando requisitado pelo usuário |  ALTA | 
+|RNF-003| O sistema deve ter boa usabilidade |  MÉDIA | 
 
 ### Critério de priorização
 Foi utilizado um critério que prioriza requisitos que sejam necessários para a viabilidade da solução em primeiro lugar e que aumentem a flexibilidade do que foi desenvolvido para permitir mudanças rápidas, seguidos por critérios que melhorem a experiência do usuário e por último requisitos que tragam funcionalidades secundárias ou melhorias que ganham mais valor apenas se a solução se consolidar no mercado.
@@ -90,20 +89,15 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços:
 
-Cadastro de Quadras: permitirá que os proprietários de quadras esportivas cadastrem suas quadras, fornecendo informações como nome, descrição, endereço, capacidade e disponibilidade.
+Cadastro de quadras: permitirá que os proprietários de quadras esportivas cadastrem suas quadras, fornecendo informações como nome, descrição, endereço, capacidade e disponibilidade.
 
-Busca de Quadras: permitirá que os usuários busquem quadras esportivas por localização, tipo de esporte, capacidade e disponibilidade.
+Busca de quadras: permitirá que os usuários busquem quadras esportivas por localização, tipo de esporte, capacidade e disponibilidade.
 
-Reserva de Quadras: permitirá que os usuários reservem quadras esportivas para um período específico.
+Reserva de quadras: permitirá que os usuários reservem quadras esportivas para um período específico.
 
-Gerenciamento de Reservas: permitirá que os proprietários de quadras gerenciem as reservas de suas quadras, incluindo a confirmação ou cancelamento de reservas.
-
-Avaliação de Quadras: permitirá que os usuários avaliem as quadras esportivas após a utilização, fornecendo feedback sobre a qualidade do serviço.
+Gerenciamento de reservas: permitirá que os proprietários de quadras gerenciem as reservas de suas quadras, incluindo a confirmação ou cancelamento de reservas.
 
 Notificações: permitirá que os usuários recebam notificações sobre as reservas, incluindo confirmação, cancelamento ou alterações.
-Arquitetura da Solução
-
-
 
 # Arquitetura da Solução
 
