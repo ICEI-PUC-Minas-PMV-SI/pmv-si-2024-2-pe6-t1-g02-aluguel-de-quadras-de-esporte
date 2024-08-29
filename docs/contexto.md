@@ -61,8 +61,7 @@ Adolescentes de (15-17 anos) com excelente convivência com a tecnologia e facil
 |ID     | Descrição do Requisito  | Prioridade |  Responsável |
 |-------|-------------------------|----|--------|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA |
-|RNF-002| O sistema deve estar disponível quando requisitado pelo usuário |  ALTA | 
-|RNF-003| O sistema deve ter boa usabilidade |  MÉDIA | 
+|RNF-002| O sistema deve ter latência máxima de 5 segundos |  MÉDIA | 
 
 ### Critério de priorização
 Foi utilizado um critério que prioriza requisitos que sejam necessários para a viabilidade da solução em primeiro lugar e que aumentem a flexibilidade do que foi desenvolvido para permitir mudanças rápidas, seguidos por critérios que melhorem a experiência do usuário e por último requisitos que tragam funcionalidades secundárias ou melhorias que ganham mais valor apenas se a solução se consolidar no mercado.
