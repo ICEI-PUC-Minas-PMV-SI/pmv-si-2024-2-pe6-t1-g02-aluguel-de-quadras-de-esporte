@@ -52,14 +52,14 @@ Adolescentes de (15-17 anos) com excelente convivência com a tecnologia e facil
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| --------|
-|RF-001| O sistema deve prover a gestão de usuários | ALTA | 
-|RF-002| O sistema deve prover o agendamento de quadras | ALTA |
-|RF-003| O sistema deve prover a gestão de quadras | ALTA |
+|RF-001| O sistema deve prover a gestão de usuários | ALTA | Bianca e Davi |
+|RF-002| O sistema deve prover o agendamento de quadras | ALTA | Enzo e Henrique |
+|RF-003| O sistema deve prover a gestão de quadras | ALTA | Lucas e Diego |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  | Prioridade |  Responsável |
-|-------|-------------------------|----|--------|
+|ID     | Descrição do Requisito  | Prioridade |  
+|-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA |
 |RNF-002| O sistema deve ter latência máxima de 5 segundos |  MÉDIA | 
 
@@ -73,6 +73,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
+|02| Desenvolver o projeto utilizando as tecnologias definidas na arquitetura |
 
 # Catálogo de Serviços
 
