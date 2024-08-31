@@ -87,8 +87,7 @@ A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços
 
 # Arquitetura da Solução
 
-![image](https://github.com/user-attachments/assets/3d2cca6e-3989-41b9-b371-6973c86c9e63)
-
+![image](https://github.com/user-attachments/assets/6faa05a1-e2bb-4967-9a74-93a62a3fc8e1)
 
 ### 1. Camada de Apresentação (Frontend)
 - **Componentes:**
