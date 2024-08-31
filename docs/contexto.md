@@ -87,7 +87,8 @@ A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços
 
 # Arquitetura da Solução
 
-![image](https://github.com/user-attachments/assets/cb5b230f-6bae-4cf8-9945-6c7e2c1a91c1)
+![image](https://github.com/user-attachments/assets/3d2cca6e-3989-41b9-b371-6973c86c9e63)
+
 
 ### 1. Camada de Apresentação (Frontend)
 - **Componentes:**
@@ -141,11 +142,35 @@ Banco de Dados: Postgresql
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+A hospedagem da solução será realizada na AWS para garantir escalabilidade, alta disponibilidade e segurança:
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+## 1. API Gateway (AWS)
+- **Serviço Utilizado:** AWS API Gateway
+- **Função:** Serve como o ponto de entrada único para todas as requisições do frontend (Web e Mobile) aos microserviços. Gerencia o roteamento das requisições, autenticação e autorização (via JWT), monitoramento, controle de tráfego.
+- **Escalabilidade:** O AWS API Gateway escala automaticamente para lidar com diferentes níveis de tráfego.
+
+## 2. Microserviços (Backend - Java)
+- **Serviço Utilizado:** Amazon Elastic Container Service (ECS)
+- **Descrição:**
+  - Cada microserviço será containerizado utilizando Docker, garantindo isolamento e escalabilidade independente.
+
+
+## 3. Banco de Dados (PostgreSQL)
+- **Serviço Utilizado:** Amazon RDS (Relational Database Service)
+- **Descrição:**
+  - Cada microserviço terá seu próprio banco de dados PostgreSQL, gerenciado pelo Amazon RDS.
+
+## 4. Frontend Web
+- **Serviço Utilizado:** Amazon S3 e Amazon CloudFront
+- **Descrição:**
+  - Os arquivos estáticos da aplicação Web (HTML, CSS, JavaScript, e assets) serão hospedados no Amazon S3.
+  - O Amazon CloudFront, uma CDN global, será utilizado para distribuir esses arquivos, garantindo baixa latência e rápida entrega do conteúdo para os usuários.
+- **Segurança:** HTTPS será utilizado para proteger a comunicação entre o navegador dos usuários e o CloudFront.
+
+## 5. Aplicativo Móvel
+- **Comunicação:** O aplicativo se comunicará com a API Gateway da AWS para interagir com os microserviços, utilizando HTTPS e autenticação via JWT.
+
+## 6. Gerenciamento de Logs e Monitoramento
+- **Serviço Utilizado:** Amazon CloudWatch
+- **Descrição:** Utilizado para coletar e monitorar logs e métricas de todos os componentes (API Gateway, microserviços, banco de dados). 
+
