@@ -87,56 +87,57 @@ A aplicação de aluguel de quadras esportivas oferecerá os seguintes serviços
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+![image](https://github.com/user-attachments/assets/cb5b230f-6bae-4cf8-9945-6c7e2c1a91c1)
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+### 1. Camada de Apresentação (Frontend)
+- **Componentes:**
+  - **Página Web:** Desenvolvida com HTML, CSS, JavaScript e React.
+  - **Aplicativo Móvel:** Desenvolvido com React Native para suportar plataformas Android e iOS.
 
-A arquitetura da solução para a aplicação de aluguel de quadras esportivas é baseada em uma estrutura de microserviços, que permite escalabilidade, flexibilidade e manutenção mais eficientes.
-A solução é composta por:
+- **Comunicação:**
+  - As interfaces Web e Mobile se comunicam com os microserviços através da **API Gateway** (AWS) via chamadas RESTful (HTTP/HTTPS).
 
-Frontend e Mobile: IONIC
+### 2. Camada de Negócios (Backend)
+- **API Gateway (AWS):**
+  - **Função:** Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego.
+  - **Segurança:** Utilização de JWT para autenticação e autorização.
 
-Backend: API Gateway (Node.js),
-Microserviço de Autenticação (Node.js),
-Microserviço de Quadras (Node.js)
+- **Microserviços:**
+  - **Microserviço de Gestão de Usuários (Java):** Gerenciamento de contas de usuários.
+  - **Microserviço de Gestão de Quadras (Java):** Gerenciamento das informações e características das quadras.
+  - **Microserviço de Agendamento de Quadras (Java):** Gerenciamento de reservas e disponibilidade das quadras.
 
-Banco de Dados: Banco de Dados Relacional (MySQL) e Banco de Dados NoSQL (MongoDB)
+- **Comunicação:**
+  - APIs REST para comunicação entre os microserviços e a API Gateway.
 
-Ambiente de Hospedagem: Cloud Provider (AWS), Containerização (Docker), Orquestração (Kubernetes)
+### 3. Camada de Dados
+- **Banco de Dados (PostgreSQL):**
+  - Cada microserviço possui um banco de dados PostgreSQL isolado.
 
-Segurança: Autenticação e Autorização, Criptografia, Firewall
+### 4. Ambiente de Hospedagem
+- **Cloud Provider (AWS):**
+  - Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade.
 
-A arquitetura da plataforma de serviços é estruturada em três camadas:
+### 5. Segurança
+- **Autenticação e Autorização:**
+  - Implementação de autenticação e autorização via JWT.
+  - Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
 
-Camada de Apresentação: Página Web (HTML, CSS, JavaScript) e Aplicativo Móvel (React Native)
 
-Camada de Negócios: Servidor de Aplicação (Node.js)
+Esta arquitetura é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
 
-Camada de Dados: Banco de Dados (MySQL)
-
-A aplicação será hospedada em um ambiente de nuvem, utilizando os seguintes componentes:
-
-Servidor Web: Hospedado na AWS
-Banco de Dados: Hospedado na AWS
-Serviço de Notificações: Utilizando o serviço de notificações da Firebase
-
-Essas arquiteturas permitem que a aplicação seja escalável, flexível e segura, garantindo uma experiência de usuário satisfatória e uma gestão eficiente das quadras esportivas.
 
 ## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 A aplicação será desenvolvida utilizando as seguintes tecnologias:
 
-Front-end: React, JavaScript, HTML, CSS
+Front-end: React, React Native, JavaScript, HTML, CSS
 
-Back-end: Node.js, Express.js, MongoDB
+Back-end: JAVA
 
-Banco de Dados: MongoDB
-
-Serviço de Notificações: Firebase Cloud Messaging
+Banco de Dados: Postgresql
 
 ## Hospedagem
 
