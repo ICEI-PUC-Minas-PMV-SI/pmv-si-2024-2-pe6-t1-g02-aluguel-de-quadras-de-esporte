@@ -143,33 +143,33 @@ Banco de Dados: Postgresql
 
 A hospedagem da solução será realizada na AWS para garantir escalabilidade, alta disponibilidade e segurança:
 
-## 1. API Gateway (AWS)
+### 1. API Gateway (AWS)
 - **Serviço Utilizado:** AWS API Gateway
 - **Função:** Serve como o ponto de entrada único para todas as requisições do frontend (Web e Mobile) aos microserviços. Gerencia o roteamento das requisições, autenticação e autorização (via JWT), monitoramento, controle de tráfego.
 - **Escalabilidade:** O AWS API Gateway escala automaticamente para lidar com diferentes níveis de tráfego.
 
-## 2. Microserviços (Backend - Java)
+### 2. Microserviços (Backend - Java)
 - **Serviço Utilizado:** Amazon Elastic Container Service (ECS)
 - **Descrição:**
   - Cada microserviço será containerizado utilizando Docker, garantindo isolamento e escalabilidade independente.
 
 
-## 3. Banco de Dados (PostgreSQL)
+### 3. Banco de Dados (PostgreSQL)
 - **Serviço Utilizado:** Amazon RDS (Relational Database Service)
 - **Descrição:**
   - Cada microserviço terá seu próprio banco de dados PostgreSQL, gerenciado pelo Amazon RDS.
 
-## 4. Frontend Web
+### 4. Frontend Web
 - **Serviço Utilizado:** Amazon S3 e Amazon CloudFront
 - **Descrição:**
   - Os arquivos estáticos da aplicação Web (HTML, CSS, JavaScript, e assets) serão hospedados no Amazon S3.
   - O Amazon CloudFront, uma CDN global, será utilizado para distribuir esses arquivos, garantindo baixa latência e rápida entrega do conteúdo para os usuários.
 - **Segurança:** HTTPS será utilizado para proteger a comunicação entre o navegador dos usuários e o CloudFront.
 
-## 5. Aplicativo Móvel
+### 5. Aplicativo Móvel
 - **Comunicação:** O aplicativo se comunicará com a API Gateway da AWS para interagir com os microserviços, utilizando HTTPS e autenticação via JWT.
 
-## 6. Gerenciamento de Logs e Monitoramento
+### 6. Gerenciamento de Logs e Monitoramento
 - **Serviço Utilizado:** Amazon CloudWatch
 - **Descrição:** Utilizado para coletar e monitorar logs e métricas de todos os componentes (API Gateway, microserviços, banco de dados). 
 
