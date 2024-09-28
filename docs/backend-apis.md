@@ -52,11 +52,59 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
 [Inclua os objetivos da sua api.]
 
+Os objetivos da API são:
+
+Fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
+Permitir que os usuários criem contas e gerenciem suas informações de perfil.
+Oferecer uma lista de quadras esportivas disponíveis para aluguel, incluindo informações detalhadas sobre cada quadra.
+Permitir que os usuários façam reservas e gerenciem suas reservas de quadras esportivas.
+Fornecer uma interface fácil de usar para os usuários gerenciarem suas contas e reservas.
+Garantir a segurança e autenticação dos usuários através da utilização de JWT.
+Fornecer uma API escalável e flexível para suportar o crescimento da aplicação.
+
+Além disso, a API deve ser capaz de:
+
+Autenticar e autorizar usuários através da API Gateway.
+Gerenciar contas de usuários e informações de perfil.
+Gerenciar informações e características das quadras esportivas.
+Gerenciar reservas e disponibilidade das quadras esportivas.
+Fornecer uma interface RESTful para a comunicação entre os microserviços e a API Gateway.
+Esses objetivos serão alcançados através da implementação de uma arquitetura modular e escalável, com uma separação clara entre as camadas de apresentação, aplicação e dados.
+
 
 ## Arquitetura
 
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
+A arquitetura da API é composta por uma série de componentes que trabalham juntos para fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
 
+Componentes
+
+API Gateway (AWS): Responsável pelo roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego.
+
+Microserviços:
+Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
+Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
+Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
+Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
+Front-end (React, React Native, JavaScript, HTML, CSS): Responsável pela interface do usuário e pela comunicação com a API Gateway.
+Interações
+
+O usuário interage com a aplicação através do front-end, que se comunica com a API Gateway.
+A API Gateway se comunica com os microserviços, que acessam os bancos de dados PostgreSQL isolados.
+Os microserviços se comunicam entre si através de APIs RESTful.
+A API Gateway valida o JWT para assegurar o acesso seguro aos microserviços.
+
+Fluxo de Requisição
+
+Aqui está um exemplo de fluxo de requisição para ilustrar como os componentes se comunicam entre si:
+
+O usuário faz uma requisição para criar uma conta de usuário através do front-end.
+O front-end envia a requisição para a API Gateway.
+A API Gateway valida o JWT e autentica o usuário.
+A API Gateway se comunica com o Microserviço de Gestão de Usuários para criar a conta de usuário.
+O Microserviço de Gestão de Usuários cria a conta de usuário e armazena as informações no banco de dados PostgreSQL isolado.
+A API Gateway retorna a resposta para o front-end, que apresenta a resposta ao usuário.
+Essa arquitetura modular e escalável permite que a aplicação seja facilmente escalável e mantida, além de garantir a segurança e a robustez da plataforma.
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
