@@ -6,40 +6,31 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 
 [Inclua uma breve descrição do projeto.]
 
-API Gateway (AWS):
+Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
+O objetivo do projeto é desenvolver uma aplicação de aluguel de quadras esportivas distribuída, utilizando tecnologias como Java, PostgreSQL, e AWS. 
+A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
+Etapas do Planejamento
 
-Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego.
-Segurança: Utilização de JWT para autenticação e autorização.
-Microserviços:
+1. API Gateway (AWS)
+Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego
+Segurança: Utilização de JWT para autenticação e autorização
+2. Microserviços
+Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários
+Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras
+Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras
+3. Comunicação
+APIs REST para comunicação entre os microserviços e a API Gateway
+4. Camada de Dados
+Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado
+5. Ambiente de Hospedagem
+Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade
+6. Segurança
+Autenticação e Autorização: Implementação de autenticação e autorização via JWT
+Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços
+Arquitetura Modular e Escalável
 
-Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
-Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
-Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
-Comunicação:
+A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
 
-APIs REST para comunicação entre os microserviços e a API Gateway.
-3. Camada de Dados
-Banco de Dados (PostgreSQL):
-Cada microserviço possui um banco de dados PostgreSQL isolado.
-4. Ambiente de Hospedagem
-Cloud Provider (AWS):
-Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade.
-5. Segurança
-Autenticação e Autorização:
-Implementação de autenticação e autorização via JWT.
-Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
-Esta arquitetura é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
-
-Tecnologias Utilizadas
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
-A aplicação será desenvolvida utilizando as seguintes tecnologias:
-
-Front-end: React, React Native, JavaScript, HTML, CSS
-
-Back-end: JAVA
-
-Banco de Dados: Postgresql
 
 ## Objetivos da API
 
