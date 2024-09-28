@@ -87,7 +87,61 @@ Gerenciar reservas e disponibilidade das quadras esportivas.
 Fornecer uma interface RESTful para a comunicação entre os microserviços e a API Gateway.
 
 Esses objetivos serão alcançados através da implementação de uma arquitetura modular e escalável, com uma separação clara entre as camadas de apresentação, aplicação e dados.
+Arquitetura Modular e Escalável
 
+A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
+
+Tecnologias Utilizadas
+
+Front-end: React, React Native, JavaScript, HTML, CSS
+
+Back-end: Java
+
+Banco de Dados: PostgreSQL
+
+Diagrama de Interação
+
+Aqui está um diagrama de interação que ilustra como as tecnologias estão relacionadas e como uma interação do usuário com o sistema vai ser conduzida:
+
+
+
+                                      +---------------+
+                                      |  Usuário    |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Front-end  |
+                                      |  (React, React  |
+                                      |  Native, JavaScript, |
+                                      |  HTML, CSS)     |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  API Gateway  |
+                                      |  (AWS)         |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Microserviços  |
+                                      |  (Java)         |
+                                      |  - Gestão de Usuários  |
+                                      |  - Gestão de Quadras  |
+                                      |  - Agendamento de Quadras|
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Banco de Dados  |
+                                      |  (PostgreSQL)    |
+                                      +---------------+
+Este diagrama mostra como o usuário interage com a aplicação através do front-end, que se comunica com a API Gateway, que por sua vez se comunica com os microserviços, que acessam os bancos de dados PostgreSQL isolados.
 
 ## Arquitetura
 
