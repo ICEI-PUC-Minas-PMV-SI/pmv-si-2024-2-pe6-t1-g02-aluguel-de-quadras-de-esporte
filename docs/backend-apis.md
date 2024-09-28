@@ -22,7 +22,9 @@ Segurança: Utilização de JWT para autenticação e autorização
 2. Microserviços
 
 Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
+
 Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
+
 Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
 
 3. Comunicação
@@ -40,9 +42,13 @@ Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, ga
 6. Segurança
     
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
+
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
+
 Arquitetura Modular e Escalável.
+
 A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. 
+
 A separação entre as camadas facilita a manutenção e futuras expansões.
 
 
@@ -94,15 +100,21 @@ API Gateway (AWS): Responsável pelo roteamento de requisições, autenticação
 
 Microserviços:
 Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
+
 Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
+
 Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
+
 Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
+
 Front-end (React, React Native, JavaScript, HTML, CSS): Responsável pela interface do usuário e pela comunicação com a API Gateway.
 Interações
 
 O usuário interage com a aplicação através do front-end, que se comunica com a API Gateway.
 A API Gateway se comunica com os microserviços, que acessam os bancos de dados PostgreSQL isolados.
+
 Os microserviços se comunicam entre si através de APIs RESTful.
+
 A API Gateway valida o JWT para assegurar o acesso seguro aos microserviços.
 
 Fluxo de Requisição
@@ -110,12 +122,19 @@ Fluxo de Requisição
 Aqui está um exemplo de fluxo de requisição para ilustrar como os componentes se comunicam entre si:
 
 O usuário faz uma requisição para criar uma conta de usuário através do front-end.
+
 O front-end envia a requisição para a API Gateway.
+
 A API Gateway valida o JWT e autentica o usuário.
+
 A API Gateway se comunica com o Microserviço de Gestão de Usuários para criar a conta de usuário.
+
 O Microserviço de Gestão de Usuários cria a conta de usuário e armazena as informações no banco de dados PostgreSQL isolado.
+
 A API Gateway retorna a resposta para o front-end, que apresenta a resposta ao usuário.
+
 Essa arquitetura modular e escalável permite que a aplicação seja facilmente escalável e mantida, além de garantir a segurança e a robustez da plataforma.
+
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
