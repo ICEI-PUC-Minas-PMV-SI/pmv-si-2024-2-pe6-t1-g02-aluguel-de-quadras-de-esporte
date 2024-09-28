@@ -22,9 +22,7 @@ Segurança: Utilização de JWT para autenticação e autorização
 2. Microserviços
 
 Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
-
 Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
-
 Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
 
 3. Comunicação
@@ -42,13 +40,9 @@ Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, ga
 6. Segurança
     
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
-
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
-
 Arquitetura Modular e Escalável.
-
 A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. 
-
 A separação entre as camadas facilita a manutenção e futuras expansões.
 
 
@@ -61,20 +55,31 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 Os objetivos da API são:
 
 Fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
+
 Permitir que os usuários criem contas e gerenciem suas informações de perfil.
+
 Oferecer uma lista de quadras esportivas disponíveis para aluguel, incluindo informações detalhadas sobre cada quadra.
+
 Permitir que os usuários façam reservas e gerenciem suas reservas de quadras esportivas.
+
 Fornecer uma interface fácil de usar para os usuários gerenciarem suas contas e reservas.
+
 Garantir a segurança e autenticação dos usuários através da utilização de JWT.
+
 Fornecer uma API escalável e flexível para suportar o crescimento da aplicação.
 
 Além disso, a API deve ser capaz de:
 
 Autenticar e autorizar usuários através da API Gateway.
+
 Gerenciar contas de usuários e informações de perfil.
+
 Gerenciar informações e características das quadras esportivas.
+
 Gerenciar reservas e disponibilidade das quadras esportivas.
+
 Fornecer uma interface RESTful para a comunicação entre os microserviços e a API Gateway.
+
 Esses objetivos serão alcançados através da implementação de uma arquitetura modular e escalável, com uma separação clara entre as camadas de apresentação, aplicação e dados.
 
 
