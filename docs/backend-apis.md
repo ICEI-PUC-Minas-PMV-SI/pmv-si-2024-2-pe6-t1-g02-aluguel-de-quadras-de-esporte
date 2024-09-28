@@ -7,8 +7,10 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 [Inclua uma breve descrição do projeto.]
 
 Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
+
 O objetivo do projeto é desenvolver uma aplicação de aluguel de quadras esportivas distribuída, utilizando tecnologias como Java, PostgreSQL, e AWS. 
 A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
+
 Etapas do Planejamento
 
 1. API Gateway (AWS)
