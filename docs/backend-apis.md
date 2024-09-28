@@ -146,6 +146,7 @@ Este diagrama mostra como o usuário interage com a aplicação através do fron
 ## Arquitetura
 
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
+
 A arquitetura da API é composta por uma série de componentes que trabalham juntos para fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
 
 Componentes
