@@ -16,6 +16,7 @@ Etapas do Planejamento
 1. API Gateway (AWS)
    
 Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego
+
 Segurança: Utilização de JWT para autenticação e autorização
 
 2. Microserviços
@@ -41,11 +42,13 @@ Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, ga
 6. Segurança
     
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
+
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
 
 Arquitetura Modular e Escalável.
 
 A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. 
+
 A separação entre as camadas facilita a manutenção e futuras expansões.
 
 
