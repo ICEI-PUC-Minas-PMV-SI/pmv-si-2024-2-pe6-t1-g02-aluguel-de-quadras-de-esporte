@@ -207,7 +207,12 @@ Essa arquitetura modular e escalável permite que a aplicação seja facilmente 
 
 Requisitos Funcionais da Aplicação
 
-Aqui estão os principais requisitos funcionais da aplicação:
+
+| ID     | Descrição do Requisito                         | Prioridade | Responsável     |
+| ------ | ---------------------------------------------- | ---------- | --------------- |
+| RF-001 | O sistema deve prover a gestão de usuários     | ALTA       | Bianca e Diego  |
+| RF-002 | O sistema deve prover o agendamento de quadras | ALTA       | Enzo e Henrique |
+| RF-003 | O sistema deve prover a gestão de quadras      | ALTA       | Lucas           |
 
 
 ## Requisitos Não Funcionais
@@ -216,54 +221,7 @@ Aqui estão os principais requisitos funcionais da aplicação:
 
 Aqui estão os principais requisitos não funcionais da aplicação:
 
-Desempenho
 
-Tempo de Resposta: A aplicação deve ter um tempo de resposta de no máximo 2 segundos para as requisições mais comuns.
-
-Taxa de Transferência de Dados: A aplicação deve ser capaz de transferir dados a uma taxa de no mínimo 100 Mbps.
-
-Capacidade de Processamento: A aplicação deve ser capaz de processar no mínimo 100 requisições por segundo.
-Segurança
-
-Autenticação: A aplicação deve utilizar autenticação de usuários para garantir que apenas usuários autorizados tenham acesso às funcionalidades da aplicação.
-
-Autorização: A aplicação deve utilizar autorização para garantir que os usuários tenham acesso apenas às funcionalidades e dados que lhes são permitidos.
-
-Criptografia: A aplicação deve utilizar criptografia para proteger os dados sensíveis, como senhas .
-Proteção contra Ataques: A aplicação deve ser protegida contra ataques comuns, como ataques de injeção de SQL e ataques de cross-site scripting (XSS).
-
-Escalabilidade
-
-Capacidade de Escalabilidade: A aplicação deve ser capaz de escalar para atender às necessidades de um grande número de usuários.
-
-Distribuição de Carga: A aplicação deve ser capaz de distribuir a carga de trabalho entre múltiplos servidores para garantir a disponibilidade e o desempenho.
-
-Gerenciamento de Recursos: A aplicação deve ser capaz de gerenciar os recursos de hardware e software para garantir a eficiência e a escalabilidade.
-
-Disponibilidade
-
-Tempo de Atividade: A aplicação deve estar disponível para os usuários pelo menos 99,9% do tempo.
-
-Recuperação de Desastres: A aplicação deve ter um plano de recuperação de desastres para garantir a disponibilidade em caso de falhas ou desastres.
-
-Manutenção: A aplicação deve ter um plano de manutenção para garantir a disponibilidade e o desempenho.
-Usabilidade
-
-Interface do Usuário: A aplicação deve ter uma interface do usuário intuitiva e fácil de usar.
-
-Acessibilidade: A aplicação deve ser acessível para usuários com deficiências.
-
-Documentação: A aplicação deve ter documentação clara e concisa para ajudar os usuários a entender como usar a aplicação.
-Manutenção
-
-Atualizações: 
-
-A aplicação deve ser capaz de ser atualizada facilmente para garantir a segurança e o desempenho.
-
-Correção de Erros: A aplicação deve ter um processo de correção de erros para garantir a disponibilidade e o desempenho.
-
-Monitoramento: A aplicação deve ser monitorada para garantir a disponibilidade e o desempenho.
-Esses são os principais requisitos não funcionais da aplicação. É importante notar que esses requisitos podem variar dependendo das necessidades específicas da aplicação.
 
 ## Tecnologias Utilizadas
 
