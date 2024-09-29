@@ -154,7 +154,7 @@ Requisitos Funcionais da Aplicação
 | ------ | ---------------------------------------------- | ---------- | --------------- |
 | RF-001 | O sistema deve prover a gestão de usuários     | ALTA       | Bianca e Diego  |
 | RF-002 | O sistema deve prover o agendamento de quadras | ALTA       | Enzo e Henrique |
-| RF-003 | O sistema deve prover a gestão de quadras      | ALTA       | Lucas           | Repositório do Micro Serviço: https://github.com/LucasDPaulaMartins/gestao-de-quadras.git
+| RF-003 | O sistema deve prover a gestão de quadras      | ALTA       | Lucas           |
 
 
 ## Requisitos Não Funcionais
@@ -212,6 +212,8 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
 ## API Endpoints
 
 ### Gerenciamento de quadras
+Repositório do Micro Serviço: https://github.com/LucasDPaulaMartins/gestao-de-quadras.git
+
 
 #### Cadastro de quadra
 - Método: POST
