@@ -216,6 +216,88 @@ Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1
 }
 ```
 
+#### Lista de agendamentos por usuário
+- Método: GET
+- URL: /api/v1/agendamentos/usuario/{id}
+- Parâmetros:
+```
+
+```
+- Sucesso (200)
+```
+{
+  "agendamentos": [
+    {
+      "idAgendamento": "String",
+      "idQuadra": "String",
+      "idUsuario": "String",
+      "dataInicio": "DateTime",
+      "dataFim": "DateTime",
+      "status": "String"
+    }
+  ]
+}
+ ```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Usuário não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
+#### Lista de agendamentos por quadra
+- Método: GET
+- URL: /api/v1/agendamentos/quadra/{id}
+- Parâmetros:
+```
+
+```
+- Sucesso (200)
+```
+{
+  "agendamentos": [
+    {
+      "idAgendamento": "String",
+      "idQuadra": "String",
+      "idUsuario": "String",
+      "dataInicio": "DateTime",
+      "dataFim": "DateTime",
+      "status": "String"
+    }
+  ]
+}
+ ```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Usuário não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
 ### Gerenciamento de quadras
 #### Cadastro de quadra
 - Método: POST
