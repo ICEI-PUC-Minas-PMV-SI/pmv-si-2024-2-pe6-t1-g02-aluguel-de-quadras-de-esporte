@@ -8,13 +8,13 @@ A aplicação será composta por uma API Gateway, microserviços para gestão de
 
 ## Etapas do Planejamento
 
-# 1. API Gateway (AWS)
+ 1. API Gateway (AWS)
    
 Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego
 
 Segurança: Utilização de JWT para autenticação e autorização
 
-# 2. Microserviços
+2. Microserviços
 
 Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
 
@@ -22,19 +22,19 @@ Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e ca
 
 Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
 
-# 3. Comunicação
+ 3. Comunicação
    
 APIs REST para comunicação entre os microserviços e a API Gateway.
 
-# 4. Camada de Dados
+ 4. Camada de Dados
    
 Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
 
-# 5. Ambiente de Hospedagem
+ 5. Ambiente de Hospedagem
    
 Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade. 
 
-# 6. Segurança
+6. Segurança
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
 
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
