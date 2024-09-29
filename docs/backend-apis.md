@@ -121,17 +121,7 @@ Esta arquitetura é modular e escalável, garantindo robustez, segurança e capa
         "descricao": "STRING",
         "status": "STRING"
     }
-### Estrutura da entidade usarios
 
-
-    "UsuarioJpaEntity": {
-        "id": "STRING",
-        "cnpj": "STRING",
-        "cpf": "STRING",
-        "estado": "STRING",
-        "": "STRING",
-        "status": "STRING" 
-        }
 
 ## Fluxo de Dados
 
