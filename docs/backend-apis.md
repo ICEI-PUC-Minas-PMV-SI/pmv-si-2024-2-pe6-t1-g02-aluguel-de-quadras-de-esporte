@@ -1,10 +1,10 @@
 # APIs e Web Services
 
-Planejamento de aplicação de Api's Web para aluguel de quadras esportivas: a aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
+Planejamento de aplicação de API's Web para aluguel de quadras esportivas: a aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
 
 ## Objetivos da API
 
-O objetivo é desenvolver uma api distribuída para realizar o cadastro de usuários e proprietários para gestão dos agendamentos em quadras esportivas. Espera-se que a api seja usada por clientes externos (pessoas que queiram fazer agendamentos) e por clientes interno (proprietários). A api deve fornecer agendamentos, quadras e usuários como recurso.
+O objetivo é desenvolver uma API distribuída para realizar o cadastro de usuários e proprietários para gestão dos agendamentos em quadras esportivas. Espera-se que a API seja usada por clientes externos (pessoas que queiram fazer agendamentos) e por clientes internos (proprietários). A API deve fornecer agendamentos, quadras e usuários como recurso.
 
 ## Arquitetura
 
@@ -82,11 +82,190 @@ Aqui estão os principais requisitos não funcionais da aplicação:
 A aplicação será desenvolvida utilizando as seguintes tecnologias:
 - Front-end: React, React Native, JavaScript, HTML, CSS
 - Back-end: Java, Spring boot
-- Banco de Dados: Postgresql
+- Banco de Dados: PostgreSQL
 
 ## API Endpoints
 
 Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1-g02-aluguel-de-quadras-de-esporte-codigo
+
+### Gerenciamento de usuários
+#### Cadastro de usuários
+- Método: POST
+- URL: /api/v1/usuarios
+- Parâmetros:
+```
+{
+  "nome": "String",
+  "telefone": "String",
+  "email": "String",
+  "senha": "String",
+  "cpf": "String",
+  "cnpj": "String"
+}
+```
+#### Resposta:
+- Sucesso (201 OK)
+```
+{
+  "id": "String",
+  "cpf": "String",
+  "cnpj": "String",
+  "nome": "String",
+  "telefone": "String",
+  "email": "String",
+  "dataCriacao": "DateTime",
+  "dataUltimaAtualizacao": "DateTime",
+  "dataDelecao": "DateTime"
+}
+```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+#### Edição de usuários
+- Método: PUT
+- URL: /api/v1/usuarios/{id}
+- Parâmetros:
+```
+{
+  "senha": "String",
+  "telefone": "String",
+  "nome": "String"
+}
+```
+#### Resposta:
+- Sucesso (204)
+```
+
+```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Usuário não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
+#### Listar usuários
+- Método: GET
+- URL: /api/v1/usuarios
+- Parâmetros:
+```
+
+```
+#### Resposta:
+- Sucesso (200 OK)
+```
+{
+  "usuario": [
+    {
+      "id": "String",
+      "cpf": "String",
+      "cnpj": "String",
+      "nome": "String",
+      "telefone": "String",
+      "email": "String",
+      "dataCriacao": "DateTime",
+      "dataUltimaAtualizacao": "DateTime",
+      "dataDelecao": "DateTime"
+    }
+  ]
+}
+ ```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
+#### Deletar usuários
+- Método: DELETE
+- URL: /api/v1/usuarios/{id}
+- Parâmetros:
+```
+
+```
+#### Resposta:
+- Sucesso (204 OK)
+```
+
+```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Usuário não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
+### Login
+- Método: POST
+- URL: /api/v1/login
+- Parâmetros:
+```
+{
+  "email": "string",
+  "senha": "string"
+}
+```
+#### Resposta:
+- Sucesso (200 OK)
+```
+{
+   "token": "String",
+   "expiresIn": "Int",
+}
+ ```
+
+- Credenciais inválidas (401)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
 
 ### Gerenciamento de agendamento
 #### Cadastro de agendamento
