@@ -209,32 +209,6 @@ Requisitos Funcionais da Aplicação
 
 Aqui estão os principais requisitos funcionais da aplicação:
 
-Usuário
-
-Cadastro de Usuário: O usuário deve ser capaz de criar uma conta na aplicação, fornecendo informações como nome, email e senha.
-
-Login: O usuário deve ser capaz de fazer login na aplicação, utilizando seu email e senha.
-
-Gerenciamento de Conta: O usuário deve ser capaz de gerenciar sua conta, incluindo a atualização de informações de perfil e a alteração de senha.
-Quadra
-
-Cadastro de Quadra:
-
-O administrador deve ser capaz de criar uma quadra na aplicação, fornecendo informações como nome, endereço e capacidade.
-
-Listagem de Quadras: O usuário deve ser capaz de visualizar uma lista de quadras disponíveis para aluguel.
-
-Detalhes da Quadra: O usuário deve ser capaz de visualizar os detalhes de uma quadra, incluindo informações como endereço e capacidade.
-
-Agendamento
-
-Realização de agendamento:
-O usuário deve ser capaz de agendar uma quadra, fornecendo informações como data e hora de início e fim.
-
-Listagem de agendamento: O usuário deve ser capaz de visualizar uma lista de seus agendamentos.
-
-Gerenciamento de agendamento: 
-O usuário deve ser capaz de gerenciar seus agendamento, incluindo a atualização de informações e a cancelamento de agendamento.
 
 ## Requisitos Não Funcionais
 
