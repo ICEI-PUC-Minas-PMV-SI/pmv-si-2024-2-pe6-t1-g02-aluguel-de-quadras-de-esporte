@@ -2,19 +2,19 @@
 
  O setor de aluguel de quadras esportivas tem experimentado um crescimento notável, refletindo uma maior conscientização sobre a importância de um estilo de vida ativo. Entre 2006 e 2019, a taxa de praticantes de esportes no Brasil era de 45%, aumentando para 82% em 2023. Isso resultou na popularidade de esportes coletivos, como futevôlei, tênis de praia e vôlei de praia, atraindo mais praticantes. Com a digitalização ganhando destaque na gestão esportiva, as ferramentas digitais facilitam a comunicação e o agendamento, mas clubes e centros esportivos ainda enfrentam desafios na gestão eficiente de suas quadras. O projeto visa modernizar o setor para melhorar a eficiência operacional e atender às necessidades de atletas amadores e proprietários de quadras. 
  
- Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
+ # Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
 
 A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
 
-Etapas do Planejamento
+## Etapas do Planejamento
 
-1. API Gateway (AWS)
+# 1. API Gateway (AWS)
    
 Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego
 
 Segurança: Utilização de JWT para autenticação e autorização
 
-2. Microserviços
+# 2. Microserviços
 
 Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
 
@@ -22,24 +22,24 @@ Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e ca
 
 Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
 
-3. Comunicação
+# 3. Comunicação
    
 APIs REST para comunicação entre os microserviços e a API Gateway.
 
-4. Camada de Dados
+# 4. Camada de Dados
    
 Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
 
-5. Ambiente de Hospedagem
+# 5. Ambiente de Hospedagem
    
 Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade. 
 
-6. Segurança
+# 6. Segurança
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
 
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
 
-Arquitetura Modular e Escalável.
+## Arquitetura Modular e Escalável.
 
 A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. 
 
@@ -109,24 +109,6 @@ A arquitetura da API é composta por uma série de componentes que trabalham jun
 
 Esta arquitetura é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
 
-Fluxo de Requisição
-
-Aqui está um exemplo de fluxo de requisição para ilustrar como os componentes se comunicam entre si:
-
-O usuário faz uma requisição para criar uma conta de usuário através do front-end.
-
-O front-end envia a requisição para a API Gateway.
-
-A API Gateway valida o JWT e autentica o usuário.
-
-A API Gateway se comunica com o Microserviço de Gestão de Usuários para criar a conta de usuário.
-
-O Microserviço de Gestão de Usuários cria a conta de usuário e armazena as informações no banco de dados PostgreSQL isolado.
-
-A API Gateway retorna a resposta para o front-end, que apresenta a resposta ao usuário.
-
-Essa arquitetura modular e escalável permite que a aplicação seja facilmente escalável e mantida, além de garantir a segurança e a robustez da plataforma.
-
 ## Modelagem da Aplicação
 
 ### Estrutura da entidade quadra
@@ -139,7 +121,17 @@ Essa arquitetura modular e escalável permite que a aplicação seja facilmente 
         "descricao": "STRING",
         "status": "STRING"
     }
+### Estrutura da entidade usarios
 
+
+    "UsuarioJpaEntity": {
+        "id": "STRING",
+        "cnpj": "STRING",
+        "cpf": "STRING",
+        "estado": "STRING",
+        "": "STRING",
+        "status": "STRING" 
+        }
 
 ## Fluxo de Dados
 
