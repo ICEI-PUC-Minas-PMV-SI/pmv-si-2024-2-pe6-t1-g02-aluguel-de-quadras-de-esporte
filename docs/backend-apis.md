@@ -2,10 +2,6 @@
 
 O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
 
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
-
  O setor de aluguel de quadras esportivas tem experimentado um crescimento notável, refletindo uma maior conscientização sobre a importância de um estilo de vida ativo. Entre 2006 e 2019, a taxa de praticantes de esportes no Brasil era de 45%, aumentando para 82% em 2023. Isso resultou na popularidade de esportes coletivos, como futevôlei, tênis de praia e vôlei de praia, atraindo mais praticantes. Com a digitalização ganhando destaque na gestão esportiva, as ferramentas digitais facilitam a comunicação e o agendamento, mas clubes e centros esportivos ainda enfrentam desafios na gestão eficiente de suas quadras. O projeto visa modernizar o setor para melhorar a eficiência operacional e atender às necessidades de atletas amadores e proprietários de quadras. 
  
 Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
@@ -55,9 +51,6 @@ A separação entre as camadas facilita a manutenção e futuras expansões.
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
-
-[Inclua os objetivos da sua api.]
 
 O objetivo do projeto é desenvolver uma aplicação de aluguel de quadras esportivas distribuída, utilizando tecnologias como Java, PostgreSQL, e AWS. 
 
@@ -85,7 +78,7 @@ Gerenciar contas de usuários e informações de perfil.
 
 Gerenciar informações e características das quadras esportivas.
 
-Gerenciar reservas e disponibilidade das quadras esportivas.
+Gerenciar agendamentos e disponibilidade das quadras esportivas.
 
 Fornecer uma interface RESTful para a comunicação entre os microserviços e a API Gateway.
 
@@ -147,8 +140,6 @@ Aqui está um diagrama de interação que ilustra como as tecnologias estão rel
 Este diagrama mostra como o usuário interage com a aplicação através do front-end, que se comunica com a API Gateway, que por sua vez se comunica com os microserviços, que acessam os bancos de dados PostgreSQL isolados.
 
 ## Arquitetura
-
-[Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
 
 A arquitetura da API é composta por uma série de componentes que trabalham juntos para fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
 
@@ -220,6 +211,11 @@ Requisitos Funcionais da Aplicação
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 
 Aqui estão os principais requisitos não funcionais da aplicação:
+
+| ID      | Descrição do Requisito                                            | Prioridade |
+| ------- | ----------------------------------------------------------------- | ---------- |
+| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA       |
+| RNF-002 | O sistema deve ter latência máxima de 5 segundos                  | MÉDIA      |
 
 
 
