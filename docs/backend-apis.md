@@ -54,8 +54,11 @@ A separação entre as camadas facilita a manutenção e futuras expansões.
 O objetivo é desenvolver uma aplicação distribuída para realizar agendamentos de quadras esportivas. Dentro deste objetivo geral há os seguintes objetivos específicos:
 
 Desenvolver uma aplicação web administrativa para proprietários.
+
 Desenvolver uma aplicação mobile para clientes.
+
 Desenvolver uma API para integração de serviços.
+
 Implementar um sistema de notificações e lembretes.
 
 
