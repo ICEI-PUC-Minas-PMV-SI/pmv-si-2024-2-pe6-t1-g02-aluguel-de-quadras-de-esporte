@@ -447,7 +447,28 @@ Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1
     
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+#### 1. Autenticação
+Métodos de Autenticação: Utilize autenticação forte, como OAuth, OpenID Connect ou autenticação multifator (MFA). 
+Isso ajuda a garantir que apenas usuários legítimos acessem o sistema.
+Gerenciamento de Senhas: Implemente políticas de senha robustas e armazene senhas usando algoritmos de hashing seguros (ex: bcrypt, Argon2).
+#### 2. Autorização
+Controle de Acesso: Utilize modelos de controle de acesso baseados em papéis (RBAC) ou em atributos (ABAC) para definir quem pode acessar quais recursos.
+Princípio do Menor Privilégio: Garanta que os usuários e serviços tenham apenas as permissões necessárias para realizar suas funções.
+#### 3. Proteção de Dados
+Criptografia: Utilize criptografia para proteger dados em trânsito (TLS/SSL) e em repouso (criptografia de banco de dados). 
+Isso ajuda a proteger dados sensíveis contra interceptação e acesso não autorizado.
+#### 4. Proteção Contra Ataques
+Firewall e IDS/IPS: Implemente firewalls e sistemas de detecção e prevenção de intrusões para monitorar e proteger a rede.
+Proteção Contra DDoS: Use serviços de mitigação de DDoS para proteger a aplicação contra ataques de negação de serviço.
+Sanitização de Entrada: Valide e sanitize todas as entradas do usuário para proteger contra injeções SQL, XSS e outras vulnerabilidades.
+#### 5. Segurança de APIs
+Autenticação e Autorização de APIs: Proteja APIs com autenticação adequada e verifique os direitos de acesso em cada chamada.
+Rate Limiting: Implemente limitação de taxa para proteger suas APIs contra abusos e ataques automatizados.
+#### 5. Conformidade
+Regulamentações e Normas: Certifique-se de que sua aplicação esteja em conformidade com regulamentações relevantes, como GDPR, HIPAA, ou PCI DSS, dependendo do tipo de dados que está manipulando.
+#### 6. Atualizações e Manutenção
+Patch Management: Mantenha todos os componentes da aplicação e dependências atualizados para proteger contra vulnerabilidades conhecidas.
+Considerar essas práticas desde o início do desenvolvimento da aplicação distribuída pode reduzir significativamente os riscos de segurança e garantir uma experiência mais segura para os usuários.
 
 ## Implantação
 
