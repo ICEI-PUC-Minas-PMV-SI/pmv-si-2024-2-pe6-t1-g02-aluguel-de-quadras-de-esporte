@@ -52,7 +52,9 @@ As aplicações web e mobile acessam as apis por meio de um api gateway que redi
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+A imagem descreve uma arquitetura de aplicação composta por uma interface mobile (React Native) e uma web (usando HTML5, JavaScript e CSS3), que se comunicam com um backend via API Gateway da AWS. O backend é dividido em microserviços, todos executados em contêineres no Amazon ECS, com persistência de dados em Amazon RDS (PostgreSQL).
+
+Há três microserviços principais: Gestão de Quadras, Agendamento de Quadras e Gestão de Usuários, todos implementados em Java. O API Gateway recebe as requisições das interfaces e as direciona para o serviço correspondente, que processa os dados e acessa o banco de dados para responder ao usuário.
 
 ## Requisitos Funcionais
 
@@ -626,24 +628,7 @@ Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1
     
 ## Considerações de Segurança
 
-#### 1. Autenticação
-Métodos de Autenticação: Utilize autenticação forte, como OAuth, OpenID Connect ou autenticação multifator (MFA). 
-Isso ajuda a garantir que apenas usuários legítimos acessem o sistema.
-Gerenciamento de Senhas: Implemente políticas de senha robustas e armazene senhas usando algoritmos de hashing seguros (ex: bcrypt, Argon2).
-#### 2. Autorização
-Controle de Acesso: Utilize modelos de controle de acesso baseados em papéis (RBAC) ou em atributos (ABAC) para definir quem pode acessar quais recursos.
-Princípio do Menor Privilégio: Garanta que os usuários e serviços tenham apenas as permissões necessárias para realizar suas funções.
-#### 3. Proteção de Dados
-Criptografia: Utilize criptografia para proteger dados em trânsito (TLS/SSL) e em repouso (criptografia de banco de dados). 
-Isso ajuda a proteger dados sensíveis contra interceptação e acesso não autorizado.
-#### 4. Segurança de APIs
-Autenticação e Autorização de APIs: Proteja APIs com autenticação adequada e verifique os direitos de acesso em cada chamada.
-Rate Limiting: Implemente limitação de taxa para proteger suas APIs contra abusos e ataques automatizados.
-#### 5. Conformidade
-Regulamentações e Normas: Certifique-se de que sua aplicação esteja em conformidade com regulamentações relevantes, como GDPR, HIPAA, ou PCI DSS, dependendo do tipo de dados que está manipulando.
-#### 6. Atualizações e Manutenção
-Patch Management: Mantenha todos os componentes da aplicação e dependências atualizados para proteger contra vulnerabilidades conhecidas.
-Considerar essas práticas desde o início do desenvolvimento da aplicação distribuída pode reduzir significativamente os riscos de segurança e garantir uma experiência mais segura para os usuários.
+Para garantir a segurança de uma aplicação distribuída, é essencial implementar autenticação segura, como o uso de tokens JWT e autorização baseada em funções (RBAC). Todo o tráfego deve ser protegido por TLS/SSL, e os dados armazenados criptografados em repouso. Proteções como WAF devem ser configuradas para evitar ataques como SQL Injection e XSS, além de implementar Rate Limiting no API Gateway para prevenir sobrecargas e DDoS. A validação e sanitização de dados nas APIs são cruciais, assim como o princípio do menor privilégio para permissões dos serviços. Monitoramento contínuo via CloudWatch e centralização de logs garantem auditoria e detecção de incidentes, seguindo normas como a LGPD para proteção de dados pessoais.
 
 ## Implantação
 
