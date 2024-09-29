@@ -652,4 +652,10 @@ Para garantir a segurança de uma aplicação distribuída, é essencial impleme
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+Luizalabs. (2017). Descomplicando a Clean Architecture. Medium. Disponível em: https://medium.com/luizalabs/descomplicando-a-clean-architecture-cf4dfc4a1ac6
+
+Docker. (2024). Install Docker Desktop on Windows. Docker Documentation. Disponível em: https://docs.docker.com/desktop/install/windows-install/
+
+Romualdo, V. (2021). Clean Architecture with Spring Boot: A Good Idea. Medium. Disponível em: https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130
+
+Obregon, A. (2021). IntelliJ IDEA and Spring Boot Integration: A Complete Guide. Medium. Disponível em: https://medium.com/@AlexanderObregon/intellij-idea-and-spring-boot-integration-a-complete-guide-aa90ab6e1a83
