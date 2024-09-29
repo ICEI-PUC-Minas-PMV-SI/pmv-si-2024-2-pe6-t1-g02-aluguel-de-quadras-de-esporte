@@ -1,63 +1,10 @@
 # APIs e Web Services
 
- O setor de aluguel de quadras esportivas tem experimentado um crescimento notável, refletindo uma maior conscientização sobre a importância de um estilo de vida ativo. Entre 2006 e 2019, a taxa de praticantes de esportes no Brasil era de 45%, aumentando para 82% em 2023. Isso resultou na popularidade de esportes coletivos, como futevôlei, tênis de praia e vôlei de praia, atraindo mais praticantes. Com a digitalização ganhando destaque na gestão esportiva, as ferramentas digitais facilitam a comunicação e o agendamento, mas clubes e centros esportivos ainda enfrentam desafios na gestão eficiente de suas quadras. O projeto visa modernizar o setor para melhorar a eficiência operacional e atender às necessidades de atletas amadores e proprietários de quadras. 
- 
- # Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
-
-A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
-
-# Etapas do Planejamento
-
- ## 1. API Gateway (AWS)
-   
-Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego
-
-Segurança: Utilização de JWT para autenticação e autorização
-
-## 2. Microserviços
-
-Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
-
-Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
-
-Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
-
- ## 3. Comunicação
-   
-APIs REST para comunicação entre os microserviços e a API Gateway.
-
- ## 4. Camada de Dados
-   
-Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
-
- ## 5. Ambiente de Hospedagem
-   
-Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade. 
-
-## 6. Segurança
-Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
-
-Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
-
-# Arquitetura Modular e Escalável.
-
-A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. 
-
-A separação entre as camadas facilita a manutenção e futuras expansões.
-
+Planejamento de aplicação de Api's Web para aluguel de quadras esportivas: a aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
 
 ## Objetivos da API
 
-O objetivo é desenvolver uma aplicação distribuída para realizar agendamentos de quadras esportivas. Dentro deste objetivo geral há os seguintes objetivos específicos:
-
-Desenvolver uma aplicação web administrativa para proprietários.
-
-Desenvolver uma aplicação mobile para clientes.
-
-Desenvolver uma API para integração de serviços.
-
-Implementar um sistema de notificações e lembretes.
-
+O objetivo é desenvolver uma api distribuída para realizar o cadastro de usuários e proprietários para gestão dos agendamentos em quadras esportivas. Espera-se que a api seja usada por clientes externos (pessoas que queiram fazer agendamentos) e por clientes interno (proprietários). A api deve fornecer agendamentos, quadras e usuários como recurso.
 
 ## Arquitetura
 
@@ -65,63 +12,43 @@ A arquitetura da API é composta por uma série de componentes que trabalham jun
 
 ![image](https://github.com/user-attachments/assets/6faa05a1-e2bb-4967-9a74-93a62a3fc8e1)
 
-### 1. Camada de Apresentação (Frontend)
-
-- **Componentes:**
-
-  - **Página Web:** Desenvolvida com HTML, CSS, JavaScript e React.
-  - **Aplicativo Móvel:** Desenvolvido com React Native para suportar plataformas Android e iOS.
-
-- **Comunicação:**
-  - As interfaces Web e Mobile se comunicam com os microserviços através da **API Gateway** (AWS) via chamadas RESTful (HTTP/HTTPS).
-
-### 2. Camada de Negócios (Backend)
-
-- **API Gateway (AWS):**
-
-  - **Função:** Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego.
-  - **Segurança:** Utilização de JWT para autenticação e autorização.
-
-- **Microserviços:**
-
-  - **Microserviço de Gestão de Usuários (Java):** Gerenciamento de contas de usuários.
-  - **Microserviço de Gestão de Quadras (Java):** Gerenciamento das informações e características das quadras.
-  - **Microserviço de Agendamento de Quadras (Java):** Gerenciamento de reservas e disponibilidade das quadras.
-
-- **Comunicação:**
-  - APIs REST para comunicação entre os microserviços e a API Gateway.
-
-### 3. Camada de Dados
-
-- **Banco de Dados (PostgreSQL):**
-  - Cada microserviço possui um banco de dados PostgreSQL isolado.
-
-### 4. Ambiente de Hospedagem
-
-- **Cloud Provider (AWS):**
-  - Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade.
-
-### 5. Segurança
-
-- **Autenticação e Autorização:**
-  - Implementação de autenticação e autorização via JWT.
-  - Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
-
-Esta arquitetura é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
+As aplicações web e mobile acessam as apis por meio de um api gateway que redirecionam as chamadas para os respectivos microserviços. Cada microserviço tem seu próprio banco de dados.
 
 ## Modelagem da Aplicação
+
+### Estrutura da entidade usuário
+
+    "Usuario": {
+        "id": "String",
+        "nome": "String",
+        "telefone": "String",
+        "email": "String",
+        "senha": "String",
+        "dataCriacao": "DateTime"
+        "dataUltimaAtualizacao": "DateTime"
+        "dataDelecao": "DateTime"
+    }
+
+### Estrutura da entidade agendamento
+
+    "Agendamento": {
+        "status": "String",
+        "quadra": "String",
+        "usuario": "String",
+        "inicioAgendamento": "String",
+        "fimAgendamento": "String"
+    }
 
 ### Estrutura da entidade quadra
 
     "Quadra": {
-        "id": "INT",
-        "nome": "STRING",
-        "tipo": "STRING",
-        "localizacao": "STRING",
-        "descricao": "STRING",
-        "status": "STRING"
+        "id": "Int",
+        "nome": "String",
+        "tipo": "String",
+        "localizacao": "String",
+        "descricao": "String",
+        "status": "String"
     }
-
 
 ## Fluxo de Dados
 
@@ -153,62 +80,154 @@ Aqui estão os principais requisitos não funcionais da aplicação:
 ## Tecnologias Utilizadas
 
 A aplicação será desenvolvida utilizando as seguintes tecnologias:
-
-Front-end: React, React Native, JavaScript, HTML, CSS
-
-Back-end: JAVA
-
-Banco de Dados: Postgresql
-
-# Hospedagem
-A hospedagem da solução será realizada na AWS para garantir escalabilidade, alta disponibilidade e segurança:
-
-## 1. API Gateway (AWS)
-ServiçUtilizado: AWS API Gateway
-Função: Seo rve como o ponto de entrada único para todas as requisições do frontend (Web e Mobile) aos microserviços. Gerencia o roteamento das requisições, autenticação e autorização (via JWT), monitoramento, controle de tráfego.
-Escalabilidade: O AWS API Gateway escala automaticamente para lidar com diferentes níveis de tráfego.
-
-## 2. Microserviços (Backend - Java)
-Serviço Utilizado: Amazon Elastic Container Service (ECS)
-Descrição:
-Cada microserviço será containerizado utilizando Docker, garantindo isolamento e escalabilidade independente.
-
-## 3. Banco de Dados (PostgreSQL)
-Serviço Utilizado: Amazon RDS (Relational Database Service)
-Descrição:
-Cada microserviço terá seu próprio banco de dados PostgreSQL, gerenciado pelo Amazon RDS. 
-
-## 4. Frontend Web
-Serviço Utilizado: Amazon S3 e Amazon CloudFront
-Descrição:
-Os arquivos estáticos da aplicação Web (HTML, CSS, JavaScript, e assets) serão hospedados no Amazon S3.
-O Amazon CloudFront, uma CDN global, será utilizado para distribuir esses arquivos, garantindo baixa latência e rápida entrega do conteúdo para os usuários.
-Segurança: HTTPS será utilizado para proteger a comunicação entre o navegador dos usuários e o CloudFront.  
-
-## 5. Aplicativo Móvel
-Comunicação: O aplicativo se comunicará com a API Gateway da AWS para interagir com os microserviços, utilizando HTTPS e autenticação via JWT.
-
-## 6. Gerenciamento de Logs e Monitoramento
-Serviço Utilizado: Amazon CloudWatch
-Descrição: Utilizado para coletar e monitorar logs e métricas de todos os componentes (API Gateway, microserviços, banco de dados).
+- Front-end: React, React Native, JavaScript, HTML, CSS
+- Back-end: Java, Spring boot
+- Banco de Dados: Postgresql
 
 ## API Endpoints
 
+Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1-g02-aluguel-de-quadras-de-esporte-codigo
+
+### Gerenciamento de agendamento
+#### Cadastro de agendamento
+- Método: POST
+- URL: /api/v1/agendamentos
+- Parâmetros:
+```
+{
+  "quadraId": "String",
+  "usuarioId": "String",
+  "inicioAgendamento": "DateTime",
+  "fimAgendamento": "DateTime"
+}
+```
+#### Resposta:
+- Sucesso (201 OK)
+```
+ {
+   "id": "String",
+   "status": "String",
+   "quadraId": "String",
+   "usuarioid": "String",
+   "inicioAgendamento": "DateTime",
+   "fimAgendamento": "DateTime"
+}
+ ```
+
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+
+- Usuário não autorizado (401)
+```
+{
+  "message": "String"
+}
+```
+
+- Recurso não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
+#### Edição de agendamento
+- Método: PUT
+- URL: /api/v1/agendamentos{id}
+- Parâmetros:
+```
+{
+  "inicioAgendamento": "DateTime",
+  "fimAgendamento": "DateTime"
+}
+```
+#### Resposta:
+- Sucesso (204)
+```
+
+ ```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Usuário não autorizado (401)
+```
+{
+  "message": "String"
+}
+```
+- Agendamento não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+#### Deleção de agendamento
+- Método: DELETE
+- URL: /api/v1/agendamentos{id}
+- Parâmetros:
+```
+
+```
+- Sucesso (204)
+```
+
+ ```
+- Requisição inválida (400)
+```
+{
+  "message": "String"
+}
+```
+- Usuário não autorizado (401)
+```
+{
+  "message": "String"
+}
+```
+- Agendamento não encontrado (404)
+```
+{
+  "message": "String"
+}
+```
+- Erro interno (500)
+```
+{
+  "message": "String"
+}
+```
+
 ### Gerenciamento de quadras
-Repositório do Micro Serviço: https://github.com/LucasDPaulaMartins/gestao-de-quadras.git
-
-
 #### Cadastro de quadra
 - Método: POST
 - URL: /quadras
 - Parâmetros:
 ```
 {
-    "nome": "STRING",
-    "tipo": "STRING",
-    "localizacao": "STRING",
-    "descricao": "STRING",
-    "status": "STRING"
+    "nome": "String",
+    "tipo": "String",
+    "localizacao": "String",
+    "descricao": "String",
+    "status": "String"
 }
 ```
 
@@ -242,12 +261,12 @@ Repositório do Micro Serviço: https://github.com/LucasDPaulaMartins/gestao-de-
     {
       "message": "Success",
       "data": {
-        "id": INT,
-        "nome": STRING,
-        "tipo": STRING,
-        "localizacao": STRING,
-        "descricao": STRING,
-        "status": STRING
+        "id": Int,
+        "nome": String,
+        "tipo": String,
+        "localizacao": String,
+        "descricao": String,
+        "status": String
       }
     }
     ```
