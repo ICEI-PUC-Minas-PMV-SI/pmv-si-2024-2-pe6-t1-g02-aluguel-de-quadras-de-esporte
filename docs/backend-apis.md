@@ -131,7 +131,6 @@ A API Gateway retorna a resposta para o front-end, que apresenta a resposta ao u
 Essa arquitetura modular e escalável permite que a aplicação seja facilmente escalável e mantida, além de garantir a segurança e a robustez da plataforma.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 ### Estrutura da entidade quadra
 
@@ -151,8 +150,6 @@ Essa arquitetura modular e escalável permite que a aplicação seja facilmente 
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
-
 Requisitos Funcionais da Aplicação
 
 
@@ -164,8 +161,6 @@ Requisitos Funcionais da Aplicação
 
 
 ## Requisitos Não Funcionais
-
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 
 Aqui estão os principais requisitos não funcionais da aplicação:
 
@@ -219,7 +214,6 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 ### Gerenciamento de quadras
 #### Cadastro de quadra
 - Método: POST
