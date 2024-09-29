@@ -6,9 +6,10 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 
 [Inclua uma breve descrição do projeto.]
 
+ O setor de aluguel de quadras esportivas tem experimentado um crescimento notável, refletindo uma maior conscientização sobre a importância de um estilo de vida ativo. Entre 2006 e 2019, a taxa de praticantes de esportes no Brasil era de 45%, aumentando para 82% em 2023. Isso resultou na popularidade de esportes coletivos, como futevôlei, tênis de praia e vôlei de praia, atraindo mais praticantes. Com a digitalização ganhando destaque na gestão esportiva, as ferramentas digitais facilitam a comunicação e o agendamento, mas clubes e centros esportivos ainda enfrentam desafios na gestão eficiente de suas quadras. O projeto visa modernizar o setor para melhorar a eficiência operacional e atender às necessidades de atletas amadores e proprietários de quadras. 
+ 
 Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
 
-O objetivo do projeto é desenvolver uma aplicação de aluguel de quadras esportivas distribuída, utilizando tecnologias como Java, PostgreSQL, e AWS. 
 A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
 
 Etapas do Planejamento
@@ -57,6 +58,8 @@ A separação entre as camadas facilita a manutenção e futuras expansões.
 O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
 
 [Inclua os objetivos da sua api.]
+
+O objetivo do projeto é desenvolver uma aplicação de aluguel de quadras esportivas distribuída, utilizando tecnologias como Java, PostgreSQL, e AWS. 
 
 Os objetivos da API são:
 
@@ -223,15 +226,15 @@ Listagem de Quadras: O usuário deve ser capaz de visualizar uma lista de quadra
 
 Detalhes da Quadra: O usuário deve ser capaz de visualizar os detalhes de uma quadra, incluindo informações como endereço e capacidade.
 
-Reserva
+Agendamento
 
-Realização de Reserva:
-O usuário deve ser capaz de fazer uma reserva de uma quadra, fornecendo informações como data e hora de início e fim.
+Realização de agendamento:
+O usuário deve ser capaz de agendar uma quadra, fornecendo informações como data e hora de início e fim.
 
-Listagem de Reservas: O usuário deve ser capaz de visualizar uma lista de suas reservas.
+Listagem de agendamento: O usuário deve ser capaz de visualizar uma lista de seus agendamentos.
 
-Gerenciamento de Reserva: 
-O usuário deve ser capaz de gerenciar suas reservas, incluindo a atualização de informações e a cancelamento de reservas.
+Gerenciamento de agendamento: 
+O usuário deve ser capaz de gerenciar seus agendamento, incluindo a atualização de informações e a cancelamento de agendamento.
 
 ## Requisitos Não Funcionais
 
