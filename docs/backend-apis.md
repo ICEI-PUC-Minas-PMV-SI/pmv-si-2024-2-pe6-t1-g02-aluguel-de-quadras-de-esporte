@@ -457,11 +457,7 @@ Princípio do Menor Privilégio: Garanta que os usuários e serviços tenham ape
 #### 3. Proteção de Dados
 Criptografia: Utilize criptografia para proteger dados em trânsito (TLS/SSL) e em repouso (criptografia de banco de dados). 
 Isso ajuda a proteger dados sensíveis contra interceptação e acesso não autorizado.
-#### 4. Proteção Contra Ataques
-Firewall e IDS/IPS: Implemente firewalls e sistemas de detecção e prevenção de intrusões para monitorar e proteger a rede.
-Proteção Contra DDoS: Use serviços de mitigação de DDoS para proteger a aplicação contra ataques de negação de serviço.
-Sanitização de Entrada: Valide e sanitize todas as entradas do usuário para proteger contra injeções SQL, XSS e outras vulnerabilidades.
-#### 5. Segurança de APIs
+#### 4. Segurança de APIs
 Autenticação e Autorização de APIs: Proteja APIs com autenticação adequada e verifique os direitos de acesso em cada chamada.
 Rate Limiting: Implemente limitação de taxa para proteger suas APIs contra abusos e ataques automatizados.
 #### 5. Conformidade
