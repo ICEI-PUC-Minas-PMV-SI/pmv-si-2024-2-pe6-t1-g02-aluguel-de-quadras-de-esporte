@@ -269,7 +269,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
     ```
-- Erro (404)
+ - Erro (404)
     ```
     {
       "message": "Falha",
@@ -278,7 +278,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
     ```
-- Erro (400, 401, 500)
+ - Erro (400, 401, 500)
     ```
     {
       "message": "Falha",
@@ -311,7 +311,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
     ```
-- Erro (404)
+  - Erro (404)
     ```
     {
       "message": "Falha",
@@ -320,7 +320,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
     ```
-- Erro (400, 401, 500)
+ - Erro (400, 401, 500)
     ```
     {
       "message": "Falha",
@@ -344,7 +344,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
     ```
-- Erro (404)
+ - Erro (404)
     ```
     {
       "message": "Falha",
@@ -353,7 +353,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
     ```
-- Erro (400, 401, 500)
+ - Erro (400, 401, 500)
     ```
     {
       "message": "Falha",
