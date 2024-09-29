@@ -134,15 +134,16 @@ Essa arquitetura modular e escalável permite que a aplicação seja facilmente 
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 ### Estrutura da entidade quadra
-Quadra = 
- {
-     "id": INT,
-     "nome": STRING,
-     "tipo": STRING,
-     "localizacao": STRING,
-     "descricao": STRING,
-     "status": STRING
- }
+
+    "Quadra": {
+        "id": "INT",
+        "nome": "STRING",
+        "tipo": "STRING",
+        "localizacao": "STRING",
+        "descricao": "STRING",
+        "status": "STRING"
+    }
+
 
 ## Fluxo de Dados
 
