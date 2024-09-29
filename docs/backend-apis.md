@@ -1,10 +1,8 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
  O setor de aluguel de quadras esportivas tem experimentado um crescimento notável, refletindo uma maior conscientização sobre a importância de um estilo de vida ativo. Entre 2006 e 2019, a taxa de praticantes de esportes no Brasil era de 45%, aumentando para 82% em 2023. Isso resultou na popularidade de esportes coletivos, como futevôlei, tênis de praia e vôlei de praia, atraindo mais praticantes. Com a digitalização ganhando destaque na gestão esportiva, as ferramentas digitais facilitam a comunicação e o agendamento, mas clubes e centros esportivos ainda enfrentam desafios na gestão eficiente de suas quadras. O projeto visa modernizar o setor para melhorar a eficiência operacional e atender às necessidades de atletas amadores e proprietários de quadras. 
  
-Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
+ Planejamento de Aplicação de APIS Web para Aluguel de Quadras Esportivas
 
 A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
 
@@ -34,10 +32,9 @@ Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados Postgre
 
 5. Ambiente de Hospedagem
    
-Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade.
+Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade. 
 
 6. Segurança
-    
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
 
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
