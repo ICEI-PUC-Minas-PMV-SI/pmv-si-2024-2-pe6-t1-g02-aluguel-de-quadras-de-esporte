@@ -95,7 +95,7 @@ Back-end: Java
 
 Banco de Dados: PostgreSQL
 
-Diagrama de Interação
+**Diagrama de Interação**
 
 Aqui está um diagrama de interação que ilustra como as tecnologias estão relacionadas e como uma interação do usuário com o sistema vai ser conduzida:
 
@@ -143,28 +143,51 @@ Este diagrama mostra como o usuário interage com a aplicação através do fron
 
 A arquitetura da API é composta por uma série de componentes que trabalham juntos para fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
 
-Componentes
+![image](https://github.com/user-attachments/assets/6faa05a1-e2bb-4967-9a74-93a62a3fc8e1)
 
-API Gateway (AWS): Responsável pelo roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego.
+### 1. Camada de Apresentação (Frontend)
 
-Microserviços:
-Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
+- **Componentes:**
 
-Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e características das quadras.
+  - **Página Web:** Desenvolvida com HTML, CSS, JavaScript e React.
+  - **Aplicativo Móvel:** Desenvolvido com React Native para suportar plataformas Android e iOS.
 
-Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
+- **Comunicação:**
+  - As interfaces Web e Mobile se comunicam com os microserviços através da **API Gateway** (AWS) via chamadas RESTful (HTTP/HTTPS).
 
-Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
+### 2. Camada de Negócios (Backend)
 
-Front-end (React, React Native, JavaScript, HTML, CSS): Responsável pela interface do usuário e pela comunicação com a API Gateway.
-Interações
+- **API Gateway (AWS):**
 
-O usuário interage com a aplicação através do front-end, que se comunica com a API Gateway.
-A API Gateway se comunica com os microserviços, que acessam os bancos de dados PostgreSQL isolados.
+  - **Função:** Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego.
+  - **Segurança:** Utilização de JWT para autenticação e autorização.
 
-Os microserviços se comunicam entre si através de APIs RESTful.
+- **Microserviços:**
 
-A API Gateway valida o JWT para assegurar o acesso seguro aos microserviços.
+  - **Microserviço de Gestão de Usuários (Java):** Gerenciamento de contas de usuários.
+  - **Microserviço de Gestão de Quadras (Java):** Gerenciamento das informações e características das quadras.
+  - **Microserviço de Agendamento de Quadras (Java):** Gerenciamento de reservas e disponibilidade das quadras.
+
+- **Comunicação:**
+  - APIs REST para comunicação entre os microserviços e a API Gateway.
+
+### 3. Camada de Dados
+
+- **Banco de Dados (PostgreSQL):**
+  - Cada microserviço possui um banco de dados PostgreSQL isolado.
+
+### 4. Ambiente de Hospedagem
+
+- **Cloud Provider (AWS):**
+  - Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade.
+
+### 5. Segurança
+
+- **Autenticação e Autorização:**
+  - Implementação de autenticação e autorização via JWT.
+  - Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
+
+Esta arquitetura é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
 
 Fluxo de Requisição
 
