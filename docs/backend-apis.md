@@ -143,7 +143,7 @@ Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1
 
 #### Edição de agendamento
 - Método: PUT
-- URL: /api/v1/agendamentos{id}
+- URL: /api/v1/agendamentos/{id}
 - Parâmetros:
 ```
 {
@@ -182,7 +182,7 @@ Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1
 ```
 #### Deleção de agendamento
 - Método: DELETE
-- URL: /api/v1/agendamentos{id}
+- URL: /api/v1/agendamentos/{id}
 - Parâmetros:
 ```
 
@@ -377,11 +377,11 @@ Repositório dos microserviços: https://github.com/ICEI-PUC-Minas-PMV-SI/pe6-t1
 - Parâmetros:
   ```
   {
-    "nome": "STRING",
-    "tipo": "STRING",
-    "localizacao": "STRING",
-    "descricao": "STRING",
-    "status": "STRING"
+    "nome": "String",
+    "tipo": "String",
+    "localizacao": "String",
+    "descricao": "String",
+    "status": "String"
   }
 
 - Resposta:
