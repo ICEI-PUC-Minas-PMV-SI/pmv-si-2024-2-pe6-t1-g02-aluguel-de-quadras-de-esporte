@@ -220,31 +220,35 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
 ## API Endpoints
 
 [Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
-
-### Endpoint 1
+### Gerenciamento de quadras
+#### Cadastro de quadra
 - Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
+- URL: /quadras
+- Parâmetros:{
+    "nome": "STRING",
+    "tipo": "STRING",
+    "localizacao": "STRING",
+    "descricao": "STRING",
+    "status": "STRING"
+}
 - Resposta:
   - Sucesso (200 OK)
     ```
     {
       "message": "Success",
       "data": {
-        ...
+        Quadra cadastrada com sucesso!
       }
     }
     ```
-  - Erro (4XX, 5XX)
+  - Erro (400, 401, 500)
     ```
     {
-      "message": "Error",
+      "message": "Falha",
       "error": {
-        ...
+        Falha ao cadastrar quadra.
       }
     }
-    ```
 
 
 ## Considerações de Segurança
