@@ -6,15 +6,15 @@
 
 A aplicação será composta por uma API Gateway, microserviços para gestão de usuários, quadras e agendamento, e uma camada de dados com bancos de dados PostgreSQL isolados para cada microserviço.
 
-## Etapas do Planejamento
+# Etapas do Planejamento
 
- 1. API Gateway (AWS)
+ ## 1. API Gateway (AWS)
    
 Função: Roteamento de requisições, autenticação/autorização (JWT), monitoramento e controle de tráfego
 
 Segurança: Utilização de JWT para autenticação e autorização
 
-2. Microserviços
+## 2. Microserviços
 
 Microserviço de Gestão de Usuários (Java): Gerenciamento de contas de usuários.
 
@@ -22,24 +22,24 @@ Microserviço de Gestão de Quadras (Java): Gerenciamento das informações e ca
 
 Microserviço de Agendamento de Quadras (Java): Gerenciamento de reservas e disponibilidade das quadras.
 
- 3. Comunicação
+ ## 3. Comunicação
    
 APIs REST para comunicação entre os microserviços e a API Gateway.
 
- 4. Camada de Dados
+ ## 4. Camada de Dados
    
 Banco de Dados (PostgreSQL): Cada microserviço possui um banco de dados PostgreSQL isolado.
 
- 5. Ambiente de Hospedagem
+ ## 5. Ambiente de Hospedagem
    
 Cloud Provider (AWS): Utilização da AWS para hospedar todos os componentes, garantindo alta disponibilidade e escalabilidade. 
 
-6. Segurança
+## 6. Segurança
 Autenticação e Autorização: Implementação de autenticação e autorização via JWT.
 
 Validação do JWT pela API Gateway para assegurar o acesso seguro aos microserviços.
 
-## Arquitetura Modular e Escalável.
+# Arquitetura Modular e Escalável.
 
 A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. 
 
@@ -152,10 +152,6 @@ Aqui estão os principais requisitos não funcionais da aplicação:
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
 A aplicação será desenvolvida utilizando as seguintes tecnologias:
 
 Front-end: React, React Native, JavaScript, HTML, CSS
@@ -164,30 +160,35 @@ Back-end: JAVA
 
 Banco de Dados: Postgresql
 
-Hospedagem
+# Hospedagem
 A hospedagem da solução será realizada na AWS para garantir escalabilidade, alta disponibilidade e segurança:
 
-1. API Gateway (AWS)
-Serviço Utilizado: AWS API Gateway
-Função: Serve como o ponto de entrada único para todas as requisições do frontend (Web e Mobile) aos microserviços. Gerencia o roteamento das requisições, autenticação e autorização (via JWT), monitoramento, controle de tráfego.
+## 1. API Gateway (AWS)
+ServiçUtilizado: AWS API Gateway
+Função: Seo rve como o ponto de entrada único para todas as requisições do frontend (Web e Mobile) aos microserviços. Gerencia o roteamento das requisições, autenticação e autorização (via JWT), monitoramento, controle de tráfego.
 Escalabilidade: O AWS API Gateway escala automaticamente para lidar com diferentes níveis de tráfego.
-2. Microserviços (Backend - Java)
+
+## 2. Microserviços (Backend - Java)
 Serviço Utilizado: Amazon Elastic Container Service (ECS)
 Descrição:
 Cada microserviço será containerizado utilizando Docker, garantindo isolamento e escalabilidade independente.
-3. Banco de Dados (PostgreSQL)
+
+## 3. Banco de Dados (PostgreSQL)
 Serviço Utilizado: Amazon RDS (Relational Database Service)
 Descrição:
-Cada microserviço terá seu próprio banco de dados PostgreSQL, gerenciado pelo Amazon RDS.
-4. Frontend Web
+Cada microserviço terá seu próprio banco de dados PostgreSQL, gerenciado pelo Amazon RDS. 
+
+## 4. Frontend Web
 Serviço Utilizado: Amazon S3 e Amazon CloudFront
 Descrição:
 Os arquivos estáticos da aplicação Web (HTML, CSS, JavaScript, e assets) serão hospedados no Amazon S3.
 O Amazon CloudFront, uma CDN global, será utilizado para distribuir esses arquivos, garantindo baixa latência e rápida entrega do conteúdo para os usuários.
-Segurança: HTTPS será utilizado para proteger a comunicação entre o navegador dos usuários e o CloudFront.
-5. Aplicativo Móvel
+Segurança: HTTPS será utilizado para proteger a comunicação entre o navegador dos usuários e o CloudFront.  
+
+## 5. Aplicativo Móvel
 Comunicação: O aplicativo se comunicará com a API Gateway da AWS para interagir com os microserviços, utilizando HTTPS e autenticação via JWT.
-6. Gerenciamento de Logs e Monitoramento
+
+## 6. Gerenciamento de Logs e Monitoramento
 Serviço Utilizado: Amazon CloudWatch
 Descrição: Utilizado para coletar e monitorar logs e métricas de todos os componentes (API Gateway, microserviços, banco de dados).
 
