@@ -215,6 +215,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
 ## API Endpoints
 
 ### Gerenciamento de quadras
+
 #### Cadastro de quadra
 - Método: POST
 - URL: /quadras
@@ -247,6 +248,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
         Falha ao cadastrar quadra.
       }
     }
+
 
 #### Consulta de quadra
 - Método: GET
@@ -284,6 +286,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
         Falha ao consultar quadra.
       }
     }
+
 
 #### Edição de quadra
 - Método: PUT
@@ -325,6 +328,7 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
         Falha ao atualizar quadra.
       }
     }
+
 
 #### Exclusão de quadra
 - Método: DELETE
