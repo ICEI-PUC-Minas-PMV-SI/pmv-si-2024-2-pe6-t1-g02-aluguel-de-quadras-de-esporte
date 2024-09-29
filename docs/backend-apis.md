@@ -51,93 +51,13 @@ A separação entre as camadas facilita a manutenção e futuras expansões.
 
 ## Objetivos da API
 
+O objetivo é desenvolver uma aplicação distribuída para realizar agendamentos de quadras esportivas. Dentro deste objetivo geral há os seguintes objetivos específicos:
 
-O objetivo do projeto é desenvolver uma aplicação de aluguel de quadras esportivas distribuída, utilizando tecnologias como Java, PostgreSQL, e AWS. 
+Desenvolver uma aplicação web administrativa para proprietários.
+Desenvolver uma aplicação mobile para clientes.
+Desenvolver uma API para integração de serviços.
+Implementar um sistema de notificações e lembretes.
 
-Os objetivos da API são:
-
-Fornecer uma plataforma segura e escalável para o aluguel de quadras esportivas.
-
-Permitir que os usuários criem contas e gerenciem suas informações de perfil.
-
-Oferecer uma lista de quadras esportivas disponíveis para aluguel, incluindo informações detalhadas sobre cada quadra.
-
-Permitir que os usuários façam reservas e gerenciem suas reservas de quadras esportivas.
-
-Fornecer uma interface fácil de usar para os usuários gerenciarem suas contas e reservas.
-
-Garantir a segurança e autenticação dos usuários através da utilização de JWT.
-
-Fornecer uma API escalável e flexível para suportar o crescimento da aplicação.
-
-Além disso, a API deve ser capaz de:
-
-Autenticar e autorizar usuários através da API Gateway.
-
-Gerenciar contas de usuários e informações de perfil.
-
-Gerenciar informações e características das quadras esportivas.
-
-Gerenciar agendamentos e disponibilidade das quadras esportivas.
-
-Fornecer uma interface RESTful para a comunicação entre os microserviços e a API Gateway.
-
-Esses objetivos serão alcançados através da implementação de uma arquitetura modular e escalável, com uma separação clara entre as camadas de apresentação, aplicação e dados.
-Arquitetura Modular e Escalável
-
-A arquitetura proposta é modular e escalável, garantindo robustez, segurança e capacidade de adaptação ao crescimento da aplicação. A separação entre as camadas facilita a manutenção e futuras expansões.
-
-Tecnologias Utilizadas
-
-Front-end: React, React Native, JavaScript, HTML, CSS
-
-Back-end: Java
-
-Banco de Dados: PostgreSQL
-
-**Diagrama de Interação**
-
-Aqui está um diagrama de interação que ilustra como as tecnologias estão relacionadas e como uma interação do usuário com o sistema vai ser conduzida:
-
-
-
-                                      +---------------+
-                                      |  Usuário    |
-                                      +---------------+
-                                             |
-                                             |
-                                             v
-                                      +---------------+
-                                      |  Front-end  |
-                                      |  (React, React  |
-                                      |  Native, JavaScript, |
-                                      |  HTML, CSS)     |
-                                      +---------------+
-                                             |
-                                             |
-                                             v
-                                      +---------------+
-                                      |  API Gateway  |
-                                      |  (AWS)         |
-                                      +---------------+
-                                             |
-                                             |
-                                             v
-                                      +---------------+
-                                      |  Microserviços  |
-                                      |  (Java)         |
-                                      |  - Gestão de Usuários  |
-                                      |  - Gestão de Quadras  |
-                                      |  - Agendamento de Quadras|
-                                      +---------------+
-                                             |
-                                             |
-                                             v
-                                      +---------------+
-                                      |  Banco de Dados  |
-                                      |  (PostgreSQL)    |
-                                      +---------------+
-Este diagrama mostra como o usuário interage com a aplicação através do front-end, que se comunica com a API Gateway, que por sua vez se comunica com os microserviços, que acessam os bancos de dados PostgreSQL isolados.
 
 ## Arquitetura
 
