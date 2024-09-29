@@ -222,15 +222,19 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
 [Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 ### Gerenciamento de quadras
 #### Cadastro de quadra
-- Método: GET
+- Método: POST
 - URL: /quadras
-- Parâmetros:{
+- Parâmetros:
+```
+{
     "nome": "STRING",
     "tipo": "STRING",
     "localizacao": "STRING",
     "descricao": "STRING",
     "status": "STRING"
 }
+```
+
 - Resposta:
   - Sucesso (200 OK)
     ```
@@ -250,7 +254,116 @@ Descrição: Utilizado para coletar e monitorar logs e métricas de todos os com
       }
     }
 
+#### Consulta de quadra
+- Método: GET
+- URL: /quadras/{{nome}}
+- Parâmetros: N/A
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Success",
+      "data": {
+        "id": INT,
+        "nome": STRING,
+        "tipo": STRING,
+        "localizacao": STRING,
+        "descricao": STRING,
+        "status": STRING
+      }
+    }
+    ```
+- Erro (404)
+    ```
+    {
+      "message": "Falha",
+      "error": {
+        Quadra não encontrada!
+      }
+    }
+    ```
+  - Erro (400, 401, 500)
+    ```
+    {
+      "message": "Falha",
+      "error": {
+        Falha ao consultar quadra.
+      }
+    }
 
+#### Edição de quadra
+- Método: PUT
+- URL: /quadras/{{nome}}
+- Parâmetros:
+  ```
+  {
+    "nome": "STRING",
+    "tipo": "STRING",
+    "localizacao": "STRING",
+    "descricao": "STRING",
+    "status": "STRING"
+  }
+
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Success",
+      "data": {
+        Quadra atualizada com sucesso!
+      }
+    }
+    ```
+- Erro (404)
+    ```
+    {
+      "message": "Falha",
+      "error": {
+        Quadra não encontrada para ser atualizada!
+      }
+    }
+    ```
+  - Erro (400, 401, 500)
+    ```
+    {
+      "message": "Falha",
+      "error": {
+        Falha ao atualizar quadra.
+      }
+    }
+
+#### Exclusão de quadra
+- Método: DELETE
+- URL: /quadras/{{nome}}
+- Parâmetros: N/A
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Success",
+      "data": {
+        Quadra excluida com sucesso!
+      }
+    }
+    ```
+- Erro (404)
+    ```
+    {
+      "message": "Falha",
+      "error": {
+        Quadra não encontrada para ser excluida!
+      }
+    }
+    ```
+  - Erro (400, 401, 500)
+    ```
+    {
+      "message": "Falha",
+      "error": {
+        Falha ao excluir quadra.
+      }
+    }
+    
 ## Considerações de Segurança
 
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
