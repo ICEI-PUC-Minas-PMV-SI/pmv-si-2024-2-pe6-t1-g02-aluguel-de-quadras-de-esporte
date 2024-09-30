@@ -644,7 +644,7 @@ Para garantir a segurança de uma aplicação distribuída, é essencial impleme
 Com base na arquitetura na aplicação mobile e web conectada a uma API Gateway da AWS e microserviços gerenciados com ECS (Elastic Container Service) e banco de dados RDS (Relational Database Service), aqui está o plano de implantação:
 
 ### 1. Definir os Requisitos de Hardware e Software:
-###Hardware:
+### Hardware:
 
 #### Aplicação Web e Mobile:
 Serviços de front-end podem ser hospedados em servidores web com capacidade suficiente para suportar a carga esperada de usuários. Requisitos típicos:
