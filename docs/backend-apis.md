@@ -632,15 +632,6 @@ Para garantir a segurança de uma aplicação distribuída, é essencial impleme
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
-
-   
 Com base na arquitetura na aplicação mobile e web conectada a uma API Gateway da AWS e microserviços gerenciados com ECS (Elastic Container Service) e banco de dados RDS (Relational Database Service), aqui está o plano de implantação:
 
 ### 1. Definir os Requisitos de Hardware e Software:
