@@ -11,7 +11,6 @@ O sistema de aluguel de quadras de esportes é uma plataforma web e mobile que p
 ## Integrantes
 
 * Bianca Oliveira da Silva
-* Davi Perrier Cabral
 * Diego da Silva Gomes Barbosa
 * Enzo Silva Soares
 * Henrique Israel Oliveira
