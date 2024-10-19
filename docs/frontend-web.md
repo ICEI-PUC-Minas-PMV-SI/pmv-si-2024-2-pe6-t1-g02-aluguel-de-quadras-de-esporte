@@ -2,6 +2,30 @@
 
 [Inclua uma breve descrição do projeto e seus objetivos.]
 
+### Descrição do Projeto: Aluguel de Quadras Esportivas
+
+O projeto "Aluguel de Quadras Esportivas" tem como objetivo desenvolver uma aplicação web que facilite a busca e o aluguel de quadras esportivas em diversas localidades. Com uma interface amigável e responsiva, o usuário poderá visualizar as quadras disponíveis, acessar detalhes sobre cada uma, realizar reservas e gerenciar suas atividades esportivas de forma simples e eficiente.
+
+### Objetivos do Projeto
+
+1. **Facilitar o Acesso**: Permitir que os usuários encontrem facilmente quadras esportivas disponíveis na sua região.
+  
+2. **Experiência do Usuário**: Proporcionar uma interface intuitiva e responsiva, que se adapte a diferentes dispositivos, melhorando a navegação e interação.
+
+3. **Gerenciamento de Reservas**: Implementar um sistema que permita aos usuários realizar e gerenciar suas reservas de forma prática.
+
+4. **Informações Detalhadas**: Oferecer informações completas sobre cada quadra, incluindo localização, horários disponíveis e avaliações de outros usuários.
+
+5. **Apoiar a Prática Esportiva**: Incentivar a prática de esportes e a socialização entre usuários, promovendo um estilo de vida ativo.
+
+### Tecnologias Utilizadas
+
+- **Front End**: React com TypeScript para criar uma interface interativa e tipada.
+- **Estilização**: CSS com foco em design responsivo.
+- **Routing**: React Router para gerenciar a navegação entre as diferentes páginas da aplicação.
+
+Esse projeto não só atende à demanda de usuários em busca de atividades esportivas, mas também promove a cultura esportiva, incentivando a utilização de espaços de lazer de forma mais acessível.
+
 ## Tecnologias Utilizadas
 [Lista das tecnologias principais que serão utilizadas no projeto.]
 
