@@ -18,6 +18,9 @@ O projeto "Aluguel de Quadras Esportivas" tem como objetivo desenvolver uma apli
 
 5. **Apoiar a Prática Esportiva**: Incentivar a prática de esportes e a socialização entre usuários, promovendo um estilo de vida ativo.
 
+## Tecnologias Utilizadas
+[Lista das tecnologias principais que serão utilizadas no projeto.]
+
 ### Tecnologias Utilizadas
 
 - **Front End**: React com TypeScript para criar uma interface interativa e tipada.
@@ -25,9 +28,6 @@ O projeto "Aluguel de Quadras Esportivas" tem como objetivo desenvolver uma apli
 - **Routing**: React Router para gerenciar a navegação entre as diferentes páginas da aplicação.
 
 Esse projeto não só atende à demanda de usuários em busca de atividades esportivas, mas também promove a cultura esportiva, incentivando a utilização de espaços de lazer de forma mais acessível.
-
-## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
 
 ## Arquitetura
 
