@@ -160,27 +160,47 @@ A interface da Web é bem projetada, com foco na simplicidade, usabilidade e seg
 ### Wireframes
 
  ### Tela Inicial
- Este é um website para um sistema de gerenciamento de quadras esportivas. Ele oferece uma solução completa para gerenciar e alugar quadras, com funcionalidades como reserva online, acesso 24 horas e gerenciamento de múltiplos usuários. O website se destaca por sua interface simples e intuitiva, e por oferecer uma solução completa para as necessidades das quadras esportivas.
+ Este é um website para um sistema de gerenciamento de quadras esportivas. 
+ Ele oferece uma solução completa para gerenciar e alugar quadras, com funcionalidades como reserva online, acesso 24 horas e gerenciamento de múltiplos usuários. 
+ O website se destaca por sua interface simples e intuitiva, e por oferecer uma solução completa para as necessidades das quadras esportivas.
 
  
 ![Captura de tela 2024-11-03 194227](https://github.com/user-attachments/assets/2663d593-144b-4111-a316-905255db46cb)
 
 ### Tela Login
-A imagem mostra uma tela de login para um aplicativo chamado "Gestão de quadras esportivas". O aplicativo permite que os usuários gerenciem seus horários com facilidade. A tela de login solicita o email e a senha do usuário. Os usuários podem entrar ou criar uma nova conta.
+A imagem mostra uma tela de login para um aplicativo chamado "Gestão de quadras esportivas". 
+O aplicativo permite que os usuários gerenciem seus horários com facilidade. A tela de login solicita o email e a senha do usuário. 
+Os usuários podem entrar ou criar uma nova conta.
 
 
 ![Captura de tela 2024-11-03 195354](https://github.com/user-attachments/assets/813df6cf-c207-4c3e-87b2-3795dbc5c0ef)
 
 ### Tela Cadastro de Usuário
-A imagem mostra um formulário de cadastro de usuário em português, com campos para inserir nome, telefone, email, senha, confirmar senha, tipo de documento (CPF ou CNPJ) e número de CPF. No final, tem um botão "Cadastrar".
+A imagem mostra um formulário de cadastro de usuário em português, com campos para inserir nome, telefone, email, senha, confirmar senha, tipo de documento (CPF ou CNPJ) e número de CPF.
+No final, tem um botão "Cadastrar".
 
 ![Captura de tela 2024-11-03 195410](https://github.com/user-attachments/assets/5ac9a8d0-526d-4d28-9852-21397c008041)
 
-### Tela
+### Tela Agendamentos
+A imagem mostra a tela de agendamentos do sistema Quaddra. A tela exibe duas quadras agendadas para o dia 23/08/2024, ambas na Penha. 
+A primeira está com status "AGENDADO" e a segunda com status "CANCELADO". O usuário pode editar ou cancelar as agendamentos clicando nos ícones de lápis e lixo, respectivamente.
+Também é possível agendar novas quadras clicando no botão "Escolha uma quadra".
+
+![Captura de tela 2024-11-03 195511](https://github.com/user-attachments/assets/c4a7815c-e7e9-46af-95e5-65db4cee6c42)
+
+### Tela Catálago de quadras
+A imagem mostra um site de um local que aluga quadras para esporte. 
+A tela mostra seis quadras diferentes, com informações sobre localização, tipo de esporte, preço por hora e botão de reservar.
+
+![Captura de tela 2024-11-03 195721](https://github.com/user-attachments/assets/9025516d-14d2-4273-8cfe-f59b24378a23)
+
 
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+A interface é organizada e limpa, com um estilo minimalista e profissional. 
+A paleta de cores é neutra, predominando o branco e o cinza, com detalhes em azul e verde. 
+A tipografia é sans-serif, legível e fácil de ler. Os ícones são simples e intuitivos, representando claramente suas funções.
+A disposição das informações é organizada e lógica, facilitando a navegação. A interface prioriza a funcionalidade e a clareza, proporcionando uma experiência de usuário agradável e eficiente.
 
 ### Layout Responsivo
 
