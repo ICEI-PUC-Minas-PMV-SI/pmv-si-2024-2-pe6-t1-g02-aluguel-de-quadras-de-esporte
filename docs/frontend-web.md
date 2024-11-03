@@ -377,15 +377,89 @@ Configurar AWS CloudWatch para monitorar o desempenho dos serviços, verificar l
 Configurar alertas para detectar problemas em tempo real.
 
 ## Testes
+### Métodologias Adotadas
+- Testes Unitários: Validar o funcionamento correto de funções e métodos isolados
+- Testes de Integração: Garantir que diferentes módulos funcionem bem juntos
+- Testes Funcionais: Verificar se o sistema atende aos requisitos funcionais
+- Testes de Interface do Usuário (UI): Avaliar a funcionalidade e usabilidade dos elementos visuais para uma boa experiência do usuário
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### Histórias SMART
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+1. **Cadastro de Usuário**  
+   Como um novo usuário do sistema, desejo me cadastrar preenchendo todas as informações obrigatórias, para que eu possa acessar a plataforma e realizar agendamentos de quadras.
 
-# Referências
+2. **Login**  
+   Como um usuário registrado, desejo fazer login no sistema usando meu e-mail e senha, para acessar minha conta e gerenciar meus agendamentos.
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+3. **Agendamento de Quadra**  
+   Como um usuário autenticado, desejo agendar uma quadra em uma data e horário específicos, para garantir o uso exclusivo da quadra no período selecionado.
+
+4. **Cancelamento de Agendamento**  
+   Como um usuário autenticado, desejo cancelar um agendamento previamente feito, para liberar o horário e evitar cobranças desnecessárias.
+
+5. **Reagendamento de Quadra**  
+   Como um usuário autenticado, desejo reagendar um horário para uma quadra reservada, para ajustar a reserva de acordo com minha disponibilidade.
+
+6. **Consulta de Quadras Disponíveis**  
+   Como um usuário do sistema, desejo consultar quadras disponíveis filtrando por localidade e tipo, para escolher uma quadra que melhor atenda às minhas necessidades.
+
+7. **Testes de Interface**  
+   Como um usuário, desejo que os elementos de interface funcionem corretamente, para navegar e utilizar a aplicação sem dificuldades.
+
+8. **Testes de Desempenho**  
+   Como administrador do sistema, desejo que a aplicação suporte múltiplos acessos simultâneos, para garantir a estabilidade do sistema em horários de pico.
+
+### Casos de Teste
+
+1. **Cadastro de Usuário**
+   - **Dado** que estou na tela de cadastro de usuário,  
+     **Quando** eu preencho todos os campos obrigatórios corretamente e clico em "Cadastrar",  
+     **Então** o sistema deve exibir uma mensagem de sucesso e criar minha conta.
+
+   - **Dado** que estou na tela de cadastro de usuário,  
+     **Quando** eu deixo algum campo obrigatório vazio ou insiro informações inválidas,  
+     **Então** o sistema deve exibir mensagens de erro indicando os campos que precisam ser corrigidos.
+
+2. **Login**
+   - **Dado** que estou na tela de login,  
+     **Quando** eu insiro credenciais válidas e clico em "Entrar",  
+     **Então** o sistema deve me redirecionar para a página inicial da minha conta.
+
+   - **Dado** que estou na tela de login,  
+     **Quando** eu insiro credenciais inválidas e clico em "Entrar",  
+     **Então** o sistema deve exibir uma mensagem de erro indicando que as credenciais estão incorretas.
+
+3. **Agendamento de Quadra**
+   - **Dado** que estou logado e na página de quadras disponíveis,  
+     **Quando** seleciono uma quadra, escolho uma data e horário disponíveis e clico em "Confirmar",  
+     **Então** o sistema deve exibir uma mensagem de confirmação e registrar o agendamento.
+
+   - **Dado** que estou logado e na página de quadras disponíveis,  
+     **Quando** tento agendar uma quadra em um horário já reservado,  
+     **Então** o sistema deve exibir uma mensagem de erro indicando indisponibilidade.
+
+4. **Cancelamento de Agendamento**
+   - **Dado** que estou logado e na página de meus agendamentos,  
+     **Quando** seleciono um agendamento existente e clico em "Cancelar",  
+     **Então** o sistema deve exibir uma mensagem de confirmação e atualizar o status do agendamento para "CANCELADO".
+
+5. **Reagendamento de Quadra**
+   - **Dado** que estou logado e na página de meus agendamentos,  
+     **Quando** escolho um agendamento e modifico a data e horário para uma nova disponibilidade,  
+     **Então** o sistema deve salvar as alterações e exibir uma mensagem de confirmação de reagendamento.
+
+6. **Consulta de Quadras Disponíveis**
+   - **Dado** que estou na página de consulta de quadras,  
+     **Quando** seleciono filtros de localidade e tipo e clico em "Buscar",  
+     **Então** o sistema deve exibir uma lista de quadras disponíveis que correspondam aos critérios selecionados.
+
+7. **Testes de Interface**
+   - **Dado** que estou navegando na aplicação,  
+     **Quando** clico em botões e links e interajo com os campos,  
+     **Então** todos os elementos da interface devem responder conforme esperado, sem erros de navegação ou carregamento.
+
+8. **Testes de Desempenho**
+   - **Dado** que o sistema está em um ambiente de testes de carga,  
+     **Quando** simulo acessos simultâneos de múltiplos usuários realizando login e agendamentos,  
+     **Então** o sistema deve responder dentro de um tempo aceitável e manter a estabilidade sem falhas.
+
