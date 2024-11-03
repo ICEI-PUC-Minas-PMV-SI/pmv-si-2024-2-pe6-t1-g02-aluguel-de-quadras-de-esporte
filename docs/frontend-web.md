@@ -197,6 +197,11 @@ Atributos:
 ## Requisitos Não Funcionais
 
 
+| ID      | Descrição do Requisito                                            | Prioridade |
+| ------- | ----------------------------------------------------------------- | ---------- |
+| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA       |
+| RNF-002 | O sistema deve ter latência máxima de 5 segundos                  | MÉDIA      |
+
 ## Considerações de Segurança
 
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
