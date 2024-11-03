@@ -188,7 +188,37 @@ Atributos:
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+Fluxo de Autenticação e Acesso a Recursos
+Usuário Interage com o Front-End:
+
+O usuário acessa a aplicação via navegador ou app móvel e insere suas credenciais para login.
+Autenticação e Geração de Token:
+
+O front-end envia as credenciais para a API de autenticação.
+O back-end valida as credenciais e, se corretas, gera um token JWT, que é enviado de volta e armazenado de forma segura (preferencialmente em um cookie).
+Acesso a Recursos Protegidos:
+
+O front-end inclui o token JWT nas requisições subsequentes para acessar recursos protegidos.
+Processamento de Requisições no Back-End:
+
+O back-end valida o token e, se válido, executa operações (como criar, ler, atualizar ou excluir dados) interagindo com o banco de dados.
+Resposta ao Front-End:
+
+O back-end retorna os dados solicitados ou confirmações de operações realizadas.
+Exibição de Dados no Front-End:
+
+O front-end recebe e exibe os dados ao usuário, atualizando a interface.
+Monitoramento e Logs:
+
+O back-end registra eventos e erros para monitoramento e auditoria, incluindo logs de acesso e tentativas de autenticação.
+Gerenciamento de Sessões e Logout:
+
+O usuário pode solicitar logout, removendo o token e invalidando a sessão no back-end, se necessário.
+Conclusão
+Esse fluxo detalha como as informações circulam entre o usuário, front-end, back-end e banco de dados, enfatizando a importância da autenticação, autorização e validação em cada etapa. 
+
+
+
 
 ## Requisitos Funcionais
 
