@@ -157,7 +157,29 @@ Em resumo:
 A interface da Web é bem projetada, com foco na simplicidade, usabilidade e segurança. A organização do conteúdo, o design visual e a interação intuitiva garantem uma experiência positiva para o usuário, facilitando o gerenciamento de suas quadras.
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+### Tela Inicial:
+Este é um website para um sistema de gerenciamento de quadras esportivas. Ele oferece uma solução completa para gerenciar e alugar quadras, com funcionalidades como reserva online, acesso 24 horas e gerenciamento de múltiplos usuários. O website se destaca por sua interface simples e intuitiva, e por oferecer uma solução completa para as necessidades das quadras esportivas.
+
+![Captura de tela 2024-11-03 194227](https://github.com/user-attachments/assets/a60d24b9-e1e0-4645-8927-163ff39ad25a)
+
+### Tela login
+A imagem mostra uma tela de login para um aplicativo chamado "Gestão de quadras esportivas". O aplicativo permite que os usuários gerenciem seus horários com facilidade. A tela de login solicita o email e a senha do usuário. Os usuários podem entrar ou criar uma nova conta.
+
+![Captura de tela 2024-11-03 195354](https://github.com/user-attachments/assets/5442385a-52b1-4ca1-9373-32953ae5453e)
+
+### Tela Cadastro
+
+A imagem mostra um formulário de cadastro de usuário em português, com campos para inserir nome, telefone, email, senha, confirmar senha, tipo de documento (CPF ou CNPJ) e número de CPF. No final, tem um botão "Cadastrar".
+
+
+![Captura de tela 2024-11-03 195410](https://github.com/user-attachments/assets/6fc209a7-5e80-412d-94f9-94f03488e127)
+
+### Tela de agendamentos do sistema Quaddra
+
+A imagem mostra a tela de agendamentos do sistema Quaddra. A tela exibe duas quadras agendadas para o dia 23/08/2024, ambas na Penha. A primeira está com status "AGENDADO" e a segunda com status "CANCELADO". O usuário pode editar ou cancelar as agendamentos clicando nos ícones de lápis e lixo, respectivamente. Também é possível agendar novas quadras clicando no botão "Escolha uma quadra".
+
+![Captura de tela 2024-11-03 195511](https://github.com/user-attachments/assets/21890580-f92d-4f21-a66f-b11ff2d6a560)
+
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
