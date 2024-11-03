@@ -112,7 +112,7 @@ As operações definidas para cada tabela permitem a manipulação dos dados do 
 O diagrama apresentado utiliza a notação Mermaid para descrever a estrutura de um sistema de gerenciamento de usuários e reservas de quadras esportivas. Aqui está uma explicação detalhada de cada componente:
 
 Entidades
-USERS (Usuários):
+ ### Usuários:
 
 Atributos:
 - id-usuários: Identificador único para cada usuário.
@@ -134,7 +134,7 @@ Atributos:
 - autenticar(): Método para permitir que o usuário faça login.
 -  atualizarPerfil(): Método para atualizar as informações do usuário.
 
-    QUADRAS (Quadras):
+  ###  QUADRAS (Quadras):
  Atributos:
 - id-quadra: Identificador único para cada quadra.
 - nome: Nome da quadra.
@@ -149,7 +149,7 @@ Atributos:
 - verificarDisponibilidade(): Método para checar se a quadra está disponível em uma determinada data e horário.
 - reservar(): Método para reservar a quadra.
 
-  RESERVA (Reservas):
+###  RESERVA (Reservas):
  Atributos:
 - id-reserva: Identificador único para cada reserva.
 - data: Data da reserva.
