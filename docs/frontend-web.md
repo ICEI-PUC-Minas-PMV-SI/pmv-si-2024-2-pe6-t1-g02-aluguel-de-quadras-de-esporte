@@ -105,10 +105,10 @@ Essa arquitetura modular e baseada em componentes permite uma manutenção e esc
 
 As operações definidas para cada tabela permitem a manipulação dos dados do sistema. As operações "verificarDisponibilidade" e "reservar" na tabela "Quadra" permitem controlar a disponibilidade das quadras, enquanto as operações "confirmar" e "cancelar" na tabela "Reserva" permitem gerenciar as reservas.
 
+### A imagem mostra um diagrama de fluxo para um sistema de agendamento online.
 
 ![image](https://github.com/user-attachments/assets/b869596a-c41f-420b-836b-02961454ac98)
 
-### A imagem mostra um diagrama de fluxo para um sistema de agendamento online.
 - O usuário começa acessando a página inicial, onde pode fazer login ou criar uma conta. 
 - Após o login, o usuário pode visualizar seus agendamentos, agendar novos, visualizar o catálogo de quadras ou alterar ou cancelar agendamentos existentes. 
 - A imagem também mostra os pontos finais da API usados pelo sistema.
