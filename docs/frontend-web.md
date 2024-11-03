@@ -1,7 +1,5 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
-
 ### Descrição do Projeto: Aluguel de Quadras Esportivas
 
 O projeto "Aluguel de Quadras Esportivas" tem como objetivo desenvolver uma aplicação web que facilite a busca e o aluguel de quadras esportivas em diversas localidades. Com uma interface amigável e responsiva, o usuário poderá visualizar as quadras disponíveis, acessar detalhes sobre cada uma, realizar reservas e gerenciar suas atividades esportivas de forma simples e eficiente.
@@ -19,8 +17,6 @@ O projeto "Aluguel de Quadras Esportivas" tem como objetivo desenvolver uma apli
 5. **Apoiar a Prática Esportiva**: Incentivar a prática de esportes e a socialização entre usuários, promovendo um estilo de vida ativo.
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
-
 ### Tecnologias Utilizadas
 
 - **Front End**: React com TypeScript para criar uma interface interativa e tipada.
@@ -31,7 +27,6 @@ Esse projeto não só atende à demanda de usuários em busca de atividades espo
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação web, incluindo os componentes e suas interações.]
 ### Arquitetura da Aplicação Web: Aluguel de Quadras Esportivas
 
 A arquitetura da aplicação é baseada em uma estrutura modular e em componentes, utilizando React para a construção da interface do usuário. Abaixo, estão descritos os principais componentes da aplicação, suas responsabilidades e interações.
@@ -95,8 +90,83 @@ Essa arquitetura modular e baseada em componentes permite uma manutenção e esc
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
+![Fluxograma (1)](https://github.com/user-attachments/assets/37e253b9-2710-4deb-a51a-f163de9d5770)
+
+### A imagem mostra o diagrama de um banco de dados para um sistema de aluguel de quadras esportivas.
+
+### Existem três tabelas:
+
+Usuários Cadastro: Armazena informações sobre os usuários do sistema, como nome, CPF, data de criação, etc. Também define os tipos de usuários: "cliente" ou "administrador". Os administradores têm acesso a funcionalidades adicionais, como gerenciar quadras e usuários.
+
+Quadra: Armazena informações sobre as quadras esportivas disponíveis para aluguel, como nome, tipo, localização, descrição, e se está disponível. Além disso, define as funções "verificarDisponibilidade" e "reservar".
+
+Reserva: Armazena informações sobre as reservas feitas pelos usuários, como data da reserva, usuário que fez a reserva, quadra reservada, localização da reserva, e se está disponível para o usuário. Também define as funções "confirmar" e "cancelar".
+
+As linhas que conectam as tabelas representam relacionamentos entre elas. Por exemplo, a tabela "Usuários Cadastro" tem uma relação com a tabela "Reserva" através do atributo "usuario".
+
+As operações definidas para cada tabela permitem a manipulação dos dados do sistema. As operações "verificarDisponibilidade" e "reservar" na tabela "Quadra" permitem controlar a disponibilidade das quadras, enquanto as operações "confirmar" e "cancelar" na tabela "Reserva" permitem gerenciar as reservas.
+
+
+![Diagrama de caso de uso (2)](https://github.com/user-attachments/assets/c86e4a73-8a78-4931-8861-7c9f38d8ca13)
+
+O diagrama apresentado utiliza a notação Mermaid para descrever a estrutura de um sistema de gerenciamento de usuários e reservas de quadras esportivas. Aqui está uma explicação detalhada de cada componente:
+
+Entidades
+USERS (Usuários):
+
+Atributos:
+##### id-usuários: Identificador único para cada usuário.
+##### cnpj: Cadastro Nacional da Pessoa Jurídica, usado para empresas.
+##### cpf: Cadastro de Pessoa Física, usado para indivíduos.
+##### estado: Localização do usuário.
+##### nome: Nome do usuário.
+##### telefone: Número de telefone do usuário.
+##### email: Endereço de email do usuário.
+##### senha: Senha para autenticação.
+##### dataCriacao: Data em que o usuário foi cadastrado.
+##### dataUltimaAtualizacao: Data da última atualização das informações do usuário.
+##### dataDelecao: Data em que o usuário foi deletado (se aplicável).
+##### Tipos: Os usuários podem ser clientes ou administradores, com diferentes permissões no sistema.
+##### Métodos:
+##### cadastrar(): Método para registrar um novo usuário.
+##### autenticar(): Método para permitir que o usuário faça login.
+##### atualizarPerfil(): Método para atualizar as informações do usuário.
+#### QUADRAS (Quadras):
+
+#### Atributos:
+##### id-quadra: Identificador único para cada quadra.
+##### nome: Nome da quadra.
+##### tipo: Tipo de quadra (por exemplo, futebol, basquete).
+##### descricao: Descrição detalhada da quadra.
+##### localizacao: Localização física da quadra.
+##### disponibilidade: Indica se a quadra está disponível para reserva.
+##### Tipos: As quadras podem ser visualizadas por clientes e locatários.
+#### Métodos:
+##### verificarDisponibilidade(): Método para checar se a quadra está disponível em uma determinada data e horário.
+##### reservar(): Método para reservar a quadra.
+##### RESERVATIONS (Reservas):
+
+#### Atributos:
+##### id-reserva: Identificador único para cada reserva.
+##### data: Data da reserva.
+##### usuario: Referência ao usuário que fez a reserva.
+##### quadra: Referência à quadra que foi reservada.
+##### localizacao: Localização da quadra reservada.
+##### disponibilidade: Indica se a reserva está confirmada ou não.
+#### Tipos: As reservas podem ser gerenciadas por clientes e administradores.
+#### Métodos:
+##### confirmar(): Método para confirmar a reserva.
+##### cancelar(): Método para cancelar a reserva.
+### Relacionamentos
+#### USERS realiza RESERVATIONS: Um usuário pode fazer várias reservas.
+#### USERS reserva QUADRAS: Um usuário pode reservar várias quadras.
+#### RESERVATIONS está associado a QUADRAS: Cada reserva está ligada a uma quadra específica.
+### Conclusão
+#### Esse diagrama fornece uma visão clara da estrutura do sistema, mostrando como os usuários interagem com as quadras e as reservas. Ele é útil para entender a lógica de negócios do aplicativo e pode servir como base para o desenvolvimento do sistema.
+
 ## Projeto da Interface Web
 [Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
