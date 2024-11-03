@@ -130,10 +130,9 @@ Relacionamentos
 Usuários realizam várias reservas.
 Usuários podem reservar várias quadras.
 Cada reserva está ligada a uma quadra específica.
-Conclusão
-Este modelo ilustra a interação entre usuários, quadras e reservas, servindo como base para o desenvolvimento do sistema.
 ### Conclusão
-- Esse diagrama fornece uma visão clara da estrutura do sistema, mostrando como os usuários interagem com as quadras e as reservas. Ele é útil para entender a lógica de negócios do aplicativo e pode servir como base para o desenvolvimento do sistema.
+Este modelo ilustra a interação entre usuários, quadras e reservas, servindo como base para o desenvolvimento do sistema.
+
 
 ## Projeto da Interface Web
 [Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
