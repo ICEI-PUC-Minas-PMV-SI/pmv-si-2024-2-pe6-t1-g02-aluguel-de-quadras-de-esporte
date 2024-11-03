@@ -196,8 +196,6 @@ Atributos:
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
-
 
 ## Considerações de Segurança
 
