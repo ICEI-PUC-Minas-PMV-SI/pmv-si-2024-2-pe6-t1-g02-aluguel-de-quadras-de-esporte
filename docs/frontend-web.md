@@ -89,25 +89,29 @@ A aplicação é dividida em três camadas principais:
 Essa arquitetura modular e baseada em componentes permite uma manutenção e escalabilidade facilitadas. Cada componente possui uma responsabilidade clara, o que torna o código mais fácil de entender e modificar. Além disso, a separação da lógica de apresentação e gerenciamento de estado promove um desenvolvimento mais organizado e eficiente.
 ## Modelagem da Aplicação
 
-
-![Fluxograma (1)](https://github.com/user-attachments/assets/37e253b9-2710-4deb-a51a-f163de9d5770)
-
 ### A imagem mostra o diagrama de um banco de dados para um sistema de aluguel de quadras esportivas.
+![Fluxograma (1)](https://github.com/user-attachments/assets/37e253b9-2710-4deb-a51a-f163de9d5770)
 
 ### Existem três tabelas:
 
-Usuários Cadastro: Armazena informações sobre os usuários do sistema, como nome, CPF, data de criação, etc. Também define os tipos de usuários: "cliente" ou "administrador". Os administradores têm acesso a funcionalidades adicionais, como gerenciar quadras e usuários.
-
-Quadra: Armazena informações sobre as quadras esportivas disponíveis para aluguel, como nome, tipo, localização, descrição, e se está disponível. Além disso, define as funções "verificarDisponibilidade" e "reservar".
-
-Reserva: Armazena informações sobre as reservas feitas pelos usuários, como data da reserva, usuário que fez a reserva, quadra reservada, localização da reserva, e se está disponível para o usuário. Também define as funções "confirmar" e "cancelar".
-
-As linhas que conectam as tabelas representam relacionamentos entre elas. Por exemplo, a tabela "Usuários Cadastro" tem uma relação com a tabela "Reserva" através do atributo "usuario".
+- Usuários Cadastro: Armazena informações sobre os usuários do sistema, como nome, CPF, data de criação, etc. Também define os tipos de usuários: "cliente" ou "administrador".
+- Os administradores têm acesso a funcionalidades adicionais, como gerenciar quadras e usuários.
+- Quadra: Armazena informações sobre as quadras esportivas disponíveis para aluguel, como nome, tipo, localização, descrição, e se está disponível.
+- Além disso, define as funções "verificarDisponibilidade" e "reservar".
+- Reserva: Armazena informações sobre as reservas feitas pelos usuários, como data da reserva, usuário que fez a reserva, quadra reservada, localização da reserva, e se está disponível para o usuário.
+- Também define as funções "confirmar" e "cancelar".
+- As linhas que conectam as tabelas representam relacionamentos entre elas.
+- Por exemplo, a tabela "Usuários Cadastro" tem uma relação com a tabela "Reserva" através do atributo "usuario".
 
 As operações definidas para cada tabela permitem a manipulação dos dados do sistema. As operações "verificarDisponibilidade" e "reservar" na tabela "Quadra" permitem controlar a disponibilidade das quadras, enquanto as operações "confirmar" e "cancelar" na tabela "Reserva" permitem gerenciar as reservas.
 
 
 ![image](https://github.com/user-attachments/assets/b869596a-c41f-420b-836b-02961454ac98)
+
+### A imagem mostra um diagrama de fluxo para um sistema de agendamento online.
+- O usuário começa acessando a página inicial, onde pode fazer login ou criar uma conta. 
+- Após o login, o usuário pode visualizar seus agendamentos, agendar novos, visualizar o catálogo de quadras ou alterar ou cancelar agendamentos existentes. 
+- A imagem também mostra os pontos finais da API usados pelo sistema.
 
 
 ## Projeto da Interface Web
@@ -169,6 +173,13 @@ A tela mostra seis quadras diferentes, com informações sobre localização, ti
 
 ![Captura de tela 2024-11-03 195721](https://github.com/user-attachments/assets/9025516d-14d2-4273-8cfe-f59b24378a23)
 
+### Tela Alterar Perfil
+
+- Esta é uma tela de atualização de perfil onde você pode atualizar suas informações pessoais, incluindo seu nome, telefone e senha.
+-  Depois de atualizar suas informações, você clica em "Atualizar perfil" e recebe a mensagem "Sucesso" para confirmar que seu perfil foi atualizado com sucesso.
+
+  
+![Captura de tela 2024-11-03 202816](https://github.com/user-attachments/assets/fac2b720-0839-446d-9b40-7e67933cdc7f)
 
 
 ### Design Visual
