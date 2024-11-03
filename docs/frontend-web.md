@@ -88,7 +88,7 @@ A aplicação é dividida em três camadas principais:
 
 Essa arquitetura modular e baseada em componentes permite uma manutenção e escalabilidade facilitadas. Cada componente possui uma responsabilidade clara, o que torna o código mais fácil de entender e modificar. Além disso, a separação da lógica de apresentação e gerenciamento de estado promove um desenvolvimento mais organizado e eficiente.
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
 
 ![Fluxograma (1)](https://github.com/user-attachments/assets/37e253b9-2710-4deb-a51a-f163de9d5770)
 
@@ -108,31 +108,6 @@ As operações definidas para cada tabela permitem a manipulação dos dados do 
 
 
 ![image](https://github.com/user-attachments/assets/b869596a-c41f-420b-836b-02961454ac98)
-
-
-O diagrama apresentado utiliza a notação Mermaid para descrever a estrutura de um sistema de gerenciamento de usuários e reservas de quadras esportivas. Aqui está uma explicação detalhada de cada componente:
-
-Entidades
-
-1. Usuários
-Atributos:
-id-usuario, cnpj, cpf, estado, nome, telefone, email, senha, dataCriacao, dataUltimaAtualizacao, dataDelecao.
-Tipos: Clientes e administradores.
-Métodos: cadastrar(), autenticar(), atualizarPerfil().
-2. Quadras
-Atributos:
-id-quadra, nome, tipo, descricao, localizacao, disponibilidade.
-Métodos: verificarDisponibilidade(), reservar().
-3. Reservas
-Atributos:
-id-reserva, data, usuario, quadra, localizacao, disponibilidade.
-Métodos: confirmar(), cancelar().
-Relacionamentos
-Usuários realizam várias reservas.
-Usuários podem reservar várias quadras.
-Cada reserva está ligada a uma quadra específica.
-### Conclusão
-Este modelo ilustra a interação entre usuários, quadras e reservas, servindo como base para o desenvolvimento do sistema.
 
 
 ## Projeto da Interface Web
