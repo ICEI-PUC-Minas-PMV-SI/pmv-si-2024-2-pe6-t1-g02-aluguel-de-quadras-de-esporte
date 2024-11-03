@@ -158,9 +158,9 @@ Atributos:
 ##### confirmar(): Método para confirmar a reserva.
 ##### cancelar(): Método para cancelar a reserva.
 ### Relacionamentos
-#### USERS realiza RESERVATIONS: Um usuário pode fazer várias reservas.
-#### USERS reserva QUADRAS: Um usuário pode reservar várias quadras.
-#### RESERVATIONS está associado a QUADRAS: Cada reserva está ligada a uma quadra específica.
+##### USERS realiza RESERVATIONS: Um usuário pode fazer várias reservas.
+##### USERS reserva QUADRAS: Um usuário pode reservar várias quadras.
+##### RESERVATIONS está associado a QUADRAS: Cada reserva está ligada a uma quadra específica.
 ### Conclusão
 #### Esse diagrama fornece uma visão clara da estrutura do sistema, mostrando como os usuários interagem com as quadras e as reservas. Ele é útil para entender a lógica de negócios do aplicativo e pode servir como base para o desenvolvimento do sistema.
 
@@ -186,7 +186,13 @@ Atributos:
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
+
+| ID     | Descrição do Requisito                         | Prioridade | Responsável     |
+| ------ | ---------------------------------------------- | ---------- | --------------- |
+| RF-001 | O sistema deve prover a gestão de usuários     | ALTA       | Bianca e Diego  |
+| RF-002 | O sistema deve prover o agendamento de quadras | ALTA       | Enzo e Henrique |
+| RF-003 | O sistema deve prover a gestão de quadras      | ALTA       | Lucas           |
+
 
 ## Requisitos Não Funcionais
 
