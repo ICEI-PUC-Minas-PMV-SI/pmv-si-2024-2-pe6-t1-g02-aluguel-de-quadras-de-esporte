@@ -216,9 +216,6 @@ Para garantir a segurança de uma aplicação distribuída no front-end, siga es
 -  Controle de Acesso: Aplique o princípio do menor privilégio nas exibições de informações e funcionalidades.
 - Proteção Contra Clickjacking: Use cabeçalhos HTTP como X-Frame-Options.
 - Segurança de APIs: Configure CORS de maneira restritiva para permitir apenas origens confiáveis.
-- Monitoramento e Auditoria: Implemente ferramentas de monitoramento para capturar problemas no front-end.
-- Educação e Conscientização: Promova treinamento de segurança para desenvolvedores.
-- Essas práticas ajudam a fortalecer a segurança do front-end contra diversas ameaças.
 
 ## Implantação
 
