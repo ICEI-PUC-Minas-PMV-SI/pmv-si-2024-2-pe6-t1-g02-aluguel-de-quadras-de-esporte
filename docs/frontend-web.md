@@ -115,54 +115,60 @@ Entidades
 USERS (Usuários):
 
 Atributos:
-##### id-usuários: Identificador único para cada usuário.
-##### cnpj: Cadastro Nacional da Pessoa Jurídica, usado para empresas.
-##### cpf: Cadastro de Pessoa Física, usado para indivíduos.
-##### estado: Localização do usuário.
-##### nome: Nome do usuário.
-##### telefone: Número de telefone do usuário.
-##### email: Endereço de email do usuário.
-##### senha: Senha para autenticação.
-##### dataCriacao: Data em que o usuário foi cadastrado.
-##### dataUltimaAtualizacao: Data da última atualização das informações do usuário.
-##### dataDelecao: Data em que o usuário foi deletado (se aplicável).
-##### Tipos: Os usuários podem ser clientes ou administradores, com diferentes permissões no sistema.
-##### Métodos:
-##### cadastrar(): Método para registrar um novo usuário.
-##### autenticar(): Método para permitir que o usuário faça login.
-##### atualizarPerfil(): Método para atualizar as informações do usuário.
-#### QUADRAS (Quadras):
+- id-usuários: Identificador único para cada usuário.
+- cnpj: Cadastro Nacional da Pessoa Jurídica, usado para empresas.
+- cpf: Cadastro de Pessoa Física, usado para indivíduos.
+- estado: Localização do usuário.
+- nome: Nome do usuário.
+- telefone: Número de telefone do usuário.
+- email: Endereço de email do usuário.
+- senha: Senha para autenticação.
+- dataCriacao: Data em que o usuário foi cadastrado.
+- dataUltimaAtualizacao: Data da última atualização das informações do usuário.
+- dataDelecao: Data em que o usuário foi deletado (se aplicável).
+  
+ Tipos: Os usuários podem ser clientes ou administradores, com diferentes permissões no sistema.
 
-#### Atributos:
-##### id-quadra: Identificador único para cada quadra.
-##### nome: Nome da quadra.
-##### tipo: Tipo de quadra (por exemplo, futebol, basquete).
-##### descricao: Descrição detalhada da quadra.
-##### localizacao: Localização física da quadra.
-##### disponibilidade: Indica se a quadra está disponível para reserva.
-##### Tipos: As quadras podem ser visualizadas por clientes e locatários.
-#### Métodos:
-##### verificarDisponibilidade(): Método para checar se a quadra está disponível em uma determinada data e horário.
-##### reservar(): Método para reservar a quadra.
-##### RESERVATIONS (Reservas):
+   Métodos:
+- cadastrar(): Método para registrar um novo usuário.
+- autenticar(): Método para permitir que o usuário faça login.
+-  atualizarPerfil(): Método para atualizar as informações do usuário.
 
-#### Atributos:
-##### id-reserva: Identificador único para cada reserva.
-##### data: Data da reserva.
-##### usuario: Referência ao usuário que fez a reserva.
-##### quadra: Referência à quadra que foi reservada.
-##### localizacao: Localização da quadra reservada.
-##### disponibilidade: Indica se a reserva está confirmada ou não.
-#### Tipos: As reservas podem ser gerenciadas por clientes e administradores.
-#### Métodos:
-##### confirmar(): Método para confirmar a reserva.
-##### cancelar(): Método para cancelar a reserva.
-### Relacionamentos
-##### USERS realiza RESERVATIONS: Um usuário pode fazer várias reservas.
-##### USERS reserva QUADRAS: Um usuário pode reservar várias quadras.
-##### RESERVATIONS está associado a QUADRAS: Cada reserva está ligada a uma quadra específica.
+    QUADRAS (Quadras):
+ Atributos:
+- id-quadra: Identificador único para cada quadra.
+- nome: Nome da quadra.
+- tipo: Tipo de quadra (por exemplo, futebol, basquete).
+- descricao: Descrição detalhada da quadra.
+- localizacao: Localização física da quadra.
+- disponibilidade: Indica se a quadra está disponível para reserva.
+  
+ Tipos: As quadras podem ser visualizadas por clientes e locatários.
+
+  Métodos:
+- verificarDisponibilidade(): Método para checar se a quadra está disponível em uma determinada data e horário.
+- reservar(): Método para reservar a quadra.
+
+  RESERVA (Reservas):
+ Atributos:
+- id-reserva: Identificador único para cada reserva.
+- data: Data da reserva.
+- usuario: Referência ao usuário que fez a reserva.
+- quadra: Referência à quadra que foi reservada.
+- localizacao: Localização da quadra reservada.
+- disponibilidade: Indica se a reserva está confirmada ou não.
+  
+ Tipos: As reservas podem ser gerenciadas por clientes e administradores.
+
+ Métodos:
+- confirmar(): Método para confirmar a reserva.
+- cancelar(): Método para cancelar a reserva.
+ Relacionamentos
+- USERS realiza RESERVATIONS: Um usuário pode fazer várias reservas.
+- USERS reserva QUADRAS: Um usuário pode reservar várias quadras.
+- RESERVA está associado a QUADRAS: Cada reserva está ligada a uma quadra específica.
 ### Conclusão
-#### Esse diagrama fornece uma visão clara da estrutura do sistema, mostrando como os usuários interagem com as quadras e as reservas. Ele é útil para entender a lógica de negócios do aplicativo e pode servir como base para o desenvolvimento do sistema.
+- Esse diagrama fornece uma visão clara da estrutura do sistema, mostrando como os usuários interagem com as quadras e as reservas. Ele é útil para entender a lógica de negócios do aplicativo e pode servir como base para o desenvolvimento do sistema.
 
 ## Projeto da Interface Web
 [Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
@@ -204,7 +210,20 @@ Atributos:
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+
+Para garantir a segurança de uma aplicação distribuída no front-end, siga estas recomendações:
+
+-  Autenticação Segura: Armazene tokens JWT em cookies seguros (HttpOnly e Secure) e implemente expiração de tokens.
+-  Proteção Contra XSS: Use bibliotecas como DOMPurify para sanitizar entradas e saídas, e implemente uma política de segurança de conteúdo (CSP).
+-  Comunicação Segura: Utilize HTTPS para proteger dados em trânsito.
+-  Validação de Dados: Valide dados no front-end e no servidor.
+- Gerenciamento de Sessões: Implemente timeout de sessão para desconectar usuários inativos.
+-  Controle de Acesso: Aplique o princípio do menor privilégio nas exibições de informações e funcionalidades.
+- Proteção Contra Clickjacking: Use cabeçalhos HTTP como X-Frame-Options.
+- Segurança de APIs: Configure CORS de maneira restritiva para permitir apenas origens confiáveis.
+- Monitoramento e Auditoria: Implemente ferramentas de monitoramento para capturar problemas no front-end.
+- Educação e Conscientização: Promova treinamento de segurança para desenvolvedores.
+- Essas práticas ajudam a fortalecer a segurança do front-end contra diversas ameaças.
 
 ## Implantação
 
