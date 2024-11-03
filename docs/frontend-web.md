@@ -198,7 +198,7 @@ A tela mostra seis quadras diferentes, com informações sobre localização, ti
 
 ### Design Visual
 A interface é organizada e limpa, com um estilo minimalista e profissional. 
-A paleta de cores é neutra, predominando o branco e o cinza, com detalhes em azul e verde. 
+A paleta de cores é neutra, predominando o branco e o preto, com detalhes em azul. 
 A tipografia é sans-serif, legível e fácil de ler. Os ícones são simples e intuitivos, representando claramente suas funções.
 A disposição das informações é organizada e lógica, facilitando a navegação. A interface prioriza a funcionalidade e a clareza, proporcionando uma experiência de usuário agradável e eficiente.
 
