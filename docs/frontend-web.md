@@ -107,7 +107,7 @@ As linhas que conectam as tabelas representam relacionamentos entre elas. Por ex
 As operações definidas para cada tabela permitem a manipulação dos dados do sistema. As operações "verificarDisponibilidade" e "reservar" na tabela "Quadra" permitem controlar a disponibilidade das quadras, enquanto as operações "confirmar" e "cancelar" na tabela "Reserva" permitem gerenciar as reservas.
 
 
-![Diagrama de caso de uso (2)](https://github.com/user-attachments/assets/c86e4a73-8a78-4931-8861-7c9f38d8ca13)
+![Diagrama de caso de uso (3)](https://github.com/user-attachments/assets/e821c5e2-ccd1-4865-af59-05eb631e4268)
 
 O diagrama apresentado utiliza a notação Mermaid para descrever a estrutura de um sistema de gerenciamento de usuários e reservas de quadras esportivas. Aqui está uma explicação detalhada de cada componente:
 
