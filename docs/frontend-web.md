@@ -135,8 +135,26 @@ Este modelo ilustra a interação entre usuários, quadras e reservas, servindo 
 
 
 ## Projeto da Interface Web
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+![Captura de tela 2024-11-03 194227](https://github.com/user-attachments/assets/e50fe27a-9f4a-410d-a885-5c4d0abfe321)
+A interface da Web apresenta um design clean e moderno, com foco na simplicidade e usabilidade. As cores claras e o uso de imagens minimalistas criam uma experiência visual agradável e intuitiva.
 
+Layout das Páginas:
+
+Página Inicial: A página inicial apresenta um título chamativo "Simplifique o gerenciamento de suas quadras", seguido de uma breve descrição dos benefícios da plataforma. Um botão de destaque "Comece agora" convida o usuário a iniciar o processo de cadastro ou login.
+Funcionalidades: Uma seção dedicada a apresentar as funcionalidades da plataforma, divididas em cards com ícones representativos, título e breve descrição de cada funcionalidade.
+Outras Páginas: A interface provavelmente inclui outras páginas como login/cadastro, perfil do usuário, administração de quadras, agendamento, etc. O layout dessas páginas deve manter a mesma estética e organização da página inicial.
+Interações do Usuário:
+
+Navegação: A navegação da interface é intuitiva, com menus simples e botões claros para acesso às diferentes áreas da plataforma.
+Formulários: Os formulários para cadastro, login e agendamento são simples e diretos, com campos intuitivos e mensagens de erro claras.
+Busca: A interface provavelmente inclui uma funcionalidade de busca para facilitar a localização de quadras e informações relevantes.
+Outros Aspectos:
+
+Responsividade: A interface é responsiva, adaptando-se automaticamente a diferentes tamanhos de tela, garantindo uma experiência otimizada em desktops, tablets e smartphones.
+Segurança: A plataforma deve garantir a segurança dos dados dos usuários, implementando medidas de proteção como criptografia de dados e autenticação de dois fatores.
+Em resumo:
+
+A interface da Web é bem projetada, com foco na simplicidade, usabilidade e segurança. A organização do conteúdo, o design visual e a interação intuitiva garantem uma experiência positiva para o usuário, facilitando o gerenciamento de suas quadras.
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
@@ -145,7 +163,30 @@ Este modelo ilustra a interação entre usuários, quadras e reservas, servindo 
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+
+Resumo da Responsividade da Interface
+Layout Flexível:
+
+O layout se ajusta automaticamente ao tamanho da tela, reorganizando texto, imagens e botões de forma inteligente.
+Media Queries:
+
+Implementação de media queries no CSS para otimizar o estilo em dispositivos móveis, tablets e desktops.
+Imagens Responsivas:
+
+Uso do atributo "srcset" para carregar versões adequadas das imagens conforme o tamanho da tela, evitando arquivos muito grandes em dispositivos menores.
+Navegação:
+
+Menu Hambúrguer: Menu de navegação principal substituído por um menu suspenso em telas menores.
+Botões de Ação: Posicionados estrategicamente para fácil acesso.
+Gestão de Toque: Interface otimizada para interação por toque, com elementos suficientemente grandes.
+Conteúdo:
+
+Texto conciso e legível em diferentes tamanhos de tela, com uso estratégico de elementos visuais.
+Testes:
+
+Testes realizados em diversos dispositivos e navegadores para garantir compatibilidade e funcionalidade.
+Conclusão
+Essas adaptações garantem uma interface responsiva e fácil de usar, proporcionando uma experiência consistente e agradável em todos os dispositivos.
 
 ### Interações do Usuário
 [Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
@@ -241,7 +282,7 @@ Armazenamento provisionado de alta performance (IOPS) para garantir baixo tempo 
 #### Software:
 
 #### Frontend (Aplicação Mobile e Web):
-React Native (mobile) e tecnologias web padrão como HTML5, CSS3 e JavaScript.
+React Native (mobile) e tecnologias web padrão React com TypeScript.
 Ferramentas de build para empacotar o app e prepará-lo para produção.
 
 #### Backend (ECS):
