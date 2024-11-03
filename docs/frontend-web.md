@@ -112,61 +112,26 @@ As operações definidas para cada tabela permitem a manipulação dos dados do 
 O diagrama apresentado utiliza a notação Mermaid para descrever a estrutura de um sistema de gerenciamento de usuários e reservas de quadras esportivas. Aqui está uma explicação detalhada de cada componente:
 
 Entidades
- ### Usuários:
 
+1. Usuários
 Atributos:
-- id-usuários: Identificador único para cada usuário.
-- cnpj: Cadastro Nacional da Pessoa Jurídica, usado para empresas.
-- cpf: Cadastro de Pessoa Física, usado para indivíduos.
-- estado: Localização do usuário.
-- nome: Nome do usuário.
-- telefone: Número de telefone do usuário.
-- email: Endereço de email do usuário.
-- senha: Senha para autenticação.
-- dataCriacao: Data em que o usuário foi cadastrado.
-- dataUltimaAtualizacao: Data da última atualização das informações do usuário.
-- dataDelecao: Data em que o usuário foi deletado (se aplicável).
-  
- Tipos: Os usuários podem ser clientes ou administradores, com diferentes permissões no sistema.
-
-   Métodos:
-- cadastrar(): Método para registrar um novo usuário.
-- autenticar(): Método para permitir que o usuário faça login.
--  atualizarPerfil(): Método para atualizar as informações do usuário.
-
-  ###  QUADRAS (Quadras):
- Atributos:
-- id-quadra: Identificador único para cada quadra.
-- nome: Nome da quadra.
-- tipo: Tipo de quadra (por exemplo, futebol, basquete).
-- descricao: Descrição detalhada da quadra.
-- localizacao: Localização física da quadra.
-- disponibilidade: Indica se a quadra está disponível para reserva.
-  
- Tipos: As quadras podem ser visualizadas por clientes e locatários.
-
-  Métodos:
-- verificarDisponibilidade(): Método para checar se a quadra está disponível em uma determinada data e horário.
-- reservar(): Método para reservar a quadra.
-
-###  RESERVA (Reservas):
- Atributos:
-- id-reserva: Identificador único para cada reserva.
-- data: Data da reserva.
-- usuario: Referência ao usuário que fez a reserva.
-- quadra: Referência à quadra que foi reservada.
-- localizacao: Localização da quadra reservada.
-- disponibilidade: Indica se a reserva está confirmada ou não.
-  
- Tipos: As reservas podem ser gerenciadas por clientes e administradores.
-
- Métodos:
-- confirmar(): Método para confirmar a reserva.
-- cancelar(): Método para cancelar a reserva.
- Relacionamentos
-- USERS realiza RESERVATIONS: Um usuário pode fazer várias reservas.
-- USERS reserva QUADRAS: Um usuário pode reservar várias quadras.
-- RESERVA está associado a QUADRAS: Cada reserva está ligada a uma quadra específica.
+id-usuario, cnpj, cpf, estado, nome, telefone, email, senha, dataCriacao, dataUltimaAtualizacao, dataDelecao.
+Tipos: Clientes e administradores.
+Métodos: cadastrar(), autenticar(), atualizarPerfil().
+2. Quadras
+Atributos:
+id-quadra, nome, tipo, descricao, localizacao, disponibilidade.
+Métodos: verificarDisponibilidade(), reservar().
+3. Reservas
+Atributos:
+id-reserva, data, usuario, quadra, localizacao, disponibilidade.
+Métodos: confirmar(), cancelar().
+Relacionamentos
+Usuários realizam várias reservas.
+Usuários podem reservar várias quadras.
+Cada reserva está ligada a uma quadra específica.
+Conclusão
+Este modelo ilustra a interação entre usuários, quadras e reservas, servindo como base para o desenvolvimento do sistema.
 ### Conclusão
 - Esse diagrama fornece uma visão clara da estrutura do sistema, mostrando como os usuários interagem com as quadras e as reservas. Ele é útil para entender a lógica de negócios do aplicativo e pode servir como base para o desenvolvimento do sistema.
 
