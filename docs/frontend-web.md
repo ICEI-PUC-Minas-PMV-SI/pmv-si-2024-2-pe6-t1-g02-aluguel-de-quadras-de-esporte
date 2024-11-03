@@ -158,7 +158,26 @@ Em resumo:
 A interface da Web é bem projetada, com foco na simplicidade, usabilidade e segurança. A organização do conteúdo, o design visual e a interação intuitiva garantem uma experiência positiva para o usuário, facilitando o gerenciamento de suas quadras.
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+
+ ### Tela Inicial
+ Este é um website para um sistema de gerenciamento de quadras esportivas. Ele oferece uma solução completa para gerenciar e alugar quadras, com funcionalidades como reserva online, acesso 24 horas e gerenciamento de múltiplos usuários. O website se destaca por sua interface simples e intuitiva, e por oferecer uma solução completa para as necessidades das quadras esportivas.
+
+ 
+![Captura de tela 2024-11-03 194227](https://github.com/user-attachments/assets/2663d593-144b-4111-a316-905255db46cb)
+
+### Tela Login
+A imagem mostra uma tela de login para um aplicativo chamado "Gestão de quadras esportivas". O aplicativo permite que os usuários gerenciem seus horários com facilidade. A tela de login solicita o email e a senha do usuário. Os usuários podem entrar ou criar uma nova conta.
+
+
+![Captura de tela 2024-11-03 195354](https://github.com/user-attachments/assets/813df6cf-c207-4c3e-87b2-3795dbc5c0ef)
+
+### Tela Cadastro de Usuário
+A imagem mostra um formulário de cadastro de usuário em português, com campos para inserir nome, telefone, email, senha, confirmar senha, tipo de documento (CPF ou CNPJ) e número de CPF. No final, tem um botão "Cadastrar".
+
+![Captura de tela 2024-11-03 195410](https://github.com/user-attachments/assets/5ac9a8d0-526d-4d28-9852-21397c008041)
+
+### Tela
+
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
