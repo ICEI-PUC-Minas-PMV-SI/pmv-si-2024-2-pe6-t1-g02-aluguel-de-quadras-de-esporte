@@ -215,7 +215,22 @@ Conclusão
 Essas adaptações garantem uma interface responsiva e fácil de usar, proporcionando uma experiência consistente e agradável em todos os dispositivos.
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+Para melhorar a experiência do usuário, as seguintes interações:
+
+Animações:
+
+Feedback visual: Quando o usuário digita em um campo, a borda do campo pode ser animada para mostrar que o input está sendo recebido.
+Botão: Ao clicar no botão "Atualizar Perfil", ele pode ter uma leve animação de pressionamento, como afundamento ou mudança de cor, para dar feedback visual imediato.
+Mensagem de sucesso: A mensagem de sucesso pode aparecer com uma animação de entrada suave, como um slide para cima ou um fade-in.
+Transições entre páginas:
+
+Após o clique no botão "Atualizar Perfil": Uma transição suave, como um fade-out do formulário e um fade-in da mensagem de sucesso, pode ser aplicada para tornar a mudança de tela mais agradável.
+Outras interações:
+
+Validação dos campos: Ao digitar nos campos, pode haver validação em tempo real para indicar erros, como campos obrigatórios ou formatos incorretos. A validação pode ser feita com mensagens de erro animadas próximas aos campos.
+Ajuda: Um ícone de ajuda ou um link para um FAQ pode ser adicionado ao lado de cada campo para fornecer mais informações sobre como preencher o campo.
+Carregamento: Durante o envio do formulário, um indicador de carregamento pode ser mostrado para indicar que a atualização está em andamento.
+Essas interações ajudam a tornar a experiência do usuário mais interativa e agradável, além de oferecer feedback claro sobre o status do processo de atualização do perfil.
 
 ## Fluxo de Dados
 
