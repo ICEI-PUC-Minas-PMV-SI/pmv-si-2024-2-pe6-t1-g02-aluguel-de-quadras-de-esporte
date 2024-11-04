@@ -217,20 +217,37 @@ Essas adaptações garantem uma interface responsiva e fácil de usar, proporcio
 ### Interações do Usuário
 Para melhorar a experiência do usuário, as seguintes interações:
 
-Animações:
+Login e Autenticação:
+- Animação de Transição: Ao enviar as credenciais, a tela de login pode desvanecer, revelando uma tela de carregamento.
+- Feedback Visual: Um spinner ou indicador de progresso é exibido enquanto a autenticação está em processo.
+  
+Navegação entre Páginas:
+- Transições Suaves: Ao navegar entre páginas, como de "Reservas" para "Perfil", utiliza-se animações de deslizamento ou desvanecimento para uma experiência fluida.
+- Barra de Navegação: A página atual é destacada com uma animação de mudança de cor ou um efeito de sublinhado, facilitando a navegação.
+  
+Formulários e Validação:
+- Validação em Tempo Real: Campos de entrada mostram animações ao interagir, com bordas vermelhas para erros e bordas verdes para sucesso.
+- Transições de Sucesso: Após o envio de um formulário, uma animação de confirmação, como um "check" animado, aparece para indicar que a ação foi bem-sucedida.
+  
+Interações com Listagens:
+- Efeitos de Hover: Itens na lista de quadras (como disponibilidade e preços) têm animações de destaque ao passar o mouse, como leve aumento ou mudança de cor.
+- Expansão de Detalhes: Ao clicar em uma quadra, detalhes adicionais são exibidos com uma animação suave de expansão.
+  
+Feedback de Ações:
+- Notificações: Mensagens de sucesso ou erro (por exemplo, reserva confirmada ou cancelada) aparecem como notificações animadas no canto da tela.
+- Animações de Carregamento: Ao realizar ações que demandam tempo, como salvar uma reserva, uma animação de carregamento é exibida.
+  
+Responsividade:
+- Adaptação de Layout: Ao redimensionar a tela, animações ajustam o layout, reorganizando elementos de forma suave.
+- Menu Hambúrguer: Em dispositivos móveis, um menu hambúrguer é utilizado, com animação de deslizamento ao abrir.
+  
+Logout:
+- Animação de Saída: Ao clicar em logout, a interface utiliza uma animação de desvanecimento, retornando à tela de login.
+  
+Conclusão
 
-Feedback visual: Quando o usuário digita em um campo, a borda do campo pode ser animada para mostrar que o input está sendo recebido.
-Botão: Ao clicar no botão "Atualizar Perfil", ele pode ter uma leve animação de pressionamento, como afundamento ou mudança de cor, para dar feedback visual imediato.
-Mensagem de sucesso: A mensagem de sucesso pode aparecer com uma animação de entrada suave, como um slide para cima ou um fade-in.
-Transições entre páginas:
+Essas interações e animações melhoram a experiência do usuário, tornando a aplicação mais envolvente e intuitiva, guiando o usuário de maneira clara durante o processo de reserva de quadras esportivas.
 
-Após o clique no botão "Atualizar Perfil": Uma transição suave, como um fade-out do formulário e um fade-in da mensagem de sucesso, pode ser aplicada para tornar a mudança de tela mais agradável.
-Outras interações:
-
-Validação dos campos: Ao digitar nos campos, pode haver validação em tempo real para indicar erros, como campos obrigatórios ou formatos incorretos. A validação pode ser feita com mensagens de erro animadas próximas aos campos.
-Ajuda: Um ícone de ajuda ou um link para um FAQ pode ser adicionado ao lado de cada campo para fornecer mais informações sobre como preencher o campo.
-Carregamento: Durante o envio do formulário, um indicador de carregamento pode ser mostrado para indicar que a atualização está em andamento.
-Essas interações ajudam a tornar a experiência do usuário mais interativa e agradável, além de oferecer feedback claro sobre o status do processo de atualização do perfil.
 
 ## Fluxo de Dados
 
@@ -306,7 +323,7 @@ Para garantir a segurança de uma aplicação distribuída no front-end, siga es
 Serviços de front-end podem ser hospedados em servidores web com capacidade suficiente para suportar a carga esperada de usuários. Requisitos típicos:
 2 a 4 vCPUs.
 4 a 8 GB de RAM.
-Armazenamento SSD de alta performance para servir rapidamente os arquivos de front-end (HTML, CSS, JS).
+Armazenamento SSD de alta performance para servir rapidamente os arquivos de front-end (TypeScript, CSS, JS).
 
 #### ECS (Serviços Backend):
 
