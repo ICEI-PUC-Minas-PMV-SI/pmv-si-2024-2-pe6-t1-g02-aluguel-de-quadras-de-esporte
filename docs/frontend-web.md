@@ -217,9 +217,6 @@ Essas adaptações garantem uma interface responsiva e fácil de usar, proporcio
 ### Interações do Usuário
 Para melhorar a experiência do usuário, as seguintes interações:
 
-Login e Autenticação:
-- Animação de Transição: Ao enviar as credenciais, a tela de login pode desvanecer, revelando uma tela de carregamento.
-
 Navegação entre Páginas:
 - Transições Suaves: Ao navegar entre páginas, como de "Reservas" para "Perfil", utiliza-se animações de deslizamento ou desvanecimento para uma experiência fluida.
 - Barra de Navegação: A página atual é destacada com uma animação de mudança de cor ou um efeito de sublinhado, facilitando a navegação.
