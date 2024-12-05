@@ -18,6 +18,21 @@ O objetivo principal é criar uma interface intuitiva e responsiva, que facilite
 
 [Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
 
+### 1. Camadas da Arquitetura 
+#### 1.1. Frontend (React Native):
+Responsável pela interface do usuário e pela interação com o back-end via API.
+### Principais componentes:
+App Component: Contém o estado global (se necessário) e configurações iniciais, como provedores de contexto e navegação.
+### Navegação:
+* Stack Navigation: Para fluxos autenticados (ex.: reserva).
+* Tab Navigation: Para navegação principal (ex.: home, perfil, histórico).
+### Tela de Busca:
+* Módulo para listar quadras próximas, com integração ao Google Maps.
+* Filtros dinâmicos por localização, tipo de quadra e horário.
+### Tela de Detalhes:
+* Exibe informações detalhadas da quadra (preço, fotos, avaliações).
+* Botão para reservar.
+
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
