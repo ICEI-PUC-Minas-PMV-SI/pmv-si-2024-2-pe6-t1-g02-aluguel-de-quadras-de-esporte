@@ -35,6 +35,19 @@ App Component: Contém o estado global (se necessário) e configurações inicia
 
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+### A imagem mostra o diagrama de um banco de dados para um sistema de aluguel de quadras esportivas.
+![Fluxograma (1)](https://github.com/user-attachments/assets/37e253b9-2710-4deb-a51a-f163de9d5770)
+
+### Existem três tabelas:
+
+- Usuários Cadastro: Armazena informações sobre os usuários do sistema, como nome, CPF, data de criação, etc. Também define os tipos de usuários: "cliente" ou "administrador".
+- Os administradores têm acesso a funcionalidades adicionais, como gerenciar quadras e usuários.
+- Quadra: Armazena informações sobre as quadras esportivas disponíveis para aluguel, como nome, tipo, localização, descrição, e se está disponível.
+- Além disso, define as funções "verificarDisponibilidade" e "reservar".
+- Reserva: Armazena informações sobre as reservas feitas pelos usuários, como data da reserva, usuário que fez a reserva, quadra reservada, localização da reserva, e se está disponível para o usuário.
+- Também define as funções "confirmar" e "cancelar".
+- As linhas que conectam as tabelas representam relacionamentos entre elas.
+- Por exemplo, a tabela "Usuários Cadastro" tem uma relação com a tabela "Reserva" através do atributo "usuario".
 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
