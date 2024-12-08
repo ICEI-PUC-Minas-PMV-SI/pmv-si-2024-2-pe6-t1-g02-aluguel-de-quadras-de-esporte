@@ -239,8 +239,37 @@ As diferenças entre elas demonstram a evolução do processo de atualização.
 * Campos: Nome, Telefone, Nova Senha e Confirmar Nova Senha.
 * Observação: A tela apresenta a mensagem "As senhas devem ser iguais", indicando que a nova senha e a confirmação são diferentes. As senhas inseridas aparecem como "..." para manter a confidencialidade.
 *Conclusão:
+
 As três telas representam um processo iterativo de atualização de perfil, guiando o usuário na entrada de informações e validando a nova senha para garantir a segurança da conta.
 
+#### Agendamentos
+![Captura de tela 2024-12-08 163548](https://github.com/user-attachments/assets/66c98fc3-e2d3-4530-99d3-21025fe33ac5)
+
+A imagem mostra três telas de um sistema de agendamento, cada uma representando uma funcionalidade específica:
+#### 1. Gestão de Agendamentos:
+* Exibe uma lista com os agendamentos realizados.
+* Cada agendamento contém informações como:
+* Quadra
+* Data
+* Horário
+* Local
+* Permite cancelar um agendamento individualmente.
+* Permite editar um agendamento (a tela de edição é mostrada na segunda imagem).
+#### 2. Alterar Data e Hora:
+* Permite editar a data e hora de um agendamento específico.
+* Mostra a data e hora atuais do agendamento.
+* Permite selecionar a nova data e hora.
+* Oferece a opção de salvar as alterações no agendamento.
+#### 3. Cancelar Agendamento:
+* Exibe uma lista com os agendamentos realizados.
+* Cada agendamento contém informações como:
+* Quadra
+* Data
+* Horário
+* Local
+* Permite cancelar todos os agendamentos de uma vez.
+* Indica os agendamentos que já foram cancelados.
+As três telas trabalham juntas para oferecer ao usuário uma experiência completa de gerenciamento de agendamentos.
 ### Design Visual
 O estilo visual da interface combina um tema escuro elegante com elementos visuais minimalistas. 
 
