@@ -207,10 +207,20 @@ Campos:
 * Senha (com validação "Informe sua senha")
 * CPF (com validação "Digite seu CPF")
 * Botão: Cadastrar
+
 Descrição: Esta tela mostra a validação dos campos de input. Ela destaca a importância de inserir informações válidas, como um número de telefone válido.
 Conclusão:
 * Tela 1 - Coleta as informações do usuário para cadastro.
 * Tela 2 - Exibe a validação dos campos de input, garantindo a integridade dos dados inseridos.
+  #### Interface
+  ![Captura de tela 2024-12-08 162206](https://github.com/user-attachments/assets/328f9dde-c5d8-46d7-a580-e853f33910c6)
+ ### App Mobile - Interface
+Objetivo: Ajudar o usuário a encontrar e reservar quadras esportivas.
+* Seus Agendamentos: Acesso à lista de reservas.
+* Perfil: Acesso ao perfil do usuário.
+Conclusão: A interface do app é simples, clean e fácil de usar.
+
+As imagens atrativas e o texto informativo convidam o usuário a explorar as funcionalidades do app.
 
 ### Design Visual
 O estilo visual da interface combina um tema escuro elegante com elementos visuais minimalistas. 
