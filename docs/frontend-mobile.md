@@ -81,6 +81,58 @@ O objetivo principal é criar uma interface intuitiva e responsiva, que facilite
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
+#### Design Visual
+Estilo Minimalista:
+* Tons escuros (tema "dark mode"), criando um visual moderno e agradável para uso prolongado.
+* Contraste bem definido: botões em azul vibrante destacam as ações principais, enquanto mensagens de erro aparecem em vermelho para chamar atenção.
+#### Espaçamento e Organização:
+* Elementos bem espaçados para evitar toques acidentais.
+* Layout limpo, sem distrações visuais.
+#### Layout das Páginas
+A interface é estruturada de forma consistente, com uma hierarquia clara e foco nas funcionalidades principais.
+Tela de Login (Principal)
+Componentes:
+* Título:
+"Bem-vindo(a)" aparece no topo da tela, centralizado, com destaque visual (tamanho maior e contraste).
+* Campos de Entrada:
+E-mail: Campo para inserir o e-mail, com validação em tempo real.
+Senha: Campo para inserir a senha, com máscara de proteção para ocultar os caracteres digitados.
+* Botões:
+Acessar: Botão principal para login, destacado em azul.
+Cadastrar: Botão secundário, em cinza, posicionado logo abaixo.
+* Mensagens de Validação/Erro:
+Mensagens em vermelho exibidas abaixo dos campos para indicar erros, como e-mail inválido ou credenciais incorretas.
+#### Feedback Visual:
+* Bordas dos campos e mensagens de erro mudam dinamicamente conforme a interação do usuário.
+* Pop-up ou tooltip para mensagens de erro gerais (e.g., "Erro no login - Credenciais inválidas").
+* Tela de Cadastro (Sugestão)
+Embora não exibida na imagem, é provável que a aplicação tenha uma tela de cadastro semelhante, com:
+Campos adicionais, como nome completo, confirmação de senha, etc.
+* Botão para voltar à tela de login.
+#### Interações do Usuário
+Validações em Tempo Real:
+* Campos de entrada verificam erros ao perder o foco (e.g., e-mail inválido ou campos vazios).
+* Mensagens de erro aparecem imediatamente, ajudando o usuário a corrigir problemas antes de tentar o login.
+Navegação:
+* Toque no botão Cadastrar redireciona para uma tela de cadastro.
+* Após o login bem-sucedido, o usuário é redirecionado para a página inicial da aplicação.
+  Estado do Botão "Acessar":
+* Desativado enquanto os campos obrigatórios estão vazios.
+* Ativado somente após validações bem-sucedidas.
+Exibição de Erros no Login:
+* Em caso de credenciais incorretas, um pop-up exibe o erro ("Erro de login - Credenciais inválidas"), com opção para tentar novamente.
+#### Aspectos Relevantes
+Acessibilidade:
+* Uso de labels e descrições claras para auxiliar usuários com deficiências visuais.
+* Alto contraste e tamanhos de toque adequados para facilitar a navegação.
+Responsividade:
+I* nterface ajustável para diferentes tamanhos de tela, garantindo uma boa experiência tanto em smartphones pequenos quanto em dispositivos maiores.
+Conectividade:
+* Design preparado para funcionar em cenários online e offline:
+* Feedback apropriado caso o dispositivo esteja sem conexão.
+Resumo
+A interface combina funcionalidade e design visual moderno, mantendo foco na usabilidade e na experiência do usuário. As validações e interações dinâmicas garantem que os usuários recebam feedback imediato e claro, minimizando erros e frustrações. O layout simples, aliado a cores e tipografia bem escolhidas, resulta em um aplicativo móvel profissional e intuitivo.
+
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
