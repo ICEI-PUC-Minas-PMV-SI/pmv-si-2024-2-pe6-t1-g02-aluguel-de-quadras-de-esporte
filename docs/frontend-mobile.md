@@ -221,6 +221,25 @@ Objetivo: Ajudar o usuário a encontrar e reservar quadras esportivas.
 Conclusão: A interface do app é simples, clean e fácil de usar.
 
 As imagens atrativas e o texto informativo convidam o usuário a explorar as funcionalidades do app.
+#### Atualizar Perfil
+![Captura de tela 2024-12-08 162929](https://github.com/user-attachments/assets/fd7e2a2d-e788-494c-9d8d-ed3a8abca221)
+
+A imagem apresenta três telas diferentes de um aplicativo, todas com o objetivo de atualizar um perfil.
+As diferenças entre elas demonstram a evolução do processo de atualização.
+#### Tela 1 - Recuperaçao de Informações:
+* Objetivo: Solicitar as informações básicas do usuário para atualizar o perfil.
+* Campos: Nome, Telefone e Nova Senha.
+* Observação: A tela solicita a nova senha sem validação inicial.
+#### Tela 2 - Validação de Senha:
+* Objetivo: Validar a nova senha informada pelo usuário.
+* Campos: Nome, Telefone, Nova Senha e Confirmar Nova Senha.
+* Observação: A tela apresenta a mensagem "Informe sua senha", indicando que a senha inicial não foi considerada válida. A confirmação da nova senha é solicitada, garantindo que o usuário digite a senha corretamente.
+#### Tela 3 - Validação de Senha (2):
+* Objetivo: Validar a nova senha informada pelo usuário.
+* Campos: Nome, Telefone, Nova Senha e Confirmar Nova Senha.
+* Observação: A tela apresenta a mensagem "As senhas devem ser iguais", indicando que a nova senha e a confirmação são diferentes. As senhas inseridas aparecem como "..." para manter a confidencialidade.
+*Conclusão:
+As três telas representam um processo iterativo de atualização de perfil, guiando o usuário na entrada de informações e validando a nova senha para garantir a segurança da conta.
 
 ### Design Visual
 O estilo visual da interface combina um tema escuro elegante com elementos visuais minimalistas. 
