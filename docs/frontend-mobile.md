@@ -191,7 +191,8 @@ Erro no Login:
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+* A segurança da aplicação será garantida por uma combinação de autenticação robusta, autorização cuidadosa, criptografia, proteção contra ataques comuns e boas práticas de desenvolvimento. 
+* Isso não apenas protegerá os dados do usuário, mas também manterá a confiança na aplicação e evitará riscos legais ou de reputação.
 
 ## Implantação
 
