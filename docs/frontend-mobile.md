@@ -142,6 +142,7 @@ O estilo visual da interface combina um tema escuro elegante com elementos visua
 A paleta de cores equilibrada e a tipografia limpa proporcionam uma experiência agradável e profissional, enquanto o uso de feedback dinâmico e ícones melhora a usabilidade e acessibilidade da aplicação.
 ### Layout Responsivo
 A interface será altamente flexível e otimizada para atender às necessidades de diferentes dispositivos e tamanhos de tela. 
+
 O uso de design responsivo, elementos escaláveis, e técnicas específicas de otimização garantirá que a aplicação funcione perfeitamente, oferecendo uma experiência de usuário consistente e agradável em qualquer dispositivo.
 
 ### Interações do Usuário
