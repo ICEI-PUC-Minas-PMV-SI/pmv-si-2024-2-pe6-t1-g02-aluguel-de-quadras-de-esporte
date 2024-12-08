@@ -305,7 +305,19 @@ Erro no Login:
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+1. **Carregamento de Dados**: A página inicial (`Home.tsx`) carrega uma lista de quadras a partir de uma API ou de dados locais e passa essas informações para o `CourtList.tsx`.
+
+2. **Navegação**: O usuário pode clicar em um `CourtCard` para ser redirecionado para `CourtDetails.tsx`, onde detalhes adicionais são exibidos.
+
+3. **Reserva**: Ao optar por reservar uma quadra, o usuário é redirecionado para `Booking.tsx`, onde pode confirmar a reserva. Os dados da reserva são gerenciados na camada de estado.
+
+4. **Atualização de Estado**: Após a confirmação da reserva, a aplicação pode atualizar a lista de quadras disponíveis, refletindo a nova disponibilidade.
+
+### Considerações Finais
+
+Essa arquitetura modular e baseada em componentes permite uma manutenção e escalabilidade facilitadas. Cada componente possui uma responsabilidade clara, o que torna o código mais fácil de entender e modificar. Além disso, a separação da lógica de apresentação e gerenciamento de estado promove um desenvolvimento mais organizado e eficiente.
+## Modelagem da Aplicação
+
 
 ## Requisitos Funcionais
 
