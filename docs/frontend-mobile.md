@@ -14,14 +14,14 @@ Front-end Móvel para Aplicação de Aluguel de Quadras Esportivas
 
 
 ## Tecnologias Utilizadas
+* React Native: Base do desenvolvimento mobile.
+* react-navigation: Gerenciamento de rotas e navegação.
+* react-native-toast-message: Exibição de notificações de erro, sucesso ou informações.
+* axios: Para realizar chamadas à API.
+* styled-components: Para estilização.
+* react-hook-form: Para gerenciamento de formulários.
+* yup: Validação de formulários.
 
-### Front-end (Camada de Apresentação)
-#### Frameworks/Plataformas :
-* React Native:  Usado para desenvolvimento de aplicações móveis multiplataforma (Android e iOS). Suporta componentes estilizados e integração com back-end via APIs.
-* Flutter: Opção  para multiplataforma, com foco em interfaces responsivas e fluídas.
-* Kotlin (Android) ou Swift (iOS): Para aplicativos desenvolvidos diretamente nas linguagens nativas das plataformas.
-  #### Estilização:
-* Uso de CSS-in-JS (React Native) ou widgets específicos no Flutter para estilização.
 #### Validações no Cliente:
 * E-mail: Uso de expressões regulares para verificar o formato do e-mail.
 * Campos obrigatórios: Validações básicas realizadas com código JavaScript (React Native) ou Dart (Flutter).
