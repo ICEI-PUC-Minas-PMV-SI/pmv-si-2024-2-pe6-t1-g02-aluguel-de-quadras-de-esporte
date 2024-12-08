@@ -126,7 +126,7 @@ Acessibilidade:
 * Uso de labels e descrições claras para auxiliar usuários com deficiências visuais.
 * Alto contraste e tamanhos de toque adequados para facilitar a navegação.
 Responsividade:
-I* nterface ajustável para diferentes tamanhos de tela, garantindo uma boa experiência tanto em smartphones pequenos quanto em dispositivos maiores.
+* Interface ajustável para diferentes tamanhos de tela, garantindo uma boa experiência tanto em smartphones pequenos quanto em dispositivos maiores.
 Conectividade:
 * Design preparado para funcionar em cenários online e offline:
 * Feedback apropriado caso o dispositivo esteja sem conexão.
@@ -137,8 +137,9 @@ A interface combina funcionalidade e design visual moderno, mantendo foco na usa
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+O estilo visual da interface combina um tema escuro elegante com elementos visuais minimalistas. 
 
+A paleta de cores equilibrada e a tipografia limpa proporcionam uma experiência agradável e profissional, enquanto o uso de feedback dinâmico e ícones melhora a usabilidade e acessibilidade da aplicação.
 ### Layout Responsivo
 [Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
 
