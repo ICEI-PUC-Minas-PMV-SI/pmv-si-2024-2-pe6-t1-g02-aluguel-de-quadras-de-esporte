@@ -6,7 +6,7 @@ Front-end Móvel para Aplicação de Aluguel de Quadras Esportivas
  O objetivo principal é criar uma interface intuitiva e responsiva, que facilite a busca e reserva de quadras esportivas para prática de diversas modalidades, como futebol, basquete e vôlei.
 
 ### Objetivos do Projeto
-*Gestão de usuários: cadastros de usuários pelo app.
+* Gestão de usuários: cadastros de usuários pelo app.
 * Facilidade de uso: Proporcionar uma experiência fluida com navegação intuitiva e design amigável.
 * Busca eficiente: Implementar filtros para localização, horários e tipos de quadra.
 * Reservas rápidas: Permitir que usuários visualizem a disponibilidade e realizem reservas em poucos passos.
