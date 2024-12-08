@@ -176,12 +176,18 @@ Erro no Login:
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
+| ID     | Descrição do Requisito                         | Prioridade | Responsável     |
+| ------ | ---------------------------------------------- | ---------- | --------------- |
+| RF-001 | O sistema deve prover a gestão de usuários     | ALTA       | Bianca e Diego  |
+| RF-002 | O sistema deve prover o agendamento de quadras | ALTA       | Enzo e Henrique |
+| RF-003 | O sistema deve prover a gestão de quadras      | ALTA       | Lucas           |
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
-
+| ID      | Descrição do Requisito                                            | Prioridade |
+| ------- | ----------------------------------------------------------------- | ---------- |
+| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA       |
+| RNF-002 | O sistema deve ter latência máxima de 5 segundos                  | MÉDIA      |
 
 ## Considerações de Segurança
 
