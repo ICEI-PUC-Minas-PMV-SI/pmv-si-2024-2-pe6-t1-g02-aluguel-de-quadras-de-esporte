@@ -42,11 +42,8 @@ A aplicação segue uma arquitetura modularizada, organizada em camadas para sep
 * Integração com APIs RESTful para sincronização de dados com o backend.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
-### A imagem mostra o diagrama de um banco de dados para um sistema de aluguel de quadras esportivas.
+A imagem mostra o diagrama de um banco de dados do sistema de aluguel de quadras esportivas.
 ![Fluxograma (1)](https://github.com/user-attachments/assets/37e253b9-2710-4deb-a51a-f163de9d5770)
-
-### Existem três tabelas:
 
 - Usuários Cadastro: Armazena informações sobre os usuários do sistema, como nome, CPF, data de criação, etc. Também define os tipos de usuários: "cliente" ou "administrador".
 - Os administradores têm acesso a funcionalidades adicionais, como gerenciar quadras e usuários.
@@ -58,244 +55,81 @@ A aplicação segue uma arquitetura modularizada, organizada em camadas para sep
 - Por exemplo, a tabela "Usuários Cadastro" tem uma relação com a tabela "Reserva" através do atributo "usuario".
 
 ## Projeto da Interface
+A interface móvel foi projetada com foco em uma experiência de usuário (UX) intuitiva e acessível, alinhada ao Material Design para garantir consistência visual e interatividade eficiente.
 
-![Captura de tela 2024-12-08 154801](https://github.com/user-attachments/assets/ef591c4a-6e46-4d26-8113-9187a164f0ed)
-#### Descrição do Projeto da Interface Móvel
-Design Visual
+#### Design Visual
 * Tema: Interface com estilo moderno e minimalista, usando cores escuras como fundo (dark mode) para destacar os elementos principais e proporcionar conforto visual.
  Paleta de cores:
 * Fundo: Preto/Antracite.
 * Botão principal: Azul vibrante (#007BFF), para chamar a atenção para ações importantes.
 * Textos: Branco para legibilidade em contraste com o fundo escuro.
 * Tipografia: Uso de fonte serifada elegante para o título (“QUADDRA”), contrastando com fontes sans-serif para textos secundários e botões.
-Layout das Páginas
-* Tela Inicial (Splash/Welcome):
+  
+### Layout das Páginas
+#### Tela Inicial
 * Logo e título: Nome da aplicação destacado na parte superior da tela.
 * Mensagem de boas-vindas: Texto centralizado que indica a funcionalidade principal (“Gerencie suas quadras de qualquer lugar!”) e um subtítulo menor (“Faça login para começar”).
 * Botão de ação: Botão grande e centralizado, com label "Acessar", projetado para facilitar a navegação para a tela de login.
-Tela de Login (conforme imagem anterior):
+  
+![Captura de tela 2024-12-08 154801](https://github.com/user-attachments/assets/ef591c4a-6e46-4d26-8113-9187a164f0ed)
+
+#### Tela de Login
 * Campos para entrada de e-mail e senha com validação visual de erros.
 * Botão de “Cadastrar” para novos usuários.
-Interações do Usuário
-* Clique em “Acessar”: Redireciona para a tela de login com animação de transição simples (deslizar ou fade).
-* Animações: Efeitos suaves para botões quando clicados, como mudanças de cor ou escala, para indicar interação.
-* Responsividade: O layout é ajustável para diferentes tamanhos de telas, mantendo o alinhamento central e proporções dos elementos.
-Outros Aspectos Relevantes
-* Acessibilidade: Texto grande e contrastante para garantir que a interface seja inclusiva.
-* UX Simples: A interface segue princípios de usabilidade, com fluxos intuitivos que minimizam a curva de aprendizado do usuário.
-* Escalabilidade: A página inicial é modular, podendo incluir links para "Ajuda", "Sobre" ou outras funções no futuro.
-* Esse design proporciona uma experiência fluida e agradável, focada na funcionalidade principal da aplicação, com atenção aos detalhes visuais e interativos.
+  
+![login](https://github.com/user-attachments/assets/64970f49-e011-4353-be45-6dbb58355ad5)
 
-## Design Visual
-Estilo Minimalista:
-* Tons escuros (tema "dark mode"), criando um visual moderno e agradável para uso prolongado.
-* Contraste bem definido: botões em azul vibrante destacam as ações principais, enquanto mensagens de erro aparecem em vermelho para chamar atenção.
-#### Espaçamento e Organização:
-* Elementos bem espaçados para evitar toques acidentais.
-* Layout limpo, sem distrações visuais.
-#### Layout das Páginas
-A interface é estruturada de forma consistente, com uma hierarquia clara e foco nas funcionalidades principais.
-Tela de Login (Principal)
-Componentes:
-* Título:
-"Bem-vindo(a)" aparece no topo da tela, centralizado, com destaque visual (tamanho maior e contraste).
-* Campos de Entrada:
-E-mail: Campo para inserir o e-mail, com validação em tempo real.
-Senha: Campo para inserir a senha, com máscara de proteção para ocultar os caracteres digitados.
-* Botões:
-Acessar: Botão principal para login, destacado em azul.
-Cadastrar: Botão secundário, em cinza, posicionado logo abaixo.
-* Mensagens de Validação/Erro:
-Mensagens em vermelho exibidas abaixo dos campos para indicar erros, como e-mail inválido ou credenciais incorretas.
-#### Feedback Visual:
-* Bordas dos campos e mensagens de erro mudam dinamicamente conforme a interação do usuário.
-* Pop-up ou tooltip para mensagens de erro gerais (e.g., "Erro no login - Credenciais inválidas").
-* Tela de Cadastro (Sugestão)
-Embora não exibida na imagem, é provável que a aplicação tenha uma tela de cadastro semelhante, com:
-Campos adicionais, como nome completo, confirmação de senha, etc.
-* Botão para voltar à tela de login.
-#### Interações do Usuário
-Validações em Tempo Real:
-* Campos de entrada verificam erros ao perder o foco (e.g., e-mail inválido ou campos vazios).
-* Mensagens de erro aparecem imediatamente, ajudando o usuário a corrigir problemas antes de tentar o login.
-Navegação:
-* Toque no botão Cadastrar redireciona para uma tela de cadastro.
-* Após o login bem-sucedido, o usuário é redirecionado para a página inicial da aplicação.
-  Estado do Botão "Acessar":
-* Desativado enquanto os campos obrigatórios estão vazios.
-* Ativado somente após validações bem-sucedidas.
-Exibição de Erros no Login:
-* Em caso de credenciais incorretas, um pop-up exibe o erro ("Erro de login - Credenciais inválidas"), com opção para tentar novamente.
-#### Aspectos Relevantes
-Acessibilidade:
-* Uso de labels e descrições claras para auxiliar usuários com deficiências visuais.
-* Alto contraste e tamanhos de toque adequados para facilitar a navegação.
-Responsividade:
-* Interface ajustável para diferentes tamanhos de tela, garantindo uma boa experiência tanto em smartphones pequenos quanto em dispositivos maiores.
-Conectividade:
-* Design preparado para funcionar em cenários online e offline:
-* Feedback apropriado caso o dispositivo esteja sem conexão.
-Resumo
-A interface combina funcionalidade e design visual moderno, mantendo foco na usabilidade e na experiência do usuário. As validações e interações dinâmicas garantem que os usuários recebam feedback imediato e claro, minimizando erros e frustrações. O layout simples, aliado a cores e tipografia bem escolhidas, resulta em um aplicativo móvel profissional e intuitivo.
+#### Tela de cadastro
+* Redirecionamento para tela de login após fazer cadastro.
+* Validação dos campos de input
 
-### Wireframes
-### Tela inicial
+![cadastro](https://github.com/user-attachments/assets/9a957e87-6fb0-46b8-9a5c-1609007641ac)
 
-![Captura de tela 2024-12-08 154801](https://github.com/user-attachments/assets/106f01b2-d811-49b2-b615-ac923c25354e)
+#### Home
+* Acessar agendamentos.
+* Acessar perfil.
 
-#### Esta tela inicial da aplicação QUADDRA apresenta um design minimalista e focado na experiência do usuário. Ela funciona como uma página de boas-vindas, orientando o usuário sobre o propósito da aplicação: o gerenciamento de quadras esportivas.
+![home](https://github.com/user-attachments/assets/a0871ac7-5816-45ae-b84a-398740e88ffb)
 
-### Tela login
-![Captura de tela 2024-12-08 080511](https://github.com/user-attachments/assets/6873552e-ece2-403f-927c-1b859e99d8a2)
+#### Atualizar perfil
+* Recuperação de informações.
+* Validação de senha.
 
-A imagem apresenta diferentes estados de validação na tela de login de uma aplicação, destacando as interações relacionadas à entrada de dados e mensagens de erro:
-Estado Inicial:
-* Campos de e-mail e senha estão vazios.
-* Botão "Acessar" destacado em azul para chamar a atenção do usuário.
-Validação de E-mail:
-* Exibe uma mensagem em vermelho "Informe seu e-mail" quando o campo é deixado vazio.
-* Mostra "E-mail inválido" caso o formato inserido seja incorreto (ex.: falta de "@" ou domínio).
-Validação de Senha:
-* Mensagem "Informe sua senha" aparece em vermelho ao tentar prosseguir sem preencher este campo.
-Toast de Erro:
-* Uma notificação (toast) no topo da tela informa "Erro de login" com a mensagem "Credenciais inválidas" após tentativa de login com dados incorretos.
-Propósito:
-* Esses estados de validação e feedback garantem uma experiência do usuário clara e intuitiva, reduzindo erros e orientando o preenchimento correto dos campos obrigatórios.
+![atualizar perfil](https://github.com/user-attachments/assets/37550848-95c2-4fd1-b0af-ed0e366e3128)
 
-### Tela cadastro
+#### Agendamentos
+* Gestão de agendamentos.
+* Alterar data e hora.
+* Cancelar agendamento.
 
-Análise das Telas de Cadastro
-
-*Título: Faça seu cadastro![Captura de tela 2024-12-08 161211](https://github.com/user-attachments/assets/ade24cb7-d01a-464d-8b47-ddf2dc72ed30)
-
-#### Tela 1:
-Campos:
-* Nome
-* Telefone
-* E-mail
-* Senha
-* CPF
-* Botão: Cadastrar
-Descrição: Esta tela representa a interface de cadastro inicial, onde o usuário preenche seus dados para criar uma conta.
-#### Tela 2:
-Campos:
-* Nome (com validação "Digite seu nome")
-* Telefone (com validação "O número de telefone é obrigatório")
-* E-mail (com validação "Informe seu e-mail")
-* Senha (com validação "Informe sua senha")
-* CPF (com validação "Digite seu CPF")
-* Botão: Cadastrar
-
-Descrição: Esta tela mostra a validação dos campos de input. Ela destaca a importância de inserir informações válidas, como um número de telefone válido.
-Conclusão:
-* Tela 1 - Coleta as informações do usuário para cadastro.
-* Tela 2 - Exibe a validação dos campos de input, garantindo a integridade dos dados inseridos.
-  #### Interface
-  ![Captura de tela 2024-12-08 162206](https://github.com/user-attachments/assets/328f9dde-c5d8-46d7-a580-e853f33910c6)
- ### App Mobile - Interface
-Objetivo: Ajudar o usuário a encontrar e reservar quadras esportivas.
-* Seus Agendamentos: Acesso à lista de reservas.
-* Perfil: Acesso ao perfil do usuário.
-Conclusão: A interface do app é simples, clean e fácil de usar.
-
-As imagens atrativas e o texto informativo convidam o usuário a explorar as funcionalidades do app.
-### Atualizar Perfil
-![Captura de tela 2024-12-08 162929](https://github.com/user-attachments/assets/fd7e2a2d-e788-494c-9d8d-ed3a8abca221)
-
-A imagem apresenta três telas diferentes de um aplicativo, todas com o objetivo de atualizar um perfil.
-As diferenças entre elas demonstram a evolução do processo de atualização.
-#### Tela 1 - Recuperaçao de Informações:
-* Objetivo: Solicitar as informações básicas do usuário para atualizar o perfil.
-* Campos: Nome, Telefone e Nova Senha.
-* Observação: A tela solicita a nova senha sem validação inicial.
-#### Tela 2 - Validação de Senha:
-* Objetivo: Validar a nova senha informada pelo usuário.
-* Campos: Nome, Telefone, Nova Senha e Confirmar Nova Senha.
-* Observação: A tela apresenta a mensagem "Informe sua senha", indicando que a senha inicial não foi considerada válida. A confirmação da nova senha é solicitada, garantindo que o usuário digite a senha corretamente.
-#### Tela 3 - Validação de Senha (2):
-* Objetivo: Validar a nova senha informada pelo usuário.
-* Campos: Nome, Telefone, Nova Senha e Confirmar Nova Senha.
-* Observação: A tela apresenta a mensagem "As senhas devem ser iguais", indicando que a nova senha e a confirmação são diferentes. As senhas inseridas aparecem como "..." para manter a confidencialidade.
-*Conclusão:
-
-As três telas representam um processo iterativo de atualização de perfil, guiando o usuário na entrada de informações e validando a nova senha para garantir a segurança da conta.
-
-### Agendamentos
-![Captura de tela 2024-12-08 163548](https://github.com/user-attachments/assets/66c98fc3-e2d3-4530-99d3-21025fe33ac5)
-
-A imagem mostra três telas de um sistema de agendamento, cada uma representando uma funcionalidade específica:
-#### 1. Gestão de Agendamentos:
-* Exibe uma lista com os agendamentos realizados.
-* Cada agendamento contém informações como:
-* Quadra
-* Data
-* Horário
-* Local
-* Permite cancelar um agendamento individualmente.
-* Permite editar um agendamento (a tela de edição é mostrada na segunda imagem).
-#### 2. Alterar Data e Hora:
-* Permite editar a data e hora de um agendamento específico.
-* Mostra a data e hora atuais do agendamento.
-* Permite selecionar a nova data e hora.
-* Oferece a opção de salvar as alterações no agendamento.
-#### 3. Cancelar Agendamento:
-* Exibe uma lista com os agendamentos realizados.
-* Cada agendamento contém informações como:
-* Quadra
-* Data
-* Horário
-* Local
-* Permite cancelar todos os agendamentos de uma vez.
-* Indica os agendamentos que já foram cancelados.
-As três telas trabalham juntas para oferecer ao usuário uma experiência completa de gerenciamento de agendamentos.
-### Design Visual
-O estilo visual da interface combina um tema escuro elegante com elementos visuais minimalistas. 
-
-A paleta de cores equilibrada e a tipografia limpa proporcionam uma experiência agradável e profissional, enquanto o uso de feedback dinâmico e ícones melhora a usabilidade e acessibilidade da aplicação.
-### Layout Responsivo
-A interface será altamente flexível e otimizada para atender às necessidades de diferentes dispositivos e tamanhos de tela. 
-
-O uso de design responsivo, elementos escaláveis, e técnicas específicas de otimização garantirá que a aplicação funcione perfeitamente, oferecendo uma experiência de usuário consistente e agradável em qualquer dispositivo.
-
-### Interações do Usuário
-A interface será projetada para proporcionar uma experiência interativa, fluida e intuitiva, incorporando animações, transições e interações que guiem o usuário e tornem o uso da aplicação agradável. Abaixo está a descrição detalhada das principais interações:
-1. Transições Entre Páginas
-Efeito de Transição Suave:
-* Transições entre telas (como a tela de login para o dashboard) usarão animações de deslizamento lateral ou desvanecimento.
-Exemplo: Ao clicar no botão "Acessar", a nova página desliza da direita para a esquerda, criando uma continuidade natural.
-Animação de Retorno:
-* Ao utilizar o botão de "voltar" do dispositivo ou um botão de navegação, a página anterior retorna com um movimento deslizante reverso, reforçando o fluxo intuitivo.
-Duração:
-* Transições rápidas (~300ms) para manter a aplicação responsiva sem atrasos perceptíveis.
-2. Animações de Feedback
-Interações diretas com elementos da interface proporcionarão feedback imediato para o usuário:
-
-Botões:
-* Quando um botão é clicado, ele muda levemente de cor (e.g., clareamento ou sombreamento) para indicar que foi pressionado.
-Ripple Effect:
-* Um efeito de onda será exibido ao tocar nos botões, especialmente em dispositivos Android, seguindo as diretrizes do Material Design.
-Campos de Texto:
-* Campos de entrada ganham destaque visual (borda colorida ou efeito de brilho) quando selecionados.
-Validações em tempo real:
-* E-mail ou senha inválidos mostram mensagens de erro com animações de desvanecimento ou pequenos tremores no campo correspondente para chamar atenção.
-Erro no Login:
-* Exibição de uma mensagem de erro (e.g., "Credenciais inválidas") com uma animação de fade-in para que o usuário perceba a mensagem de forma natural.
+![agendamentos](https://github.com/user-attachments/assets/ebf2b4ba-c305-450e-bb19-27c3df3a013b)
 
 ## Fluxo de Dados
+#### 1. Entrada de Dados
+Usuário insere informações via interface:
+Exemplo: Formulários de login, perfil e cadastro.
+Os dados inseridos são validados localmente usando bibliotecas como react-hook-form e yup.
 
-1. **Carregamento de Dados**: A página inicial (`Home.tsx`) carrega uma lista de quadras a partir de uma API ou de dados locais e passa essas informações para o `CourtList.tsx`.
+#### 2. Processamento e Envio para o Backend
+Após a validação, os dados são enviados ao backend via chamadas HTTP.
+fetch para requisições assíncronas (ex.: POST /login, POST /agendamento).
+Estrutura JSON para envio e recebimento de dados.
 
-2. **Navegação**: O usuário pode clicar em um `CourtCard` para ser redirecionado para `CourtDetails.tsx`, onde detalhes adicionais são exibidos.
+#### 3. Processamento no Backend
+O backend, implementado em Java/Spring Boot, processa os dados recebidos:
+Autenticação de usuários.
+Armazenamento e consulta em banco de dados.
+Respostas formatadas em JSON para o app.
 
-3. **Reserva**: Ao optar por reservar uma quadra, o usuário é redirecionado para `Booking.tsx`, onde pode confirmar a reserva. Os dados da reserva são gerenciados na camada de estado.
+#### 4. Resposta e Atualização da Interface
+O backend retorna uma resposta HTTP com o status da operação:
+200 OK: Dados válidos e operação concluída.
+400 Bad Request: Erro de validação ou entrada inválida.
+O app processa a resposta e atualiza o estado da aplicação usando React Hooks, refletindo as alterações na interface.
 
-4. **Atualização de Estado**: Após a confirmação da reserva, a aplicação pode atualizar a lista de quadras disponíveis, refletindo a nova disponibilidade.
-
-### Considerações Finais
-
-Essa arquitetura modular e baseada em componentes permite uma manutenção e escalabilidade facilitadas. Cada componente possui uma responsabilidade clara, o que torna o código mais fácil de entender e modificar. Além disso, a separação da lógica de apresentação e gerenciamento de estado promove um desenvolvimento mais organizado e eficiente.
-## Modelagem da Aplicação
-
+#### 5. Persistência de Dados Local
+Alguns dados são armazenados localmente para melhorar a experiência do usuário, como:
+Tokens de autenticação em AsyncStorage.
 
 ## Requisitos Funcionais
 
@@ -336,12 +170,10 @@ Testes em Produção:
 ## Testes
 
 ### Métodologias Adotadas
-- Testes Unitários: Validar o funcionamento correto de funções e métodos isolados
 - Testes de Integração: Garantir que diferentes módulos funcionem bem juntos
 - Testes Funcionais: Verificar se o sistema atende aos requisitos funcionais
 - Testes de Interface do Usuário (UI): Avaliar a funcionalidade e usabilidade dos elementos visuais para uma boa experiência do usuário
 
-### Histórias SMART
 
 1. **Cadastro de Usuário**  
    Como um novo usuário do sistema, desejo me cadastrar preenchendo todas as informações obrigatórias, para que eu possa acessar a plataforma e realizar agendamentos de quadras.
@@ -360,12 +192,6 @@ Testes em Produção:
 
 6. **Consulta de Quadras Disponíveis**  
    Como um usuário do sistema, desejo consultar quadras disponíveis filtrando por localidade e tipo, para escolher uma quadra que melhor atenda às minhas necessidades.
-
-7. **Testes de Interface**  
-   Como um usuário, desejo que os elementos de interface funcionem corretamente, para navegar e utilizar a aplicação sem dificuldades.
-
-8. **Testes de Desempenho**  
-   Como administrador do sistema, desejo que a aplicação suporte múltiplos acessos simultâneos, para garantir a estabilidade do sistema em horários de pico.
 
 ### Casos de Teste
 
