@@ -221,7 +221,7 @@ Objetivo: Ajudar o usuário a encontrar e reservar quadras esportivas.
 Conclusão: A interface do app é simples, clean e fácil de usar.
 
 As imagens atrativas e o texto informativo convidam o usuário a explorar as funcionalidades do app.
-#### Atualizar Perfil
+### Atualizar Perfil
 ![Captura de tela 2024-12-08 162929](https://github.com/user-attachments/assets/fd7e2a2d-e788-494c-9d8d-ed3a8abca221)
 
 A imagem apresenta três telas diferentes de um aplicativo, todas com o objetivo de atualizar um perfil.
@@ -242,7 +242,7 @@ As diferenças entre elas demonstram a evolução do processo de atualização.
 
 As três telas representam um processo iterativo de atualização de perfil, guiando o usuário na entrada de informações e validando a nova senha para garantir a segurança da conta.
 
-#### Agendamentos
+### Agendamentos
 ![Captura de tela 2024-12-08 163548](https://github.com/user-attachments/assets/66c98fc3-e2d3-4530-99d3-21025fe33ac5)
 
 A imagem mostra três telas de um sistema de agendamento, cada uma representando uma funcionalidade específica:
