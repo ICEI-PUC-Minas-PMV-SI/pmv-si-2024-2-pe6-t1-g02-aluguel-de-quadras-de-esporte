@@ -1,8 +1,9 @@
 # Front-end Móvel
 
 Front-end Móvel para Aplicação de Aluguel de Quadras Esportivas
-O projeto consiste no desenvolvimento do front-end de uma aplicação móvel que conecta usuários a quadras esportivas disponíveis para aluguel.
-O objetivo principal é criar uma interface intuitiva e responsiva, que facilite a busca e reserva de quadras esportivas para prática de diversas modalidades, como futebol, basquete e vôlei.
+
+ O projeto consiste no desenvolvimento do front-end de uma aplicação móvel que conecta usuários a quadras esportivas disponíveis para aluguel.
+ O objetivo principal é criar uma interface intuitiva e responsiva, que facilite a busca e reserva de quadras esportivas para prática de diversas modalidades, como futebol, basquete e vôlei.
 
 ### Objetivos do Projeto
 * Facilidade de uso: Proporcionar uma experiência fluida com navegação intuitiva e design amigável.
