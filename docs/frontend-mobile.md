@@ -80,9 +80,35 @@ Front-end Móvel para Aplicação de Aluguel de Quadras Esportivas
 - Por exemplo, a tabela "Usuários Cadastro" tem uma relação com a tabela "Reserva" através do atributo "usuario".
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
-#### Design Visual
+![Captura de tela 2024-12-08 154801](https://github.com/user-attachments/assets/ef591c4a-6e46-4d26-8113-9187a164f0ed)
+#### Descrição do Projeto da Interface Móvel
+Design Visual
+* Tema: Interface com estilo moderno e minimalista, usando cores escuras como fundo (dark mode) para destacar os elementos principais e proporcionar conforto visual.
+ Paleta de cores:
+* Fundo: Preto/Antracite.
+* Botão principal: Azul vibrante (#007BFF), para chamar a atenção para ações importantes.
+* Textos: Branco para legibilidade em contraste com o fundo escuro.
+* Tipografia: Uso de fonte serifada elegante para o título (“QUADDRA”), contrastando com fontes sans-serif para textos secundários e botões.
+Layout das Páginas
+* Tela Inicial (Splash/Welcome):
+* Logo e título: Nome da aplicação destacado na parte superior da tela.
+* Mensagem de boas-vindas: Texto centralizado que indica a funcionalidade principal (“Gerencie suas quadras de qualquer lugar!”) e um subtítulo menor (“Faça login para começar”).
+* Botão de ação: Botão grande e centralizado, com label "Acessar", projetado para facilitar a navegação para a tela de login.
+Tela de Login (conforme imagem anterior):
+* Campos para entrada de e-mail e senha com validação visual de erros.
+* Botão de “Cadastrar” para novos usuários.
+Interações do Usuário
+* Clique em “Acessar”: Redireciona para a tela de login com animação de transição simples (deslizar ou fade).
+* Animações: Efeitos suaves para botões quando clicados, como mudanças de cor ou escala, para indicar interação.
+* Responsividade: O layout é ajustável para diferentes tamanhos de telas, mantendo o alinhamento central e proporções dos elementos.
+Outros Aspectos Relevantes
+* Acessibilidade: Texto grande e contrastante para garantir que a interface seja inclusiva.
+* UX Simples: A interface segue princípios de usabilidade, com fluxos intuitivos que minimizam a curva de aprendizado do usuário.
+* Escalabilidade: A página inicial é modular, podendo incluir links para "Ajuda", "Sobre" ou outras funções no futuro.
+* Esse design proporciona uma experiência fluida e agradável, focada na funcionalidade principal da aplicação, com atenção aos detalhes visuais e interativos.
+
+## Design Visual
 Estilo Minimalista:
 * Tons escuros (tema "dark mode"), criando um visual moderno e agradável para uso prolongado.
 * Contraste bem definido: botões em azul vibrante destacam as ações principais, enquanto mensagens de erro aparecem em vermelho para chamar atenção.
@@ -135,7 +161,56 @@ Resumo
 A interface combina funcionalidade e design visual moderno, mantendo foco na usabilidade e na experiência do usuário. As validações e interações dinâmicas garantem que os usuários recebam feedback imediato e claro, minimizando erros e frustrações. O layout simples, aliado a cores e tipografia bem escolhidas, resulta em um aplicativo móvel profissional e intuitivo.
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+### Tela inicial
+
+![Captura de tela 2024-12-08 154801](https://github.com/user-attachments/assets/106f01b2-d811-49b2-b615-ac923c25354e)
+
+#### Esta tela inicial da aplicação QUADDRA apresenta um design minimalista e focado na experiência do usuário. Ela funciona como uma página de boas-vindas, orientando o usuário sobre o propósito da aplicação: o gerenciamento de quadras esportivas.
+
+### Tela login
+![Captura de tela 2024-12-08 080511](https://github.com/user-attachments/assets/6873552e-ece2-403f-927c-1b859e99d8a2)
+
+A imagem apresenta diferentes estados de validação na tela de login de uma aplicação, destacando as interações relacionadas à entrada de dados e mensagens de erro:
+Estado Inicial:
+* Campos de e-mail e senha estão vazios.
+* Botão "Acessar" destacado em azul para chamar a atenção do usuário.
+Validação de E-mail:
+* Exibe uma mensagem em vermelho "Informe seu e-mail" quando o campo é deixado vazio.
+* Mostra "E-mail inválido" caso o formato inserido seja incorreto (ex.: falta de "@" ou domínio).
+Validação de Senha:
+* Mensagem "Informe sua senha" aparece em vermelho ao tentar prosseguir sem preencher este campo.
+Toast de Erro:
+* Uma notificação (toast) no topo da tela informa "Erro de login" com a mensagem "Credenciais inválidas" após tentativa de login com dados incorretos.
+Propósito:
+* Esses estados de validação e feedback garantem uma experiência do usuário clara e intuitiva, reduzindo erros e orientando o preenchimento correto dos campos obrigatórios.
+
+### Tela cadastro
+
+Análise das Telas de Cadastro
+
+*Título: Faça seu cadastro![Captura de tela 2024-12-08 161211](https://github.com/user-attachments/assets/ade24cb7-d01a-464d-8b47-ddf2dc72ed30)
+
+#### Tela 1:
+Campos:
+* Nome
+* Telefone
+* E-mail
+* Senha
+* CPF
+* Botão: Cadastrar
+Descrição: Esta tela representa a interface de cadastro inicial, onde o usuário preenche seus dados para criar uma conta.
+#### Tela 2:
+Campos:
+* Nome (com validação "Digite seu nome")
+* Telefone (com validação "O número de telefone é obrigatório")
+* E-mail (com validação "Informe seu e-mail")
+* Senha (com validação "Informe sua senha")
+* CPF (com validação "Digite seu CPF")
+* Botão: Cadastrar
+Descrição: Esta tela mostra a validação dos campos de input. Ela destaca a importância de inserir informações válidas, como um número de telefone válido.
+Conclusão:
+* Tela 1 - Coleta as informações do usuário para cadastro.
+* Tela 2 - Exibe a validação dos campos de input, garantindo a integridade dos dados inseridos.
 
 ### Design Visual
 O estilo visual da interface combina um tema escuro elegante com elementos visuais minimalistas. 
