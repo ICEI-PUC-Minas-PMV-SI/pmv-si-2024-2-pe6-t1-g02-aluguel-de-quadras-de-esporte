@@ -22,23 +22,6 @@ Front-end Móvel para Aplicação de Aluguel de Quadras Esportivas
 * react-hook-form: Para gerenciamento de formulários.
 * yup: Validação de formulários.
 
-#### Validações no Cliente:
-* E-mail: Uso de expressões regulares para verificar o formato do e-mail.
-* Campos obrigatórios: Validações básicas realizadas com código JavaScript (React Native) ou Dart (Flutter).
-* Back-end (Camada de Aplicação e Acesso a Dados)
-#### Linguagens e Frameworks:
-* Node.js com Express.js: Popular para construir APIs REST. Suporta alto desempenho para autenticação e conexão com banco de dados.
-* Django/Flask (Python): Focado em simplicidade e segurança, ideal para autenticação.
-* Ruby on Rails: Oferece um ecossistema completo para APIs e gerenciamento de usuários.
-#### API REST:
-* A comunicação cliente-servidor deve ser feita através de APIs RESTful, enviando e recebendo dados no formato JSON.
-#### Banco de Dados (Camada de Persistência)
-* MySQL ou PostgreSQL: Muito usados para armazenar dados estruturados como e-mails e senhas (armazenadas como hash, nunca em texto puro).
-* MongoDB: Banco de dados NoSQL, útil em projetos que precisam de mais flexibilidade nos dados.
-  #### Segurança:
-* Senhas devem ser armazenadas com hashing seguro (e.g., bcrypt).
-* Comunicação cliente-servidor deve ser protegida por HTTPS.
-
 ## Arquitetura
 ### Camadas da Arquitetura
 #### Camada de Apresentação (Front-end):
