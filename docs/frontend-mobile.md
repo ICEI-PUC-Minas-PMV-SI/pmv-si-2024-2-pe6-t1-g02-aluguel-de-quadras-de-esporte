@@ -242,8 +242,3 @@ Testes em Produção:
      **Quando** clico em botões e links e interajo com os campos,  
      **Então** todos os elementos da interface devem responder conforme esperado, sem erros de navegação ou carregamento.
 
-8. **Testes de Desempenho**
-   - **Dado** que o sistema está em um ambiente de testes de carga,  
-     **Quando** simulo acessos simultâneos de múltiplos usuários realizando login e agendamentos,  
-     **Então** o sistema deve responder dentro de um tempo aceitável e manter a estabilidade sem falhas.
-
