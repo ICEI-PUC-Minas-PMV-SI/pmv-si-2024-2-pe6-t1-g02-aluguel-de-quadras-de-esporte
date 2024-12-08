@@ -195,14 +195,20 @@ Erro no Login:
 * Isso não apenas protegerá os dados do usuário, mas também manterá a confiança na aplicação e evitará riscos legais ou de reputação.
 
 ## Implantação
-
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+#### Requisitos de Hardware e Software:
+* Servidor (Backend): CPU de 2 vCPUs, 4 GB de RAM, 50 GB de armazenamento SSD. Sistema operacional Linux ou Windows Server.
+* Dispositivo Móvel (Cliente): Android 8.0 ou superior, iOS 12 ou superior, com 3 GB de RAM.
+Plataforma de Hospedagem:
+*AWS, GCP, Azure ou DigitalOcean são boas opções. AWS e GCP oferecem escalabilidade, enquanto DigitalOcean é mais acessível para pequenas empresas.
+Configuração do Ambiente de Implantação:
+* Criação de instância no provedor de nuvem, instalação de dependências como Node.js, Python, banco de dados (PostgreSQL/MySQL).
+Deploy da Aplicação:
+* Backend: Clone o repositório, instale dependências e configure o servidor web (Nginx ou Apache).
+* Frontend: Gere o APK/IPA e faça o upload para a Google Play ou App Store.
+Testes em Produção:
+* Realize testes funcionais (login, API), de performance (com JMeter), e de segurança (com OWASP ZAP).
+* Configure ferramentas de monitoramento (ex.: New Relic, Datadog) para garantir a saúde do sistema.
+* Esse processo assegura que a aplicação seja implantada corretamente em produção, com alta disponibilidade e segurança
 
 ## Testes
 
