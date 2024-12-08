@@ -12,26 +12,55 @@ O objetivo principal é criar uma interface intuitiva e responsiva, que facilite
 
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+
+### Front-end (Camada de Apresentação)
+#### Frameworks/Plataformas :
+* React Native:  Usado para desenvolvimento de aplicações móveis multiplataforma (Android e iOS). Suporta componentes estilizados e integração com back-end via APIs.
+* Flutter: Opção  para multiplataforma, com foco em interfaces responsivas e fluídas.
+* Kotlin (Android) ou Swift (iOS): Para aplicativos desenvolvidos diretamente nas linguagens nativas das plataformas.
+  #### Estilização:
+* Uso de CSS-in-JS (React Native) ou widgets específicos no Flutter para estilização.
+#### Validações no Cliente:
+* E-mail: Uso de expressões regulares para verificar o formato do e-mail.
+* Campos obrigatórios: Validações básicas realizadas com código JavaScript (React Native) ou Dart (Flutter).
+* Back-end (Camada de Aplicação e Acesso a Dados)
+#### Linguagens e Frameworks:
+* Node.js com Express.js: Popular para construir APIs REST. Suporta alto desempenho para autenticação e conexão com banco de dados.
+* Django/Flask (Python): Focado em simplicidade e segurança, ideal para autenticação.
+* Ruby on Rails: Oferece um ecossistema completo para APIs e gerenciamento de usuários.
+#### API REST:
+* A comunicação cliente-servidor deve ser feita através de APIs RESTful, enviando e recebendo dados no formato JSON.
+#### Banco de Dados (Camada de Persistência)
+* MySQL ou PostgreSQL: Muito usados para armazenar dados estruturados como e-mails e senhas (armazenadas como hash, nunca em texto puro).
+* MongoDB: Banco de dados NoSQL, útil em projetos que precisam de mais flexibilidade nos dados.
+  #### Segurança:
+* Senhas devem ser armazenadas com hashing seguro (e.g., bcrypt).
+* Comunicação cliente-servidor deve ser protegida por HTTPS.
 
 ## Arquitetura
-
-[Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
-
-### 1. Camadas da Arquitetura 
-#### 1.1. Frontend (React Native):
-Responsável pela interface do usuário e pela interação com o back-end via API.
-### Principais componentes:
-App Component: Contém o estado global (se necessário) e configurações iniciais, como provedores de contexto e navegação.
-### Navegação:
-* Stack Navigation: Para fluxos autenticados (ex.: reserva).
-* Tab Navigation: Para navegação principal (ex.: home, perfil, histórico).
-### Tela de Busca:
-* Módulo para listar quadras próximas, com integração ao Google Maps.
-* Filtros dinâmicos por localização, tipo de quadra e horário.
-### Tela de Detalhes:
-* Exibe informações detalhadas da quadra (preço, fotos, avaliações).
-* Botão para reservar.
+### Camadas da Arquitetura
+#### Camada de Apresentação (Front-end):
+* Interface gráfica representada pela tela de login mostrada na imagem.
+* Validações básicas no cliente, como verificar se os campos estão preenchidos e se o formato do e-mail é válido.
+* Exibe mensagens de erro para o usuário (e.g., "Informe seu e-mail", "E-mail inválido", "Credenciais inválidas").
+#### Camada de Aplicação/Negócio:
+* Responsável por gerenciar as interações da aplicação.
+* Reúne os dados do formulário e os envia ao servidor através de requisições HTTP (provavelmente via API REST).
+* Trata respostas do servidor (e.g., credenciais inválidas) e repassa o feedback para a camada de apresentação.
+#### Camada de Acesso a Dados (Back-end):
+* Realiza a autenticação das credenciais no banco de dados.
+* Retorna mensagens apropriadas para o cliente, como "Credenciais inválidas" ou sucesso no login.
+* Possui uma API para gerenciar as requisições recebidas do front-end.
+#### Camada de Persistência de Dados (Banco de Dados):
+* Armazena os dados do usuário (e.g., e-mails, senhas hash).
+* Garante a segurança e integridade das informações.
+ Fluxo de Comunicação
+#### Entrada do usuário: O usuário insere o e-mail e a senha.
+* Validação local: O front-end verifica se os campos estão preenchidos e se o formato do e-mail está correto.
+* Requisição ao servidor: Os dados são enviados ao backend via API para autenticação.
+* Verificação no banco: O backend consulta o banco de dados para validar as credenciais.
+* Resposta ao cliente: O servidor retorna o status da autenticação (sucesso ou erro), que é exibido na interface.
+* Essa arquitetura garante flexibilidade para evoluir o sistema e atender diferentes requisitos, como segurança, escalabilidade e desempenho.
 
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
