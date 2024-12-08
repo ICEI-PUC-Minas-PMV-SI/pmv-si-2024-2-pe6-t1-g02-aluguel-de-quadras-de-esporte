@@ -443,6 +443,3 @@ Testes em Produção:
      **Quando** simulo acessos simultâneos de múltiplos usuários realizando login e agendamentos,  
      **Então** o sistema deve responder dentro de um tempo aceitável e manter a estabilidade sem falhas.
 
-# Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
