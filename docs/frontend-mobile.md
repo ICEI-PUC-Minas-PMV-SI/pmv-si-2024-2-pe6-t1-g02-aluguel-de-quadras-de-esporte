@@ -147,7 +147,28 @@ A interface será altamente flexível e otimizada para atender às necessidades 
 O uso de design responsivo, elementos escaláveis, e técnicas específicas de otimização garantirá que a aplicação funcione perfeitamente, oferecendo uma experiência de usuário consistente e agradável em qualquer dispositivo.
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+A interface será projetada para proporcionar uma experiência interativa, fluida e intuitiva, incorporando animações, transições e interações que guiem o usuário e tornem o uso da aplicação agradável. Abaixo está a descrição detalhada das principais interações:
+1. Transições Entre Páginas
+Efeito de Transição Suave:
+* Transições entre telas (como a tela de login para o dashboard) usarão animações de deslizamento lateral ou desvanecimento.
+Exemplo: Ao clicar no botão "Acessar", a nova página desliza da direita para a esquerda, criando uma continuidade natural.
+Animação de Retorno:
+* Ao utilizar o botão de "voltar" do dispositivo ou um botão de navegação, a página anterior retorna com um movimento deslizante reverso, reforçando o fluxo intuitivo.
+Duração:
+* Transições rápidas (~300ms) para manter a aplicação responsiva sem atrasos perceptíveis.
+2. Animações de Feedback
+Interações diretas com elementos da interface proporcionarão feedback imediato para o usuário:
+
+Botões:
+* Quando um botão é clicado, ele muda levemente de cor (e.g., clareamento ou sombreamento) para indicar que foi pressionado.
+Ripple Effect:
+* Um efeito de onda será exibido ao tocar nos botões, especialmente em dispositivos Android, seguindo as diretrizes do Material Design.
+Campos de Texto:
+* Campos de entrada ganham destaque visual (borda colorida ou efeito de brilho) quando selecionados.
+Validações em tempo real:
+* E-mail ou senha inválidos mostram mensagens de erro com animações de desvanecimento ou pequenos tremores no campo correspondente para chamar atenção.
+Erro no Login:
+* Exibição de uma mensagem de erro (e.g., "Credenciais inválidas") com uma animação de fade-in para que o usuário perceba a mensagem de forma natural.
 
 ## Fluxo de Dados
 
